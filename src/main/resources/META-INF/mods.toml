@@ -1,15 +1,13 @@
 modLoader="javafml" #mandatory
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
-# A URL to refer people to when problems occur with this mod
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+issueTrackerURL="https://discord.gg/TPjjuHFfZV"
 [[mods]]
 modId="gmm"
 version="2.2"
 displayName="MineTopia Mod"
 updateJSONURL="https://raw.githubusercontent.com/GhostgamesDHG/update.json/main/update.json"
-# A URL for the "homepage" for this mod, displayed in the mod UI
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/minetopia-extra-mod"
 logoFile="pack.png"
 authors="ArmedEndmion"
 

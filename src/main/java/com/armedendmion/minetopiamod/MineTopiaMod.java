@@ -1,10 +1,14 @@
 package com.armedendmion.minetopiamod;
 
+import com.armedendmion.minetopiamod.Tabs.ModCreativeModeTabs;
+import com.armedendmion.minetopiamod.blocks.ModBlocks;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,9 +29,19 @@ public class MineTopiaMod
 
     public MineTopiaMod()
     {
-        IEventBus Bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        Bus.addListener(this::commonSetup);
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        ModCreativeModeTabs.register(bus);
+    //    ModBlocks.BLOCKS.register(bus);
+    //    ModSoundEvents.register(bus);
+    //    ModItems.ITEMS.register(bus);
+    //    BlockItems.ITEMS.register(bus);
+    //    ModFood.ITEMS.register(bus);
+    //    ModHats.ITEMS.register(bus);
+    //    ModArmor.ITEMS.register(bus);
+    //    ModDolls.ITEMS.register(bus);
+    //    ModTools.ITEMS.register(bus);
+    //    ModPaintings.PAINTING_TYPES.register(bus);
+        bus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
