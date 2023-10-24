@@ -1,0 +1,11 @@
+{
+	"parent": "gmm:item/rolex_gold",
+	"texture_size": [
+		32,
+		32
+	],
+	"textures": {
+		"0": "gmm:item/rolex_diamond",
+		"particle": "gmm:item/rolex_diamond"
+	}
+}

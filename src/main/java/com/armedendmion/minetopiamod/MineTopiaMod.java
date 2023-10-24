@@ -1,6 +1,7 @@
 package com.armedendmion.minetopiamod;
 
 import com.armedendmion.minetopiamod.Tabs.ModCreativeModeTabs;
+import com.armedendmion.minetopiamod.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,7 +27,7 @@ public class MineTopiaMod
         ModCreativeModeTabs.register(bus);
     //    ModBlocks.BLOCKS.register(bus);
     //    ModSoundEvents.register(bus);
-    //    ModItems.ITEMS.register(bus);
+        ModItems.register(bus);
     //    BlockItems.ITEMS.register(bus);
     //    ModFood.ITEMS.register(bus);
     //    ModHats.ITEMS.register(bus);

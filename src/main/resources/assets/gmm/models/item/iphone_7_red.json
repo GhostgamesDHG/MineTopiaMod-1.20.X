@@ -1,0 +1,8 @@
+{
+	"parent": "gmm:item/iphone_7_black",
+	"textures": {
+		"particle": "gmm:item/rood_back",
+		"telefoon_back": "gmm:item/rood_back",
+		"telefoon_front": "gmm:item/rood"
+	}
+}

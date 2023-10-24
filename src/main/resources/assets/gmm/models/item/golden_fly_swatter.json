@@ -1,0 +1,8 @@
+{
+	"parent": "gmm:item/black_fly_swatter",
+	"textures": {
+		"1": "minecraft:block/gold_block",
+		"2": "minecraft:block/iron_block",
+		"particle": "minecraft:block/gold_block"
+	}
+}

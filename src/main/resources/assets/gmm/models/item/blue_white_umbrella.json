@@ -1,0 +1,9 @@
+{
+	"parent": "gmm:item/red_white_umbrella",
+	"textures": {
+		"0": "minecraft:block/spruce_planks",
+		"1": "minecraft:block/bone_block_side",
+		"2": "minecraft:block/blue_concrete",
+		"particle": "minecraft:block/bone_block_side"
+	}
+}

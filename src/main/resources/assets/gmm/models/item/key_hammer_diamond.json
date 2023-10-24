@@ -1,0 +1,6 @@
+{
+	"parent": "gmm:item/key_hammer_bronze",
+	"textures": {
+		"1": "gmm:item/key_hamer_diamond"
+	}
+}

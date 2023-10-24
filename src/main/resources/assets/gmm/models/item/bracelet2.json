@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/bracelet",
+	"textures": {
+		"0": "gmm:item/armband2",
+		"particle": "gmm:item/armband2"
+	}
+}

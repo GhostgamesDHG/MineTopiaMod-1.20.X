@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/black_umbrella",
+	"textures": {
+		"0": "minecraft:block/lime_concrete",
+		"particle": "minecraft:block/lime_concrete"
+	}
+}

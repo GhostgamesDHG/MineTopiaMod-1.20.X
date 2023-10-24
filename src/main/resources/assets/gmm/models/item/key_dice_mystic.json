@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/key_dice_bronze",
+	"textures": {
+		"0": "gmm:item/key_dobbelsteen_mystic",
+		"particle": "gmm:item/key_dobbelsteen_mystic"
+	}
+}

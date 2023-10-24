@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/blue_balloon",
+	"textures": {
+		"0": "gmm:item/balloon_pink",
+		"particle": "gmm:item/balloon_pink"
+	}
+}
