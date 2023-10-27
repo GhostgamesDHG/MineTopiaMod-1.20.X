@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "gmm:block/magenta_kitchen_tiles" }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gmm:block/pcb_dust_ore",
+    "particle": "gmm:block/pcb_dust_ore"
+  }
+}

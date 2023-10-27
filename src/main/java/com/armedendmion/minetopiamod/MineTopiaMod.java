@@ -1,6 +1,7 @@
 package com.armedendmion.minetopiamod;
 
 import com.armedendmion.minetopiamod.Tabs.ModCreativeModeTabs;
+import com.armedendmion.minetopiamod.blocks.ModBlocks;
 import com.armedendmion.minetopiamod.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -25,7 +26,7 @@ public class MineTopiaMod
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ModCreativeModeTabs.register(bus);
-    //    ModBlocks.BLOCKS.register(bus);
+        ModBlocks.register(bus);
     //    ModSoundEvents.register(bus);
         ModItems.register(bus);
     //    BlockItems.ITEMS.register(bus);

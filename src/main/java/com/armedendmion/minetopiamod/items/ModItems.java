@@ -1,6 +1,7 @@
 package com.armedendmion.minetopiamod.items;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
+import com.armedendmion.minetopiamod.food.ModFood;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -29,17 +30,10 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> MONEY8 = ITEMS.register("200euro", () -> new MoneyTooltip(new Item.Properties()));
     public static final RegistryObject<Item> MONEY9 = ITEMS.register("500euro", () -> new MoneyTooltip(new Item.Properties()));
     public static final RegistryObject<Item> MONEY10 = ITEMS.register("1000euro", () -> new MoneyTooltip(new Item.Properties()));
-    public static final RegistryObject<Item> MONEY11 = ITEMS.register("100dollard", () -> new MoneyTooltip(new Item.Properties()));
-    public static final RegistryObject<Item> MONEY12 = ITEMS.register("1000dollard", () -> new MoneyTooltip(new Item.Properties()));
-    public static final RegistryObject<Item> MONEY13 = ITEMS.register("5000dollard", () -> new MoneyTooltip(new Item.Properties()));
-    public static final RegistryObject<Item> MONEY14 = ITEMS.register("10000dollard", () -> new MoneyTooltip(new Item.Properties()));
-    public static final RegistryObject<Item> MONEY15 = ITEMS.register("25000dollard", () -> new MoneyTooltip(new Item.Properties()));
-    public static final RegistryObject<Item> MONEY16 = ITEMS.register("50000dollard", () -> new MoneyTooltip(new Item.Properties()));
     public static final RegistryObject<Item> DEBIT_CARD = ITEMS.register("debit_card", () -> new Item(new Item.Properties()));
 
 
     public static final RegistryObject<Item> BLUE_CRYSTAL = ITEMS.register("blue_crystal", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> COPPER_INGOT = ITEMS.register("copper_ingot", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PINK_BALLOON = ITEMS.register("pink_balloon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RED_BALLOON = ITEMS.register("red_balloon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CHRISTMAS_BALLOON = ITEMS.register("christmas_balloon", () -> new Item(new Item.Properties()));
@@ -53,14 +47,11 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> BLUE_WHITE_UMBRELLA = ITEMS.register("blue_white_umbrella", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAINBOW_UMBRELLA = ITEMS.register("rainbow_umbrella", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RED_WHITE_UMBRELLA = ITEMS.register("red_white_umbrella", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> STONE_KEY = ITEMS.register("stone_key", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MINETOPIABAG = ITEMS.register("minetopiabag", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PEPPERSPRAY = ITEMS.register("pepperspray", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> WATCH = ITEMS.register("watch", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LUCKYSHARD = ITEMS.register("luckyshard", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_PRISONCOIN = ITEMS.register("bronze_prisoncoin", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SILVER_PRISONCOIN = ITEMS.register("silver_prisoncoin", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GRAYCOIN = ITEMS.register("graycoin", () -> new Item(new Item.Properties()));
 
 
     public static final RegistryObject<Item> MTCASINO_BLAUW = ITEMS.register("mtcasino_blauw", () -> new Item(new Item.Properties()));
@@ -129,15 +120,14 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> GOLDEN_FLY_SWATTER = ITEMS.register("golden_fly_swatter", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PCB_DUST = ITEMS.register("pcb_dust", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PCB = ITEMS.register("pcb", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> BITCOIN = ITEMS.register("bitcoin", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> DASHCOIN = ITEMS.register("dashcoin", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ETHEREUM = ITEMS.register("ethereum", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> LITECOIN = ITEMS.register("litecoin", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EASTER_BASKET = ITEMS.register("easter_basket", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> GUITAR = ITEMS.register("guitar", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> WHEELCOIN = ITEMS.register("wheelcoin", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SANTA_CLAUS_STAFF = ITEMS.register("santa_claus_staff", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
+
+    //FOOD
+
+    public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Item(new Item.Properties().food(ModFood.BANANA)));
 
     //HALLOWEEEN
     //  public static final RegistryObject<Item> DEMON_RED_HORNS = ITEMS.register("demon_red_horns", ItemHalloween::new);

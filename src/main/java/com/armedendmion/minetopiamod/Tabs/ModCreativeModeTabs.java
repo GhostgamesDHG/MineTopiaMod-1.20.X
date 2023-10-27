@@ -1,5 +1,6 @@
 package com.armedendmion.minetopiamod.Tabs;
 import com.armedendmion.minetopiamod.MineTopiaMod;
+import com.armedendmion.minetopiamod.blocks.ModBlocks;
 import com.armedendmion.minetopiamod.items.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -34,15 +35,8 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.MONEY8.get());
                             pOutput.accept(ModItems.MONEY9.get());
                             pOutput.accept(ModItems.MONEY10.get());
-                            pOutput.accept(ModItems.MONEY11.get());
-                            pOutput.accept(ModItems.MONEY12.get());
-                            pOutput.accept(ModItems.MONEY13.get());
-                            pOutput.accept(ModItems.MONEY14.get());
-                            pOutput.accept(ModItems.MONEY15.get());
-                            pOutput.accept(ModItems.MONEY16.get());
                             pOutput.accept(ModItems.DEBIT_CARD.get());
                             pOutput.accept(ModItems.BLUE_CRYSTAL.get());
-                            pOutput.accept(ModItems.COPPER_INGOT.get());
                             pOutput.accept(ModItems.PINK_BALLOON.get());
                             pOutput.accept(ModItems.RED_BALLOON.get());
                             pOutput.accept(ModItems.CHRISTMAS_BALLOON.get());
@@ -56,14 +50,11 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.BLUE_WHITE_UMBRELLA.get());
                             pOutput.accept(ModItems.RAINBOW_UMBRELLA.get());
                             pOutput.accept(ModItems.RED_WHITE_UMBRELLA.get());
-                            pOutput.accept(ModItems.STONE_KEY.get());
                             pOutput.accept(ModItems.MINETOPIABAG.get());
                             pOutput.accept(ModItems.PEPPERSPRAY.get());
                             pOutput.accept(ModItems.WATCH.get());
-                            pOutput.accept(ModItems.LUCKYSHARD.get());
                             pOutput.accept(ModItems.BRONZE_PRISONCOIN.get());
                             pOutput.accept(ModItems.SILVER_PRISONCOIN.get());
-                            pOutput.accept(ModItems.GRAYCOIN.get());
                             pOutput.accept(ModItems.MTCASINO_BLAUW.get());
                             pOutput.accept(ModItems.MTCASINO_GOLD.get());
                             pOutput.accept(ModItems.MTCASINO_GROEN.get());
@@ -128,13 +119,8 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.GOLDEN_FLY_SWATTER.get());
                             pOutput.accept(ModItems.PCB_DUST.get());
                             pOutput.accept(ModItems.PCB.get());
-                            pOutput.accept(ModItems.BITCOIN.get());
-                            pOutput.accept(ModItems.DASHCOIN.get());
-                            pOutput.accept(ModItems.ETHEREUM.get());
-                            pOutput.accept(ModItems.LITECOIN.get());
                             pOutput.accept(ModItems.EASTER_BASKET.get());
                             pOutput.accept(ModItems.GUITAR.get());
-                            pOutput.accept(ModItems.WHEELCOIN.get());
                             pOutput.accept(ModItems.SANTA_CLAUS_STAFF.get());
                             pOutput.accept(ModItems.STEEL_INGOT.get());
 
@@ -142,21 +128,39 @@ public class ModCreativeModeTabs {
                         .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_FOOD = CREATIVE_MODE_TABS.register("minetopia_food",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.AIR))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BANANA.get()))
                     .title(Component.translatable("creativetab.minetopia_food"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(Items.DIAMOND_BLOCK); //puts a diamond in the tab
+                        pOutput.accept(ModItems.BANANA.get());
 
                     })
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_BLOCKS = CREATIVE_MODE_TABS.register("minetopia_blocks",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.AIR))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ATM.get()))
                     .title(Component.translatable("creativetab.minetopia_blocks"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(Items.DIAMOND_BLOCK); //puts a diamond in the tab
+                        pOutput.accept(ModBlocks.ORANGE_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.BLACK_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.BLUE_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.RED_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.YELLOW_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.GREEN_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.MAGENTA_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.PURPLE_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.PINK_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.LIGHT_GRAY_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.LIGHT_GREEN_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.GRAY_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.DARK_BLUE_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.CYAN_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.BROWN_KITCHEN_TILES.get());
+                        pOutput.accept(ModBlocks.ATM.get());
+                        pOutput.accept(ModBlocks.BLUE_CRYSTAL_BLOCK.get());
+                        pOutput.accept(ModBlocks.BLUE_CRYSTAL_ORE.get());
+                        pOutput.accept(ModBlocks.PCB_ORE.get());
 
                     })
                     .build());

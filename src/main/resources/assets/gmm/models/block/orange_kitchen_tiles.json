@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gmm:block/oranje_keukentegels",
+    "particle": "gmm:block/oranje_keukentegels"
+  }
+}
