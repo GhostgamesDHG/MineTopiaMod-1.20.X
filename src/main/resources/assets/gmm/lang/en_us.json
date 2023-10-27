@@ -137,5 +137,10 @@
   "block.gmm.lantern": "Lantern",
   "block.gmm.boombox": "Boombox",
   "block.gmm.camera": "Camera",
-  "block.gmm.portable_atm": "Porable ATM"
+  "block.gmm.portable_atm": "Porable ATM",
+  "block.gmm.owl": "Owl",
+  "block.gmm.white_bricks": "White bricks",
+  "block.gmm.black_bricks": "Black bricks",
+  "block.gmm.wreath": "Wreath",
+  "block.gmm.christmas_garlands": "Christmas garlands"
 }

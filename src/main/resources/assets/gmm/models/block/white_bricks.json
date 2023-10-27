@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gmm:block/white_bricks",
+    "particle": "gmm:block/white_bricks"
+  }
+}

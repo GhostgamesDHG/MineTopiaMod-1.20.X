@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/wreath" },
+    "facing=south": { "model": "gmm:block/wreath", "y":  180},
+    "facing=west": { "model": "gmm:block/wreath", "y":  270},
+    "facing=east": { "model": "gmm:block/wreath", "y":  90}
+  }
+}

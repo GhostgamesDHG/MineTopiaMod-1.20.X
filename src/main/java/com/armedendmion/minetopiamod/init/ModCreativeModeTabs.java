@@ -174,6 +174,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.LANTERN.get());
                         pOutput.accept(ModBlocks.BOOMBOX.get());
                         pOutput.accept(ModBlocks.CAMERA.get());
+                        pOutput.accept(ModBlocks.OWL.get());
+                        pOutput.accept(ModBlocks.WREATH.get());
+                        pOutput.accept(ModBlocks.CHRISTMAS_GARLANDS.get());
+                        pOutput.accept(ModBlocks.BLACK_BRICKS.get());
+                        pOutput.accept(ModBlocks.WHITE_BRICKS.get());
 
                     })
                     .build());
