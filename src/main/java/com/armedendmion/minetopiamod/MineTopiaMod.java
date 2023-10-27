@@ -1,8 +1,8 @@
 package com.armedendmion.minetopiamod;
 
-import com.armedendmion.minetopiamod.Tabs.ModCreativeModeTabs;
-import com.armedendmion.minetopiamod.blocks.ModBlocks;
-import com.armedendmion.minetopiamod.items.ModItems;
+import com.armedendmion.minetopiamod.init.ModCreativeModeTabs;
+import com.armedendmion.minetopiamod.init.ModBlocks;
+import com.armedendmion.minetopiamod.init.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,4 +56,6 @@ public class MineTopiaMod
 
         }
     }
+
+
 }

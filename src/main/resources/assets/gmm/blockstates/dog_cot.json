@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/dog_cot" },
+    "facing=south": { "model": "gmm:block/dog_cot", "y":  180},
+    "facing=west": { "model": "gmm:block/dog_cot", "y":  270},
+    "facing=east": { "model": "gmm:block/dog_cot", "y":  90}
+  }
+}

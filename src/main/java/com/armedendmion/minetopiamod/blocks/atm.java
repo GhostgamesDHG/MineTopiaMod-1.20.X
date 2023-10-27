@@ -15,15 +15,14 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 
-public class PortableATM extends Block {
+public class atm extends Block {
 
-    public PortableATM() {
-        super(Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().lightLevel(value -> 10));
+    public atm() {
+        super(Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-
 
     @Override
     public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
@@ -32,12 +31,8 @@ public class PortableATM extends Block {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        return switch (state.getValue(FACING)) {
-            default -> box(6, 0, 5, 10, 6, 10);
-            case NORTH -> box(6, 0, 6, 10, 6, 11);
-            case EAST -> box(5, 0, 6, 10, 6, 10);
-            case WEST -> box(6, 0, 6, 11, 6, 10);
-        };
+        state.getValue(FACING);
+        return box(0, 0, 0, 16, 16, 16);
     }
 
     @Override
@@ -57,6 +52,5 @@ public class PortableATM extends Block {
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
         return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
     }
-
 
 }

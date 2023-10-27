@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/portable_atm" },
+    "facing=south": { "model": "gmm:block/portable_atm", "y":  180},
+    "facing=west": { "model": "gmm:block/portable_atm", "y":  270},
+    "facing=east": { "model": "gmm:block/portable_atm", "y":  90}
+  }
+}

@@ -124,5 +124,18 @@
   "block.gmm.purple_kitchen_tiles": "Purple kitchen tiles",
   "block.gmm.red_kitchen_tiles": "Red kitchen tiles",
   "block.gmm.yellow_kitchen_tiles": "Yellow kitchen tiles",
-  "block.gmm.atm": "ATM"
+  "block.gmm.atm": "ATM",
+  "block.gmm.lamp": "Lamp",
+  "block.gmm.computer": "Computer",
+  "block.gmm.dog_cot": "Dog cot",
+  "block.gmm.oil_can": "Oil can",
+  "block.gmm.parking_sign": "Parking sign block",
+  "block.gmm.pumpkin": "Pumpkin",
+  "block.gmm.roadblock": "Roadblock",
+  "block.gmm.schoentje": "Schoentje",
+  "block.gmm.traffic_cone": "Traffic cone",
+  "block.gmm.lantern": "Lantern",
+  "block.gmm.boombox": "Boombox",
+  "block.gmm.camera": "Camera",
+  "block.gmm.portable_atm": "Porable ATM"
 }

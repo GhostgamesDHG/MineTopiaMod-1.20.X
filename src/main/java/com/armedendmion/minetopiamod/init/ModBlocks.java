@@ -1,7 +1,8 @@
-package com.armedendmion.minetopiamod.blocks;
+package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.items.ModItems;
+import com.armedendmion.minetopiamod.blocks.*;
+import com.armedendmion.minetopiamod.init.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -21,9 +22,6 @@ public class ModBlocks {
 public static final DeferredRegister<Block> BLOCKS =
         DeferredRegister.create(ForgeRegistries.BLOCKS, MineTopiaMod.MOD_ID);
 
- //   public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
- //           () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
-
     //ORES
     public static final RegistryObject<Block> BLUE_CRYSTAL_BLOCK = registerBlock("blue_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL)));
@@ -31,7 +29,6 @@ public static final DeferredRegister<Block> BLOCKS =
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> PCB_ORE = registerBlock("pcb_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
-
 
     //KEUKENTEGELS
     public static final RegistryObject<Block> BLUE_KITCHEN_TILES = registerBlock("blue_kitchen_tiles",
@@ -66,25 +63,28 @@ public static final DeferredRegister<Block> BLOCKS =
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_YELLOW)));
 
     //ALL THE OTHER BLOCKS
-    public static final RegistryObject<Block> ATM = registerBlock("atm",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY)));
- //   public static final RegistryObject<Block> PORTABLE_ATM = registerBlock("portable_atm", PortableATM::new);
- //   public static final RegistryObject<Block> LAMP = registerBlock("lamp", lamp::new);
- //   public static final RegistryObject<Block> COMPUTER = registerBlock("computer", Computer::new);
- //   public static final RegistryObject<Block> HONDEN_BEDJE = registerBlock("honden_bedje", Honden_Bedje::new);
- //   public static final RegistryObject<Block> OVEN = registerBlock("oven", () -> new Oven(AbstractBlock.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.5F).setLightLevel(getLightValueLit())));
- //   public static final RegistryObject<Block> OIL_CAN = registerBlock("oil_can", Oil_Can::new);
- //   public static final RegistryObject<Block> PARKING_SIGN = registerBlock("parking_sign", Parking_Sign::new);
- //   public static final RegistryObject<Block> PUMPKIN = registerBlock("pumpkin", Pumpkin::new);
- //   public static final RegistryObject<Block> ROADBLOCK = registerBlock("roadblock", Roadblock::new);
- //   public static final RegistryObject<Block> SCHOENTJE = registerBlock("schoentje", Schoentje::new);
- //   public static final RegistryObject<Block> TRAFFIC_CONE = registerBlock("traffic_cone", Traffic_Cone::new);
- //   public static final RegistryObject<Block> LANTAARN = registerBlock("lantaarn", lantaarn::new);
- //   public static final RegistryObject<Block> BOOMBOX = registerBlock("boombox", boombox::new);
- //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);
- //   public static final RegistryObject<Block> GOPRO = registerBlock("gopro", gopro::new);
- //   public static final RegistryObject<Block> FILMCAMERA = registerBlock("filmcamera", filmcamera::new);
- //   public static final RegistryObject<Block> WALKIETALKIE = registerBlock("walkietalkie", walkietalkie::new);
+    public static final RegistryObject<Block> ATM = registerBlock("atm", atm::new);
+    public static final RegistryObject<Block> PORTABLE_ATM = registerBlock("portable_atm", PortableATM::new);
+    public static final RegistryObject<Block> LAMP = registerBlock("lamp", Lamp::new);
+    public static final RegistryObject<Block> COMPUTER = registerBlock("computer", Computer::new);
+    public static final RegistryObject<Block> DOG_COT = registerBlock("dog_cot", DogCot::new);
+    public static final RegistryObject<Block> OIL_CAN = registerBlock("oil_can", OilCan::new);
+    public static final RegistryObject<Block> PARKING_SIGN = registerBlock("parking_sign", ParkingSign::new);
+    public static final RegistryObject<Block> PUMPKIN = registerBlock("pumpkin", Pumpkin::new);
+    public static final RegistryObject<Block> ROADBLOCK = registerBlock("roadblock", RoadBlock::new);
+    public static final RegistryObject<Block> SCHOENTJE = registerBlock("schoentje", Schoentje::new);
+    public static final RegistryObject<Block> TRAFFIC_CONE = registerBlock("traffic_cone", TrafficCone::new);
+    public static final RegistryObject<Block> LANTERN = registerBlock("lantern", Lantaarn::new);
+    public static final RegistryObject<Block> BOOMBOX = registerBlock("boombox", Boombox::new);
+    public static final RegistryObject<Block> CAMERA = registerBlock("camera", Camera::new);
+
+    //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);
+    //   public static final RegistryObject<Block> GOPRO = registerBlock("gopro", gopro::new);
+    //   public static final RegistryObject<Block> OVEN = registerBlock("oven", () -> new Oven(AbstractBlock.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.5F).setLightLevel(getLightValueLit())));
+
+
+
+    //   public static final RegistryObject<Block> WALKIETALKIE = registerBlock("walkietalkie", walkietalkie::new);
  //   public static final RegistryObject<Block> KRANS = registerBlock("krans", krans::new);
  //   public static final RegistryObject<Block> KERST_SLINGERS = registerBlock("kerst_slingers", kerst_slingers::new);
  //   public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);

@@ -1,7 +1,7 @@
-package com.armedendmion.minetopiamod.Tabs;
+package com.armedendmion.minetopiamod.init;
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.blocks.ModBlocks;
-import com.armedendmion.minetopiamod.items.ModItems;
+import com.armedendmion.minetopiamod.init.ModBlocks;
+import com.armedendmion.minetopiamod.init.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -161,6 +161,19 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.BLUE_CRYSTAL_BLOCK.get());
                         pOutput.accept(ModBlocks.BLUE_CRYSTAL_ORE.get());
                         pOutput.accept(ModBlocks.PCB_ORE.get());
+                        pOutput.accept(ModBlocks.PORTABLE_ATM.get());
+                        pOutput.accept(ModBlocks.LAMP.get());
+                        pOutput.accept(ModBlocks.COMPUTER.get());
+                        pOutput.accept(ModBlocks.DOG_COT.get());
+                        pOutput.accept(ModBlocks.OIL_CAN.get());
+                        pOutput.accept(ModBlocks.PARKING_SIGN.get());
+                        pOutput.accept(ModBlocks.PUMPKIN.get());
+                        pOutput.accept(ModBlocks.ROADBLOCK.get());
+                        pOutput.accept(ModBlocks.SCHOENTJE.get());
+                        pOutput.accept(ModBlocks.TRAFFIC_CONE.get());
+                        pOutput.accept(ModBlocks.LANTERN.get());
+                        pOutput.accept(ModBlocks.BOOMBOX.get());
+                        pOutput.accept(ModBlocks.CAMERA.get());
 
                     })
                     .build());

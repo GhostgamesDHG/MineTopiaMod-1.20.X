@@ -4,21 +4,18 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 
-public class PortableATM extends Block {
+public class Schoentje extends Block {
 
-    public PortableATM() {
-        super(Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().lightLevel(value -> 10));
+    public Schoentje() {
+        super(Properties.copy(Blocks.DARK_OAK_PLANKS));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
@@ -33,10 +30,10 @@ public class PortableATM extends Block {
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return switch (state.getValue(FACING)) {
-            default -> box(6, 0, 5, 10, 6, 10);
-            case NORTH -> box(6, 0, 6, 10, 6, 11);
-            case EAST -> box(5, 0, 6, 10, 6, 10);
-            case WEST -> box(6, 0, 6, 11, 6, 10);
+            default -> box(5, 0.5, 1, 11, 8.5, 13);
+            case NORTH -> box(5, 0.5, 3, 11, 8.5, 15);
+            case EAST -> box(1, 0.5, 5, 13, 8.5, 11);
+            case WEST -> box(3, 0.5, 5, 15, 8.5, 11);
         };
     }
 

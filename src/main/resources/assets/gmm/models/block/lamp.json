@@ -1,0 +1,79 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "minecraft:block/anvil",
+		"1": "minecraft:block/sea_lantern",
+		"particle": "minecraft:block/anvil"
+	},
+	"elements": [
+		{
+			"from": [4, 0, 4],
+			"to": [12, 1, 12],
+			"faces": {
+				"north": {"uv": [0, 0, 8, 1], "texture": "#0"},
+				"east": {"uv": [0, 0, 8, 1], "texture": "#0"},
+				"south": {"uv": [0, 0, 8, 1], "texture": "#0"},
+				"west": {"uv": [0, 0, 8, 1], "texture": "#0"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#0"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 4, 3],
+			"to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [3, 2, 13, 13], "texture": "#1"},
+				"east": {"uv": [3, 2, 13, 13], "texture": "#1"},
+				"south": {"uv": [3, 2, 13, 13], "texture": "#1"},
+				"west": {"uv": [3, 2, 13, 13], "texture": "#1"},
+				"up": {"uv": [3, 2, 13, 13], "texture": "#1"},
+				"down": {"uv": [3, 2, 13, 13], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6, 1, 6],
+			"to": [10, 4, 10],
+			"faces": {
+				"north": {"uv": [0, 0, 4, 3], "texture": "#0"},
+				"east": {"uv": [0, 0, 4, 3], "texture": "#0"},
+				"south": {"uv": [0, 0, 4, 3], "texture": "#0"},
+				"west": {"uv": [0, 0, 4, 3], "texture": "#0"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#0"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 2.75, -1.25],
+			"scale": [0.6, 0.6, 0.61]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 4, -1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"translation": [0.5, 0, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"firstperson_lefthand": {
+			"translation": [1.25, 0, 0],
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 3.5, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"gui": {
+			"rotation": [15, -43, 0],
+			"translation": [0.25, 0.25, -0.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"head": {
+			"translation": [0, 14.25, 0]
+		},
+		"fixed": {
+			"scale": [1, 1, 0.46]
+		}
+	}
+}

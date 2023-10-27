@@ -1,7 +1,7 @@
-package com.armedendmion.minetopiamod.items;
+package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.food.ModFood;
+import com.armedendmion.minetopiamod.items.MoneyTooltip;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,12 +12,12 @@ public class ModItems {
 public static final DeferredRegister<Item> ITEMS =
         DeferredRegister.create(ForgeRegistries.ITEMS, MineTopiaMod.MOD_ID);
 
-    public static final RegistryObject<Item> IPHONE_7_BLACK = ITEMS.register("iphone_7_black", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IPHONE_7_PINK = ITEMS.register("iphone_7_pink", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IPHONE_7_YELLOW = ITEMS.register("iphone_7_yellow", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IPHONE_7_GREEN = ITEMS.register("iphone_7_green", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IPHONE_7_BLUE = ITEMS.register("iphone_7_blue", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IPHONE_7_RED = ITEMS.register("iphone_7_red", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IPHONE_7_BLACK = ITEMS.register("iphone_7_black", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IPHONE_7_PINK = ITEMS.register("iphone_7_pink", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IPHONE_7_YELLOW = ITEMS.register("iphone_7_yellow", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IPHONE_7_GREEN = ITEMS.register("iphone_7_green", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IPHONE_7_BLUE = ITEMS.register("iphone_7_blue", () -> new Item(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IPHONE_7_RED = ITEMS.register("iphone_7_red", () -> new Item(new Item.Properties().stacksTo(1)));
 
     //MONEY
     public static final RegistryObject<Item> MONEY1 = ITEMS.register("0.10euro", () -> new MoneyTooltip(new Item.Properties()));
