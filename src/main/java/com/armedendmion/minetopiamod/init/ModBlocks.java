@@ -83,6 +83,7 @@ public static final DeferredRegister<Block> BLOCKS =
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final RegistryObject<Block> BLACK_BRICKS = registerBlock("black_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK)));
+    public static final RegistryObject<Block> SAFE = registerBlock("safe", SafeBlock::new);
 
 
     //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);

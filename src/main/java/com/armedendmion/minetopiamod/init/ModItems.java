@@ -32,7 +32,15 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> MONEY10 = ITEMS.register("1000euro", () -> new MoneyTooltip(new Item.Properties()));
     public static final RegistryObject<Item> DEBIT_CARD = ITEMS.register("debit_card", () -> new Item(new Item.Properties()));
 
+    //CASINO COINS
+    public static final RegistryObject<Item> CASINO_COIN_BLUE = ITEMS.register("casino_coin_blue", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CASINO_COIN_GOLD = ITEMS.register("casino_coin_gold", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CASINO_COIN_GREEN = ITEMS.register("casino_coin_green", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CASINO_COIN_ORANGE = ITEMS.register("casino_coin_orange", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CASINO_COIN_RED = ITEMS.register("casino_coin_red", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CASINO_COIN_SILVER = ITEMS.register("casino_coin_silver", () -> new Item(new Item.Properties()));
 
+    //ALL THE OTHER ITEMS
     public static final RegistryObject<Item> BLUE_CRYSTAL = ITEMS.register("blue_crystal", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> PINK_BALLOON = ITEMS.register("pink_balloon", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RED_BALLOON = ITEMS.register("red_balloon", () -> new Item(new Item.Properties()));
@@ -52,16 +60,6 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> WATCH = ITEMS.register("watch", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> BRONZE_PRISONCOIN = ITEMS.register("bronze_prisoncoin", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SILVER_PRISONCOIN = ITEMS.register("silver_prisoncoin", () -> new Item(new Item.Properties()));
-
-
-    public static final RegistryObject<Item> MTCASINO_BLAUW = ITEMS.register("mtcasino_blauw", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MTCASINO_GOLD = ITEMS.register("mtcasino_gold", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MTCASINO_GROEN = ITEMS.register("mtcasino_groen", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MTCASINO_ORANJE = ITEMS.register("mtcasino_oranje", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MTCASINO_ROOD = ITEMS.register("mtcasino_rood", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> MTCASINO_SILVER = ITEMS.register("mtcasino_silver", () -> new Item(new Item.Properties()));
-
-
     public static final RegistryObject<Item> LEGEND_50 = ITEMS.register("legend_50", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> LEGEND_1 = ITEMS.register("legend_1", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EPIC_10 = ITEMS.register("epic_10", () -> new Item(new Item.Properties()));
@@ -124,15 +122,58 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> GUITAR = ITEMS.register("guitar", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> SANTA_CLAUS_STAFF = ITEMS.register("santa_claus_staff", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot", () -> new Item(new Item.Properties()));
-
-    //FOOD
-
-    public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Item(new Item.Properties().food(ModFood.BANANA)));
-
-    //HALLOWEEEN
     //  public static final RegistryObject<Item> DEMON_RED_HORNS = ITEMS.register("demon_red_horns", ItemHalloween::new);
     //  public static final RegistryObject<Item> DEMON_RED_TAIL = ITEMS.register("demon_red_tail", ItemHalloween::new);
     //   public static final RegistryObject<Item> POMPOENLANTAARN = ITEMS.register("pompoenlantaarn", ItemHalloween::new);
+
+    //FOOD
+    public static final RegistryObject<Item> BANANA = ITEMS.register("banana", () -> new Item(new Item.Properties().food(ModFood.BANANA)));
+    public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFood.STRAWBERRY)));
+    public static final RegistryObject<Item> HAMBURGER = ITEMS.register("hamburger", () -> new Item(new Item.Properties().food(ModFood.HAMBURGER)));
+    public static final RegistryObject<Item> SANDWICH = ITEMS.register("sandwich", () -> new Item(new Item.Properties().food(ModFood.SANDWICH)));
+    public static final RegistryObject<Item> PINEAPPLE = ITEMS.register("pineapple", () -> new Item(new Item.Properties().food(ModFood.PINEAPPLE)));
+    public static final RegistryObject<Item> BACON = ITEMS.register("bacon", () -> new Item(new Item.Properties().food(ModFood.BACON)));
+    public static final RegistryObject<Item> COOKED_BACON = ITEMS.register("cooked_bacon", () -> new Item(new Item.Properties().food(ModFood.COOKED_BACON)));
+    public static final RegistryObject<Item> CHICKEN = ITEMS.register("chicken", () -> new Item(new Item.Properties().food(ModFood.CHICKEN)));
+    public static final RegistryObject<Item> COOKED_CHICKEN = ITEMS.register("cooked_chicken", () -> new Item(new Item.Properties().food(ModFood.COOKED_CHICKEN)));
+    public static final RegistryObject<Item> HOTDOG = ITEMS.register("hotdog", () -> new Item(new Item.Properties().food(ModFood.HOTDOG)));
+    public static final RegistryObject<Item> ICECREAM = ITEMS.register("icecream", () -> new Item(new Item.Properties().food(ModFood.ICE_CREAM)));
+    public static final RegistryObject<Item> CODFISH = ITEMS.register("codfish", () -> new Item(new Item.Properties().food(ModFood.CODFISH)));
+    public static final RegistryObject<Item> FRIES = ITEMS.register("fries", () -> new Item(new Item.Properties().food(ModFood.FRIES)));
+    public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza", () -> new Item(new Item.Properties().food(ModFood.PIZZA)));
+    public static final RegistryObject<Item> CHICKEN_BUCKET = ITEMS.register("chicken_bucket", () -> new Item(new Item.Properties().food(ModFood.CHICKEN_BUCKET)));
+    public static final RegistryObject<Item> FRUIT_SKEWER = ITEMS.register("fruit_skewer", () -> new Item(new Item.Properties().food(ModFood.FRUIT_SKEWER)));
+    public static final RegistryObject<Item> SUSHI = ITEMS.register("sushi", () -> new Item(new Item.Properties().food(ModFood.SUSHI)));
+    public static final RegistryObject<Item> SUSHI_PACKAGE = ITEMS.register("sushi_package", () -> new Item(new Item.Properties().food(ModFood.SUSHI_PACKAGE)));
+    public static final RegistryObject<Item> MUFFIN = ITEMS.register("muffin", () -> new Item(new Item.Properties().food(ModFood.MUFFIN)));
+    public static final RegistryObject<Item> VANILLA_MUFFIN = ITEMS.register("vanilla_muffin", () -> new Item(new Item.Properties().food(ModFood.VANILLA_MUFFIN)));
+    public static final RegistryObject<Item> CHOCOLATE_MUFFIN = ITEMS.register("chocolate_muffin", () -> new Item(new Item.Properties().food(ModFood.CHOCOLATE_MUFFIN)));
+    public static final RegistryObject<Item> JELLYBEANS = ITEMS.register("jellybeans", () -> new Item(new Item.Properties().food(ModFood.JELLYBEANS)));
+    public static final RegistryObject<Item> CANDY_CANE = ITEMS.register("candy_cane", () -> new Item(new Item.Properties().food(ModFood.CANDY_CANE)));
+    public static final RegistryObject<Item> DOUBLE_SUSHI_PACKAGE = ITEMS.register("double_sushi_package", () -> new Item(new Item.Properties().food(ModFood.DOUBLE_SUSHI_PACKAGE)));
+    public static final RegistryObject<Item> CUPCAKES = ITEMS.register("cupcakes", () -> new Item(new Item.Properties().food(ModFood.CUPCAKE)));
+    public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese", () -> new Item(new Item.Properties().food(ModFood.CHEESE)));
+    public static final RegistryObject<Item> GRAPES = ITEMS.register("grapes", () -> new Item(new Item.Properties().food(ModFood.GRAPES)));
+    public static final RegistryObject<Item> RED_GRAPES = ITEMS.register("red_grapes", () -> new Item(new Item.Properties().food(ModFood.RED_GRAPES)));
+    public static final RegistryObject<Item> HOP = ITEMS.register("hop", () -> new Item(new Item.Properties().food(ModFood.HOP)));
+    public static final RegistryObject<Item> CHIPS_NATURAL = ITEMS.register("chips_natural", () -> new Item(new Item.Properties().food(ModFood.CHIPS_NATURAL)));
+    public static final RegistryObject<Item> DONUT_BLUEBERRIES = ITEMS.register("donut_blueberries", () -> new Item(new Item.Properties().food(ModFood.DONUT_BLUEBERRIES)));
+    public static final RegistryObject<Item> DONUT_CHOCOLATE = ITEMS.register("donut_chocolate", () -> new Item(new Item.Properties().food(ModFood.DONUT_CHOCOLATE)));
+    public static final RegistryObject<Item> DONUT_HALLOWEEN = ITEMS.register("donut_halloween", () -> new Item(new Item.Properties().food(ModFood.DONUT_HALLOWEEN)));
+    public static final RegistryObject<Item> DONUT_STRAWBERRY = ITEMS.register("donut_strawberry", () -> new Item(new Item.Properties().food(ModFood.DONUT_STRAWBERRY)));
+    public static final RegistryObject<Item> DONUT_CHRISTMAS = ITEMS.register("donut_christmas", () -> new Item(new Item.Properties().food(ModFood.DONUT_CHRISTMAS)));
+    public static final RegistryObject<Item> DONUT_WHITE = ITEMS.register("donut_white", () -> new Item(new Item.Properties().food(ModFood.DONUT_WHITE)));
+    public static final RegistryObject<Item> STRAWBERRY_ICECREAM = ITEMS.register("strawberry_icecream", () -> new Item(new Item.Properties().food(ModFood.STRAWBERRY_ICECREAM)));
+    public static final RegistryObject<Item> CHOCOLATE_LETTER = ITEMS.register("chocolate_letter", () -> new Item(new Item.Properties().food(ModFood.CHOCOLATE_LETTER)));
+    public static final RegistryObject<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar", () -> new Item(new Item.Properties().food(ModFood.CHOCOLATE_BAR)));
+    public static final RegistryObject<Item> APFELSTRUDEL = ITEMS.register("apfelstrudel", () -> new Item(new Item.Properties().food(ModFood.APFELSTRUDEL)));
+    public static final RegistryObject<Item> BITTERBALLEN = ITEMS.register("bitterballen", () -> new Item(new Item.Properties().food(ModFood.BITTERBALLEN)));
+
+
+
+
+
+
 
 public static void register(IEventBus eventbus) {
     ITEMS.register(eventbus);

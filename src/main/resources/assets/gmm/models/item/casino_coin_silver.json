@@ -1,0 +1,8 @@
+{
+    "credit": "robinlol2 ;p",
+    "parent": "gmm:item/mtcasino_base",
+    "textures": {
+        "0": "gmm:item/mtcasino_silver",
+        "particle": "gmm:item/mtcasino_silver"
+    }
+}

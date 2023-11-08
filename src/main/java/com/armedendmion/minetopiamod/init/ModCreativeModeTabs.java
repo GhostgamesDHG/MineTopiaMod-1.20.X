@@ -1,7 +1,6 @@
 package com.armedendmion.minetopiamod.init;
+
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.init.ModBlocks;
-import com.armedendmion.minetopiamod.init.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -55,12 +54,12 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.WATCH.get());
                             pOutput.accept(ModItems.BRONZE_PRISONCOIN.get());
                             pOutput.accept(ModItems.SILVER_PRISONCOIN.get());
-                            pOutput.accept(ModItems.MTCASINO_BLAUW.get());
-                            pOutput.accept(ModItems.MTCASINO_GOLD.get());
-                            pOutput.accept(ModItems.MTCASINO_GROEN.get());
-                            pOutput.accept(ModItems.MTCASINO_ORANJE.get());
-                            pOutput.accept(ModItems.MTCASINO_ROOD.get());
-                            pOutput.accept(ModItems.MTCASINO_SILVER.get());
+                            pOutput.accept(ModItems.CASINO_COIN_BLUE.get());
+                            pOutput.accept(ModItems.CASINO_COIN_GOLD.get());
+                            pOutput.accept(ModItems.CASINO_COIN_GREEN.get());
+                            pOutput.accept(ModItems.CASINO_COIN_ORANGE.get());
+                            pOutput.accept(ModItems.CASINO_COIN_RED.get());
+                            pOutput.accept(ModItems.CASINO_COIN_SILVER.get());
                             pOutput.accept(ModItems.LEGEND_50.get());
                             pOutput.accept(ModItems.LEGEND_1.get());
                             pOutput.accept(ModItems.EPIC_1.get());
@@ -128,11 +127,52 @@ public class ModCreativeModeTabs {
                         .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_FOOD = CREATIVE_MODE_TABS.register("minetopia_food",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BANANA.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HOTDOG.get()))
                     .title(Component.translatable("creativetab.minetopia_food"))
                     .displayItems((pParameters, pOutput) -> {
 
                         pOutput.accept(ModItems.BANANA.get());
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.HAMBURGER.get());
+                        pOutput.accept(ModItems.SANDWICH.get());
+                        pOutput.accept(ModItems.PINEAPPLE.get());
+                        pOutput.accept(ModItems.BACON.get());
+                        pOutput.accept(ModItems.COOKED_BACON.get());
+                        pOutput.accept(ModItems.CHICKEN.get());
+                        pOutput.accept(ModItems.COOKED_CHICKEN.get());
+                        pOutput.accept(ModItems.HOTDOG.get());
+                        pOutput.accept(ModItems.ICECREAM.get());
+                        pOutput.accept(ModItems.CODFISH.get());
+                        pOutput.accept(ModItems.FRIES.get());
+                        pOutput.accept(ModItems.PIZZA.get());
+                        pOutput.accept(ModItems.CHICKEN_BUCKET.get());
+                        pOutput.accept(ModItems.FRUIT_SKEWER.get());
+                        pOutput.accept(ModItems.SUSHI.get());
+                        pOutput.accept(ModItems.SUSHI_PACKAGE.get());
+                        pOutput.accept(ModItems.MUFFIN.get());
+                        pOutput.accept(ModItems.VANILLA_MUFFIN.get());
+                        pOutput.accept(ModItems.CHOCOLATE_MUFFIN.get());
+                        pOutput.accept(ModItems.JELLYBEANS.get());
+                        pOutput.accept(ModItems.CANDY_CANE.get());
+                        pOutput.accept(ModItems.DOUBLE_SUSHI_PACKAGE.get());
+                        pOutput.accept(ModItems.CUPCAKES.get());
+                        pOutput.accept(ModItems.CHEESE.get());
+                        pOutput.accept(ModItems.GRAPES.get());
+                        pOutput.accept(ModItems.RED_GRAPES.get());
+                        pOutput.accept(ModItems.HOP.get());
+                        pOutput.accept(ModItems.CHIPS_NATURAL.get());
+                        pOutput.accept(ModItems.DONUT_BLUEBERRIES.get());
+                        pOutput.accept(ModItems.DONUT_CHOCOLATE.get());
+                        pOutput.accept(ModItems.DONUT_CHRISTMAS.get());
+                        pOutput.accept(ModItems.DONUT_HALLOWEEN.get());
+                        pOutput.accept(ModItems.DONUT_STRAWBERRY.get());
+                        pOutput.accept(ModItems.DONUT_WHITE.get());
+                        pOutput.accept(ModItems.STRAWBERRY_ICECREAM.get());
+                        pOutput.accept(ModItems.CHOCOLATE_LETTER.get());
+                        pOutput.accept(ModItems.CHOCOLATE_BAR.get());
+                        pOutput.accept(ModItems.APFELSTRUDEL.get());
+                        pOutput.accept(ModItems.BITTERBALLEN.get());
+
 
                     })
                     .build());

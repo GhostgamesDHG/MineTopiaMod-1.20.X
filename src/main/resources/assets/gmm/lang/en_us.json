@@ -142,5 +142,11 @@
   "block.gmm.white_bricks": "White bricks",
   "block.gmm.black_bricks": "Black bricks",
   "block.gmm.wreath": "Wreath",
-  "block.gmm.christmas_garlands": "Christmas garlands"
+  "block.gmm.christmas_garlands": "Christmas garlands",
+  "item.gmm.casino_coin_blue": "€100 Casino coin",
+  "item.gmm.casino_coin_gold": "€2.500 Casino coin",
+  "item.gmm.casino_coin_green": "€50 Casino coin",
+  "item.gmm.casino_coin_orange": "€500 Casino coin",
+  "item.gmm.casino_coin_red": "€5.000 Casino coin",
+  "item.gmm.casino_coin_silver": "€1.000 Casino coin"
 }
