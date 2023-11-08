@@ -219,6 +219,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHRISTMAS_GARLANDS.get());
                         pOutput.accept(ModBlocks.BLACK_BRICKS.get());
                         pOutput.accept(ModBlocks.WHITE_BRICKS.get());
+                        pOutput.accept(ModBlocks.SAFE.get());
 
                     })
                     .build());

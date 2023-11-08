@@ -44,7 +44,7 @@ public class LockButtonProcedure {
 			if (entity instanceof Player _player)
 				_player.closeContainer();
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uFFFDa\uFFFDlSafe is now locked!"), true);
+				_player.displayClientMessage(Component.literal("Safe is now locked!"), true);
 		} else {
 			{
 				if (entity instanceof ServerPlayer _ent) {

@@ -148,5 +148,14 @@
   "item.gmm.casino_coin_green": "€50 Casino coin",
   "item.gmm.casino_coin_orange": "€500 Casino coin",
   "item.gmm.casino_coin_red": "€5.000 Casino coin",
-  "item.gmm.casino_coin_silver": "€1.000 Casino coin"
+  "item.gmm.casino_coin_silver": "€1.000 Casino coin",
+  "gui.gmm.safe_gui_set_password.label_safe": "Set password",
+  "gui.gmm.safe_gui_set_password.password": "Password",
+  "gui.gmm.safe_gui_set_password.button_set_password": "Set Password",
+  "gui.gmm.safe_gui.password": "Password",
+  "gui.gmm.safe_gui.button_unlock": "Unlock",
+  "gui.gmm.safe_gui.label_safe": "Safe",
+  "gui.gmm.safeinventory.label_safe": "Safe",
+  "gui.gmm.safeinventory.button_lock": "Lock",
+  "block.gmm.safe": "Safe"
 }

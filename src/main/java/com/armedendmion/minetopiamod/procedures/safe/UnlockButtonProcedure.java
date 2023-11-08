@@ -43,7 +43,7 @@ public class UnlockButtonProcedure {
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uFFFDa\uFFFDlSafe is now unlocked!"), true);
+				_player.displayClientMessage(Component.literal("Safe is now unlocked!"), true);
 			{
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = BlockPos.containing(x, y, z);
@@ -64,7 +64,7 @@ public class UnlockButtonProcedure {
 			if (entity instanceof Player _player)
 				_player.closeContainer();
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("\uFFFD4\uFFFDlWrong password!"), true);
+				_player.displayClientMessage(Component.literal("§cWrong password!"), true);
 		}
 	}
 }
