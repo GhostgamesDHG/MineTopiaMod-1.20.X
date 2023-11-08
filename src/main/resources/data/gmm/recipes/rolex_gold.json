@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:gold_block"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:rolex_gold",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "bcb",
+    "cac",
+    " a "
+  ],
+  "key":
+  {
+    "c":
+    {
+      "item": "minecraft:blue_wool"
+    },
+    "b":
+    {
+      "item": "minecraft:white_wool"
+    },
+    "a":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:blue_white_umbrella",
+    "count": 1
+  }
+}

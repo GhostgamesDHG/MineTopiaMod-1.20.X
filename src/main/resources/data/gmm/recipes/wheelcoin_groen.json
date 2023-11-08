@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gmm:wheelcoin"
+    },
+    {
+      "item": "gmm:50euro"
+    }
+  ],
+  "result": {
+    "item": "gmm:casino_coin_green",
+    "count": 1
+  }
+}

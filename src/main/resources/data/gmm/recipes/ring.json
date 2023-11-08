@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "xax"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:gold_block"
+    },
+    "a":
+    {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:ring",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " a ",
+    "bcb",
+    " a "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:brown_wool"
+    },
+    "b":
+    {
+      "item": "minecraft:iron_block"
+    },
+    "c":
+    {
+      "item": "minecraft:gray_wool"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:watch",
+    "count": 1
+  }
+}

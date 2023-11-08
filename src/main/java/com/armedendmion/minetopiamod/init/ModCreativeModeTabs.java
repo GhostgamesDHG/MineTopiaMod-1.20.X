@@ -60,6 +60,7 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.CASINO_COIN_ORANGE.get());
                             pOutput.accept(ModItems.CASINO_COIN_RED.get());
                             pOutput.accept(ModItems.CASINO_COIN_SILVER.get());
+                            pOutput.accept(ModItems.WHEELCOIN.get());
                             pOutput.accept(ModItems.LEGEND_50.get());
                             pOutput.accept(ModItems.LEGEND_1.get());
                             pOutput.accept(ModItems.EPIC_1.get());
@@ -122,6 +123,7 @@ public class ModCreativeModeTabs {
                             pOutput.accept(ModItems.GUITAR.get());
                             pOutput.accept(ModItems.SANTA_CLAUS_STAFF.get());
                             pOutput.accept(ModItems.STEEL_INGOT.get());
+                            pOutput.accept(ModItems.PUMPKINLANTERN.get());
 
                         })
                         .build());
@@ -249,7 +251,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.minetopia_hats"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(Items.DIAMOND_BLOCK); //puts a diamond in the tab
+                        pOutput.accept(ModItems.DEMON_RED_HORNS.get());
 
                     })
                     .build());

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    " a ",
+    " a "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:iron_block"
+    },
+    "a":
+    {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:modern_walking_stick",
+    "count": 1
+  }
+}

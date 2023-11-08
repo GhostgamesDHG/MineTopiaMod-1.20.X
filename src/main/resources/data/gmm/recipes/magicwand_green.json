@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "bab",
+    "bcb",
+    " d "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "gmm:pcb"
+    },
+    "b":
+    {
+      "item": "minecraft:iron_block"
+    },
+    "c":
+    {
+      "item": "minecraft:green_concrete"
+    },
+    "d":
+    {
+      "item": "minecraft:gray_concrete"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:magicwand_green",
+    "count": 1
+  }
+}

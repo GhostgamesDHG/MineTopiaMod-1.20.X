@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:minecart"
+    },
+    {
+      "item": "gmm:1000euro"
+    },
+    {
+      "item": "gmm:1000euro"
+    },
+    {
+      "item": "gmm:500euro"
+    }
+  ],
+  "result": {
+    "item": "gmm:racecoin2500",
+    "count": 1
+  }
+}

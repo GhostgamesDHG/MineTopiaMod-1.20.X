@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "bba",
+    "bb "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "gmm:pcb_dust"
+    },
+    "b":
+    {
+      "item": "gmm:copper_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:pcb",
+    "count": 3
+  }
+}

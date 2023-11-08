@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "bbb",
+    "bab",
+    "bbb"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    "b":
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:1euro",
+    "count": 1
+  }
+}

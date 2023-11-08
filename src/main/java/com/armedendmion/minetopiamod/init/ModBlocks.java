@@ -84,46 +84,44 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> BLACK_BRICKS = registerBlock("black_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK)));
     public static final RegistryObject<Block> SAFE = registerBlock("safe", SafeBlock::new);
-
-
-    //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);
-    //   public static final RegistryObject<Block> GOPRO = registerBlock("gopro", gopro::new);
-    //   public static final RegistryObject<Block> OVEN = registerBlock("oven", () -> new Oven(AbstractBlock.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.5F).setLightLevel(getLightValueLit())));
-    //   public static final RegistryObject<Block> WALKIETALKIE = registerBlock("walkietalkie", walkietalkie::new);
-    //   public static final RegistryObject<Block> FLASHLIGHT = registerBlock("flashlight", Flashlight::new);
  //   public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);
   //  public static final RegistryObject<Block> MONITOR = registerBlock("monitor", Monitor::new);
  //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
- //   public static final RegistryObject<Block> ANTENNE = registerBlock("antenne", Antenne::new);
- //   public static final RegistryObject<Block> DIAMOND_TROPHIE_1J = registerBlock("diamond_trophie_1j", trophies_1j::new);
- //   public static final RegistryObject<Block> GOLDEN_TROPHIE_1J = registerBlock("golden_trophie_1j", trophies_1j::new);
- //   public static final RegistryObject<Block> BRONZE_TROPHIE_1J = registerBlock("bronze_trophie_1j", trophies_1j::new);
- //   public static final RegistryObject<Block> SILVER_TROPHIE_1J = registerBlock("silver_trophie_1j", trophies_1j::new);
+ //   public static final RegistryObject<Block> ANTENNA = registerBlock("antenne", Antenne::new);
+    //   public static final RegistryObject<Block> GLOBE = registerBlock("globe", Globe::new);
+    //   public static final RegistryObject<Block> DARTBORD = registerBlock("dartbord", Dartbord::new);
+    //   public static final RegistryObject<Block> FIRE_PIT = registerBlock("fire_pit", Firepit::new);
+    //   public static final RegistryObject<Block> SMALL_TREE = registerBlock("small_tree", Smalltree::new);
+    //   public static final RegistryObject<Block> TABLE_PLANT = registerBlock("table_plant", Tableplant::new);
+    //   public static final RegistryObject<Block> BIN = registerBlock("bin", Bin::new);
+    //  public static final RegistryObject<Block> COOLBOX = registerBlock("coolbox", coolbox::new);
+    //   public static final RegistryObject<Block> MODERN_PLANT = registerBlock("modern_plant", modern_plant::new);
+    //   public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = registerBlock("modern_pancake_plant", modern_pancake_plant::new);
+    //   public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", Table_lamp::new);
+
+    //HALLOWEEN
  //   public static final RegistryObject<Block> WALL_LIGHT = registerBlock("wall_light", wall_light::new);
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);
  //   public static final RegistryObject<Block> MONSTERBOOK = registerBlock("monsterbook", Monsterbook::new);
  //   public static final RegistryObject<Block> CLEAVER = registerBlock("cleaver", Cleaver::new);
  //   public static final RegistryObject<Block> RAT = registerBlock("rat", Rat::new);
- //   public static final RegistryObject<Block> GLOBE = registerBlock("globe", Globe::new);
  //   public static final RegistryObject<Block> ZOMBIE_ARM = registerBlock("zombie_arm", Zombie_arm::new);
  //   public static final RegistryObject<Block> MINI_SPIDER = registerBlock("mini_spider", Mini_Spider::new);
- //   public static final RegistryObject<Block> DARTBORD = registerBlock("dartbord", Dartbord::new);
- //   public static final RegistryObject<Block> FIRE_PIT = registerBlock("fire_pit", Firepit::new);
- //   public static final RegistryObject<Block> SMALL_TREE = registerBlock("small_tree", Smalltree::new);
- //   public static final RegistryObject<Block> TABLE_PLANT = registerBlock("table_plant", Tableplant::new);
- //   public static final RegistryObject<Block> FRYING_PAN = registerBlock("frying_pan", Frying_pan::new);
- //   public static final RegistryObject<Block> POPCORN_MACHINE = registerBlock("popcorn_machine", PopcornMachine::new);
- //   public static final RegistryObject<Block> BIN = registerBlock("bin", Bin::new);
-  //  public static final RegistryObject<Block> COOLBOX = registerBlock("coolbox", coolbox::new);
- //   public static final RegistryObject<Block> MODERN_PLANT = registerBlock("modern_plant", modern_plant::new);
- //   public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = registerBlock("modern_pancake_plant", modern_pancake_plant::new);
-  //  public static final RegistryObject<Block> GHOST = registerBlock("ghost", ghost::new);
- //   public static final RegistryObject<Block> GRAVE = registerBlock("grave", Grave::new);
- //   public static final RegistryObject<Block> PUMPKIN_CABINET = registerBlock("pumpkin_cabinet", Pumpkin_cabinet::new);
- //   public static final RegistryObject<Block> PUMPKINS = registerBlock("pumpkins", pumpkins::new);
- //   public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow", Scarecrow::new);
- //   public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", Table_lamp::new);
- //   public static final RegistryObject<Block> TOMB = registerBlock("tomb", Tomb::new);
+    //  public static final RegistryObject<Block> GHOST = registerBlock("ghost", ghost::new);
+    //   public static final RegistryObject<Block> GRAVE = registerBlock("grave", Grave::new);
+    //   public static final RegistryObject<Block> PUMPKIN_CABINET = registerBlock("pumpkin_cabinet", Pumpkin_cabinet::new);
+    //   public static final RegistryObject<Block> PUMPKINS = registerBlock("pumpkins", pumpkins::new);
+    //   public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow", Scarecrow::new);
+    //   public static final RegistryObject<Block> TOMB = registerBlock("tomb", Tomb::new);
+
+//STILL ON THE TO-DO LIST
+//   public static final RegistryObject<Block> OVEN = registerBlock("oven", () -> new Oven(AbstractBlock.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.5F).setLightLevel(getLightValueLit())));
+    //   public static final RegistryObject<Block> FLASHLIGHT = registerBlock("flashlight", Flashlight::new);
+    //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);
+    //   public static final RegistryObject<Block> GOPRO = registerBlock("gopro", gopro::new);
+    //   public static final RegistryObject<Block> WALKIETALKIE = registerBlock("walkietalkie", walkietalkie::new);
+    //   public static final RegistryObject<Block> FRYING_PAN = registerBlock("frying_pan", Frying_pan::new);
+    //   public static final RegistryObject<Block> POPCORN_MACHINE = registerBlock("popcorn_machine", PopcornMachine::new);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

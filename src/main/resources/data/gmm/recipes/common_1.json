@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "gmm:1euro"
+    }
+  ],
+  "result": {
+    "item": "gmm:common_1",
+    "count": 1
+  }
+}

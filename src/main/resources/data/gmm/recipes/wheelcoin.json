@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aba",
+    "bbb",
+    "aba"
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:quartz_block"
+    },
+    "b":
+    {
+      "item": "minecraft:red_concrete"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:wheelcoin",
+    "count": 1
+  }
+}

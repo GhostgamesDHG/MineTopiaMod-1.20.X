@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "   ",
+    "a a",
+    "   "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:airpods",
+    "count": 1
+  }
+}

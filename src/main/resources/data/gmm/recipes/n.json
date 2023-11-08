@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gmm:1euro"
+    },
+    {
+      "item": "gmm:1euro"
+    },
+    {
+      "item": "gmm:1euro"
+    },
+    {
+      "item": "gmm:1euro"
+    },
+    {
+      "item": "gmm:1euro"
+    }
+  ],
+  "result": {
+    "item": "gmm:5euro",
+    "count": 1
+  }
+}

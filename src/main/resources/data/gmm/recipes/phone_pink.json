@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xxx",
+    "x x",
+    "xax"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:pink_wool"
+    },
+    "a":
+    {
+      "item": "minecraft:gray_wool"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:iphone_7_pink",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " b ",
+    "bab",
+    " b "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "b":
+    {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:silver_prisoncoin",
+    "count": 1
+  }
+}

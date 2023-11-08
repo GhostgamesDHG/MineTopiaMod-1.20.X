@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "aaa",
+    "x a",
+    "aaa"
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:black_wool"
+    },
+    "a":
+    {
+      "item": "minecraft:gray_wool"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:sports_watch",
+    "count": 1
+  }
+}

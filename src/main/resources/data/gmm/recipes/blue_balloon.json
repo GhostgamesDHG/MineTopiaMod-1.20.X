@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " a ",
+    " a "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:light_blue_wool"
+    },
+    "a":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:blue_balloon",
+    "count": 1
+  }
+}

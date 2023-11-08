@@ -157,5 +157,8 @@
   "gui.gmm.safe_gui.label_safe": "Safe",
   "gui.gmm.safeinventory.label_safe": "Safe",
   "gui.gmm.safeinventory.button_lock": "Lock",
-  "block.gmm.safe": "Safe"
+  "block.gmm.safe": "Safe",
+  "item.gmm.demon_red_horns": "Demon red horns",
+  "item.gmm.pumpkinlantern": "Pumpkin lantern",
+  "item.gmm.wheelcoin": "Wheelcoin"
 }

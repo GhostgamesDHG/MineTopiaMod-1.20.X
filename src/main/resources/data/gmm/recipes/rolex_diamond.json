@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " a ",
+    "aaa",
+    " a "
+  ],
+  "key":
+  {
+    "a":
+    {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:rolex_diamond",
+    "count": 1
+  }
+}

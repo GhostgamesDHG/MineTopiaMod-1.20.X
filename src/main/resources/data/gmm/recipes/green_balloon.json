@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " a ",
+    " a "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:lime_wool"
+    },
+    "a":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:green_balloon",
+    "count": 1
+  }
+}

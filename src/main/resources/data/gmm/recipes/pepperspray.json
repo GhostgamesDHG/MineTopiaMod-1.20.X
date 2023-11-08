@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xb ",
+    "aa ",
+    "aa "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "minecraft:black_wool"
+    },
+    "b":
+    {
+      "item": "minecraft:red_wool"
+    },
+    "a":
+    {
+      "item": "minecraft:yellow_wool"
+    }
+  },
+  "result":
+  {
+    "item": "gmm:pepperspray",
+    "count": 5
+  }
+}
