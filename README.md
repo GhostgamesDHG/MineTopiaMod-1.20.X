@@ -11,7 +11,7 @@ If you want to play the new version you need to download the source code and bui
 * Add all the blocks back ACTIVE
 * ~~Add all the Items back~~
 * Add functionallity PARTLY ACTIVE
-* Add all the recipes
+* Add all the recipes PARTLY ACTIVE
 * Add all the loot tables
 * ~~Add all the textures~~
 * ~~Add all the commands~~
