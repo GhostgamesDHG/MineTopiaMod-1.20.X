@@ -10,6 +10,10 @@ If you want to play the new version you need to download the source code and bui
 <!-- TOC -->
 * Add all the blocks back ACTIVE
 * ~~Add all the Items back~~
+* Add all the food back ACTTIVE
+* Add all the tools back
+* Add all the hats back
+* Add all the Dolls back
 * Add functionallity PARTLY ACTIVE
 * Add all the recipes PARTLY ACTIVE
 * Add all the loot tables
