@@ -1,4 +1,4 @@
-package com.armedendmion.minetopiamod.tileentity;
+package com.armedendmion.minetopiamod.blocks.blockentity;
 
 import com.armedendmion.minetopiamod.gui.safe.SAFEINVENTORYMenu;
 import com.armedendmion.minetopiamod.init.BlockEntities;

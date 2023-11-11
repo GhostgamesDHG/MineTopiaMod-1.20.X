@@ -1,8 +1,9 @@
 
-package com.armedendmion.minetopiamod.network;
+package com.armedendmion.minetopiamod.network.VendingMachine;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.procedures.safe.LockButtonProcedure;
+import com.armedendmion.minetopiamod.gui.vendingmachine.VendingguiMenu;
+import com.armedendmion.minetopiamod.procedures.VendingMachine.*;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Player;
@@ -12,34 +13,35 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.network.NetworkEvent;
 
+import java.util.HashMap;
 import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class SAFEINVENTORYButtonMessage {
+public class VendingguiButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public SAFEINVENTORYButtonMessage(FriendlyByteBuf buffer) {
+	public VendingguiButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public SAFEINVENTORYButtonMessage(int buttonID, int x, int y, int z) {
+	public VendingguiButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(SAFEINVENTORYButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(VendingguiButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(SAFEINVENTORYButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(VendingguiButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -54,17 +56,46 @@ public class SAFEINVENTORYButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
+		HashMap guistate = VendingguiMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			LockButtonProcedure.execute(world, x, y, z, entity);
+			AProcedure.execute(world, entity);
+		}
+		if (buttonID == 1) {
+
+			ChocolateProcedure.execute(world, entity);
+		}
+		if (buttonID == 2) {
+
+			ChickenBucketProcedure.execute(world, entity);
+		}
+		if (buttonID == 3) {
+
+			PizzaProcedure.execute(world, entity);
+		}
+		if (buttonID == 4) {
+
+			FriesProcedure.execute(world, entity);
+		}
+		if (buttonID == 5) {
+
+			SandwichProcedure.execute(world, entity);
+		}
+		if (buttonID == 6) {
+
+			WaterbottleProcedure.execute(world, entity);
+		}
+		if (buttonID == 7) {
+
+			MilkshakeProcedure.execute(world, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		MineTopiaMod.addNetworkMessage(SAFEINVENTORYButtonMessage.class, SAFEINVENTORYButtonMessage::buffer, SAFEINVENTORYButtonMessage::new, SAFEINVENTORYButtonMessage::handler);
+		MineTopiaMod.addNetworkMessage(VendingguiButtonMessage.class, VendingguiButtonMessage::buffer, VendingguiButtonMessage::new, VendingguiButtonMessage::handler);
 	}
 }

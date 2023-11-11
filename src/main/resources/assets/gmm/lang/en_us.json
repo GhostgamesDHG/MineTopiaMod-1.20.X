@@ -160,5 +160,15 @@
   "block.gmm.safe": "Safe",
   "item.gmm.demon_red_horns": "Demon red horns",
   "item.gmm.pumpkinlantern": "Pumpkin lantern",
-  "item.gmm.wheelcoin": "Wheelcoin"
+  "item.gmm.wheelcoin": "Wheelcoin",
+  "gui.gmm.vendinggui.button_a": "Chips",
+  "gui.gmm.vendinggui.button_b": "Chocolate",
+  "gui.gmm.vendinggui.button_c": "Chicken",
+  "gui.gmm.vendinggui.button_d": "Pizza",
+  "gui.gmm.vendinggui.button_e": "Fries",
+  "gui.gmm.vendinggui.button_f": "Sandwich",
+  "gui.gmm.vendinggui.button_g": "Water bottle",
+  "gui.gmm.vendinggui.button_h": "Milkshake",
+  "block.gmm.vendingmachine": "Vending machine",
+  "block.gmm.mysterious_block": "Mysterious block"
 }

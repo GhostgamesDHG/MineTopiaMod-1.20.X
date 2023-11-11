@@ -1,7 +1,7 @@
 package com.armedendmion.minetopiamod.gui.safe;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.network.SafeGuiSetPasswordButtonMessage;
+import com.armedendmion.minetopiamod.network.safe.SafeGuiSetPasswordButtonMessage;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;

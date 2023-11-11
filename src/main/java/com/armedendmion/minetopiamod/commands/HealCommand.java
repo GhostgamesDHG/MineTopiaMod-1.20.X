@@ -1,8 +1,7 @@
 
 package com.armedendmion.minetopiamod.commands;
 
-import com.armedendmion.minetopiamod.procedures.GmmcommandProcedure;
-import com.armedendmion.minetopiamod.procedures.HealCommandProcedure;
+import com.armedendmion.minetopiamod.procedures.commands.HealCommandProcedure;
 import net.minecraft.commands.Commands;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;

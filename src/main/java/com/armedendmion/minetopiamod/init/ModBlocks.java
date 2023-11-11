@@ -83,7 +83,11 @@ public static final DeferredRegister<Block> BLOCKS =
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.TERRACOTTA_WHITE)));
     public static final RegistryObject<Block> BLACK_BRICKS = registerBlock("black_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK)));
+    public static final RegistryObject<Block> MYSTERIOUS_BLOCK = registerBlock("mysterious_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK).lightLevel(value -> 15)));
     public static final RegistryObject<Block> SAFE = registerBlock("safe", SafeBlock::new);
+    public static final RegistryObject<Block> VENDINGMACHINE = registerBlock("vendingmachine", VendingMachine::new);
+    public static final RegistryObject<Block> VENDING_MACHINE_TOP = registerBlock("vending_machine_top", VendingMachineTopBlock::new);
  //   public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);
   //  public static final RegistryObject<Block> MONITOR = registerBlock("monitor", Monitor::new);
  //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);

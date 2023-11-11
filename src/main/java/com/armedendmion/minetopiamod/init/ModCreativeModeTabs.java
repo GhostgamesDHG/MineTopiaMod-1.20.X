@@ -222,6 +222,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.BLACK_BRICKS.get());
                         pOutput.accept(ModBlocks.WHITE_BRICKS.get());
                         pOutput.accept(ModBlocks.SAFE.get());
+                        pOutput.accept(ModBlocks.VENDINGMACHINE.get());
 
                     })
                     .build());

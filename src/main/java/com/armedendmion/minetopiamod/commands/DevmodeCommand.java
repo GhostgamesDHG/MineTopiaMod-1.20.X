@@ -1,22 +1,21 @@
 
 package com.armedendmion.minetopiamod.commands;
 
-import com.armedendmion.minetopiamod.procedures.commands.GmmcommandProcedure;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegisterCommandsEvent;
-import net.minecraftforge.common.util.FakePlayerFactory;
-
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.Direction;
+import com.armedendmion.minetopiamod.procedures.commands.DevmodepProcedure;
 import net.minecraft.commands.Commands;
+import net.minecraft.core.Direction;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.entity.Entity;
+import net.minecraftforge.common.util.FakePlayerFactory;
+import net.minecraftforge.event.RegisterCommandsEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber
-public class GmmCommand {
+public class DevmodeCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("gmm")
+		event.getDispatcher().register(Commands.literal("devmode")
 
 				.executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
@@ -28,7 +27,7 @@ public class GmmCommand {
 						entity = FakePlayerFactory.getMinecraft(world);
 					Direction direction = entity.getDirection();
 
-					GmmcommandProcedure.execute(entity);
+					DevmodepProcedure.execute(world, entity);
 					return 0;
 				}));
 	}

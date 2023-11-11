@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "gmm:block/mysterious_block" }
+  }
+}

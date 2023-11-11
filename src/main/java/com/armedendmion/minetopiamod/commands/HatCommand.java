@@ -1,7 +1,7 @@
 
 package com.armedendmion.minetopiamod.commands;
 
-import com.armedendmion.minetopiamod.procedures.HatProcedure;
+import com.armedendmion.minetopiamod.procedures.commands.HatProcedure;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegisterCommandsEvent;

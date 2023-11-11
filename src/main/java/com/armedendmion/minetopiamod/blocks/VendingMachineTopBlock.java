@@ -1,44 +1,47 @@
 
 package com.armedendmion.minetopiamod.blocks;
 
-import com.armedendmion.minetopiamod.procedures.safe.SafeBlockIsPlacedByProcedure;
-import com.armedendmion.minetopiamod.procedures.safe.SafeOnBlockRightClickedProcedure;
-import com.armedendmion.minetopiamod.procedures.safe.SafePlayerStartsToDestroyProcedure;
-import com.armedendmion.minetopiamod.blocks.blockentity.SafeBlockEntity;
+import com.armedendmion.minetopiamod.init.ModBlocks;
+import com.armedendmion.minetopiamod.procedures.VendingMachine.VendingMachineTopBlockDestroyedByPlayerProcedure;
+import com.armedendmion.minetopiamod.procedures.VendingMachine.VendingMachineTopclickProcedure;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-public class SafeBlock extends Block implements EntityBlock {
+import java.util.Collections;
+import java.util.List;
+
+public class VendingMachineTopBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-	public SafeBlock() {
-		super(Properties.of().mapColor(MapColor.METAL).sound(SoundType.METAL).strength(-1, 3600000).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.BLOCK).isRedstoneConductor((bs, br, bp) -> false).noLootTable());
+	public VendingMachineTopBlock() {
+		super(Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).strength(3.5f).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK)
+				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -49,7 +52,7 @@ public class SafeBlock extends Block implements EntityBlock {
 
 	@Override
 	public int getLightBlock(@NotNull BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos) {
-		return 0;
+		return 15;
 	}
 
 	@Override
@@ -59,12 +62,8 @@ public class SafeBlock extends Block implements EntityBlock {
 
 	@Override
 	public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter world, @NotNull BlockPos pos, @NotNull CollisionContext context) {
-		return switch (state.getValue(FACING)) {
-			default -> box(1, 0, 1, 15, 13, 14);
-			case NORTH -> box(1, 0, 2, 15, 13, 15);
-			case EAST -> box(1, 0, 1, 14, 13, 15);
-			case WEST -> box(2, 0, 1, 15, 13, 15);
-		};
+        state.getValue(FACING);
+        return box(0, -16, 0, 16, 14, 16);
 	}
 
 	@Override
@@ -86,6 +85,11 @@ public class SafeBlock extends Block implements EntityBlock {
 	}
 
 	@Override
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(ModBlocks.VENDINGMACHINE.get());
+	}
+
+	@Override
 	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return BlockPathTypes.BLOCKED;
 	}
@@ -98,15 +102,24 @@ public class SafeBlock extends Block implements EntityBlock {
 	}
 
 	@Override
-	public void attack(@NotNull BlockState blockstate, @NotNull Level world, @NotNull BlockPos pos, @NotNull Player entity) {
-		super.attack(blockstate, world, pos, entity);
-		SafePlayerStartsToDestroyProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+	public @NotNull List<ItemStack> getDrops(@NotNull BlockState state, LootParams.@NotNull Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(ModBlocks.VENDINGMACHINE.get()));
 	}
 
 	@Override
-	public void setPlacedBy(@NotNull Level world, @NotNull BlockPos pos, @NotNull BlockState blockstate, LivingEntity entity, @NotNull ItemStack itemstack) {
-		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
-		SafeBlockIsPlacedByProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		VendingMachineTopBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
+	}
+
+	@Override
+	public void wasExploded(@NotNull Level world, @NotNull BlockPos pos, @NotNull Explosion e) {
+		super.wasExploded(world, pos, e);
+		VendingMachineTopBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -119,51 +132,7 @@ public class SafeBlock extends Block implements EntityBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-		SafeOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		VendingMachineTopclickProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
-	}
-
-	@Override
-	public MenuProvider getMenuProvider(@NotNull BlockState state, Level worldIn, @NotNull BlockPos pos) {
-		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
-		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
-	}
-
-	@Override
-	public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-		return new SafeBlockEntity(pos, state);
-	}
-
-	@Override
-	public boolean triggerEvent(@NotNull BlockState state, @NotNull Level world, @NotNull BlockPos pos, int eventID, int eventParam) {
-		super.triggerEvent(state, world, pos, eventID, eventParam);
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
-	}
-
-	@Override
-	public void onRemove(BlockState state, @NotNull Level world, @NotNull BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof SafeBlockEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
-		}
-	}
-
-	@Override
-	public boolean hasAnalogOutputSignal(@NotNull BlockState state) {
-		return true;
-	}
-
-	@Override
-	public int getAnalogOutputSignal(@NotNull BlockState blockState, Level world, @NotNull BlockPos pos) {
-		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof SafeBlockEntity be)
-			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
-		else
-			return 0;
 	}
 }

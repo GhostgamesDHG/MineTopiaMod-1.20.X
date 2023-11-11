@@ -1,4 +1,4 @@
-package com.armedendmion.minetopiamod.procedures;
+package com.armedendmion.minetopiamod.procedures.commands;
 
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
