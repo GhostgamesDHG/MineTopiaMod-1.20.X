@@ -46,13 +46,18 @@ public class VendingMachineTopBlock extends Block {
 	}
 
 	@Override
+	public RenderShape getRenderShape(BlockState pState) {
+		return RenderShape.MODEL;
+	}
+
+	@Override
 	public boolean propagatesSkylightDown(@NotNull BlockState state, @NotNull BlockGetter reader, @NotNull BlockPos pos) {
 		return true;
 	}
 
 	@Override
 	public int getLightBlock(@NotNull BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos) {
-		return 15;
+		return 0;
 	}
 
 	@Override

@@ -4,6 +4,7 @@
 		"0": "gmm:block/kerstkrans_leaves",
 		"particle": "gmm:block/kerstkrans_leaves"
 	},
+	"render_type": "cutout_mipped",
 	"elements": [
 		{
 			"from": [-0.93015, 7.37849, 12],

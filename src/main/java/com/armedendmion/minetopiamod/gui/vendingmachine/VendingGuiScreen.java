@@ -27,6 +27,8 @@ public class VendingGuiScreen extends AbstractContainerScreen<VendingguiMenu> {
 	Button button_f;
 	Button button_g;
 	Button button_h;
+	Button button_i;
+	Button button_j;
 
 	public VendingGuiScreen(VendingguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -84,75 +86,73 @@ public class VendingGuiScreen extends AbstractContainerScreen<VendingguiMenu> {
 	public void init() {
 		super.init();
 		button_a = Button.builder(Component.translatable("gui.gmm.vendinggui.button_a"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(0, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 6, 70, 10).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(0, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 6, 70, 10).build();
 		guistate.put("button:button_a", button_a);
 		this.addRenderableWidget(button_a);
 
 		button_b = Button.builder(Component.translatable("gui.gmm.vendinggui.button_b"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(1, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 15, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(1, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 15, 70, 11).build();
 		guistate.put("button:button_b", button_b);
 		this.addRenderableWidget(button_b);
 
 		button_c = Button.builder(Component.translatable("gui.gmm.vendinggui.button_c"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(2, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 26, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(2, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 26, 70, 11).build();
 		guistate.put("button:button_c", button_c);
 		this.addRenderableWidget(button_c);
 
 		button_d = Button.builder(Component.translatable("gui.gmm.vendinggui.button_d"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(3, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 3, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 37, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(3, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 3, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 37, 70, 11).build();
 		guistate.put("button:button_d", button_d);
 		this.addRenderableWidget(button_d);
 
 		button_e = Button.builder(Component.translatable("gui.gmm.vendinggui.button_e"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(4, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 4, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 48, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(4, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 4, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 48, 70, 11).build();
 		guistate.put("button:button_e", button_e);
 		this.addRenderableWidget(button_e);
 
 		button_f = Button.builder(Component.translatable("gui.gmm.vendinggui.button_f"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(5, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 5, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 59, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(5, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 5, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 59, 70, 11).build();
 		guistate.put("button:button_f", button_f);
 		this.addRenderableWidget(button_f);
 
 		button_g = Button.builder(Component.translatable("gui.gmm.vendinggui.button_g"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(6, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 6, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 92, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(6, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 6, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 92, 70, 11).build();
 		guistate.put("button:button_g", button_g);
 		this.addRenderableWidget(button_g);
 
 		button_h = Button.builder(Component.translatable("gui.gmm.vendinggui.button_h"), e -> {
-			if (true) {
-				MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(7, x, y, z));
-				VendingguiButtonMessage.handleButtonAction(entity, 7, x, y, z);
-			}
-		}).bounds(this.leftPos + 6, this.topPos + 103, 70, 11).build();
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(7, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 7, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 103, 70, 11).build();
 		guistate.put("button:button_h", button_h);
 		this.addRenderableWidget(button_h);
+
+		button_i = Button.builder(Component.translatable("gui.gmm.vendinggui.button_i"), e -> {
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(8, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 8, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 70, 70, 11).build();
+		guistate.put("button:button_i", button_i);
+		this.addRenderableWidget(button_i);
+
+		button_j = Button.builder(Component.translatable("gui.gmm.vendinggui.button_j"), e -> {
+            MineTopiaMod.PACKET_HANDLER.sendToServer(new VendingguiButtonMessage(9, x, y, z));
+            VendingguiButtonMessage.handleButtonAction(entity, 9, x, y, z);
+        }).bounds(this.leftPos + 6, this.topPos + 81, 70, 11).build();
+		guistate.put("button:button_j", button_j);
+		this.addRenderableWidget(button_j);
 	}
 }

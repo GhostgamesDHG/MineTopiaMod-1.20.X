@@ -5,7 +5,6 @@ import com.armedendmion.minetopiamod.gui.vendingmachine.VendingguiMenu;
 import com.armedendmion.minetopiamod.init.ModBlocks;
 import com.armedendmion.minetopiamod.procedures.VendingMachine.VendingMachineAddedProcedure;
 import com.armedendmion.minetopiamod.procedures.VendingMachine.VendingMachineTopBlockDestroyedByPlayerProcedure;
-import com.armedendmion.minetopiamod.blocks.blockentity.VendingmachineBlockEntity;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -41,13 +40,14 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Collections;
 import java.util.List;
 
-public class VendingMachine extends Block implements EntityBlock {
+public class VendingMachine extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public VendingMachine() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(1f, 10f).noOcclusion().lightLevel(value -> 8).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
+
 
 	@Override
 	public boolean propagatesSkylightDown(@NotNull BlockState state, @NotNull BlockGetter reader, @NotNull BlockPos pos) {
@@ -56,7 +56,7 @@ public class VendingMachine extends Block implements EntityBlock {
 
 	@Override
 	public int getLightBlock(@NotNull BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos) {
-		return 15;
+		return 0;
 	}
 
 	@Override
@@ -68,6 +68,11 @@ public class VendingMachine extends Block implements EntityBlock {
 	public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter world, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         state.getValue(FACING);
         return box(0, 0, 0, 16, 30, 16);
+	}
+
+	@Override
+	public RenderShape getRenderShape(BlockState pState) {
+		return RenderShape.MODEL;
 	}
 
 	@Override
@@ -132,17 +137,6 @@ public class VendingMachine extends Block implements EntityBlock {
 	public void wasExploded(@NotNull Level world, @NotNull BlockPos pos, @NotNull Explosion e) {
 		super.wasExploded(world, pos, e);
 		VendingMachineTopBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public MenuProvider getMenuProvider(@NotNull BlockState state, Level worldIn, @NotNull BlockPos pos) {
-		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
-		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
-	}
-
-	@Override
-	public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-		return new VendingmachineBlockEntity(pos, state);
 	}
 
 	@Override

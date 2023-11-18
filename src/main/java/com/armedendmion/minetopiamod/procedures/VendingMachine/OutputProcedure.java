@@ -1,6 +1,7 @@
 package com.armedendmion.minetopiamod.procedures.VendingMachine;
 
 import com.armedendmion.minetopiamod.init.GmmModVariables;
+import com.armedendmion.minetopiamod.init.ModItems;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.Slot;
@@ -18,7 +19,7 @@ public class OutputProcedure {
 		ItemStack geld = ItemStack.EMPTY;
 		double amount = 0;
 		if (GmmModVariables.MapVariables.get(world).DevMode == false) {
-			geld = new ItemStack(Blocks.DIAMOND_BLOCK);
+			geld = new ItemStack(ModItems.MONEY2.get());
 			if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(geld) : false) {
 				amount = new Object() {
 					public int getAmount(int sltid) {

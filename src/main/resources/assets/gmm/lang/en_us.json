@@ -170,5 +170,8 @@
   "gui.gmm.vendinggui.button_g": "Water bottle",
   "gui.gmm.vendinggui.button_h": "Milkshake",
   "block.gmm.vendingmachine": "Vending machine",
-  "block.gmm.mysterious_block": "Mysterious block"
+  "block.gmm.mysterious_block": "Mysterious block",
+  "block.gmm.fire_pit": "Fire pit",
+  "gui.gmm.vendinggui.button_i": "N/A",
+  "gui.gmm.vendinggui.button_j": "N/A"
 }

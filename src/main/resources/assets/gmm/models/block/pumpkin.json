@@ -8,6 +8,7 @@
 		"4": "gmm:block/pumpkin_big_3",
 		"particle": "minecraft:block/pumpkin_side"
 	},
+	"render_type": "cutout_mipped",
 	"elements": [
 		{
 			"from": [1.92936, 1.2098, 4.02571],

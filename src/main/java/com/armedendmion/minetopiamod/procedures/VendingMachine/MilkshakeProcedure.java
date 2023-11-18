@@ -20,9 +20,9 @@ public class MilkshakeProcedure {
 		double count = 0;
 		ItemStack output = ItemStack.EMPTY;
 		count = 2*8;
-		output = new ItemStack(ModItems.WHEELCOIN.get());
+		output = new ItemStack(Blocks.BARRIER);
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-			ItemStack _setstack = new ItemStack(Blocks.DIAMOND_BLOCK);
+			ItemStack _setstack = new ItemStack(ModItems.MONEY2.get());
 			_setstack.setCount((int) count);
 			((Slot) _slots.get(0)).set(_setstack);
 			_player.containerMenu.broadcastChanges();

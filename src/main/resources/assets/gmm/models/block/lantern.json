@@ -10,6 +10,7 @@
 		"12": "minecraft:block/gray_concrete",
 		"particle": "minecraft:block/cyan_terracotta"
 	},
+	"render_type": "cutout_mipped",
 	"elements": [
 		{
 			"name": "Cube",

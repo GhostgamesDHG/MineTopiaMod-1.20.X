@@ -4,6 +4,7 @@
 		"particle": "gmm:block/owl",
 		"texture": "gmm:block/owl"
 	},
+	"render_type": "cutout_mipped",
 	"elements": [
 		{
 			"name": "head1_",

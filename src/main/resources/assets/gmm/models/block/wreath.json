@@ -9,6 +9,7 @@
 		"5": "minecraft:block/purple_glazed_terracotta",
 		"particle": "gmm:block/kerstkrans_leaves"
 	},
+	"render_type": "cutout_mipped",
 	"elements": [
 		{
 			"from": [12.82843, 12.82843, 12],
