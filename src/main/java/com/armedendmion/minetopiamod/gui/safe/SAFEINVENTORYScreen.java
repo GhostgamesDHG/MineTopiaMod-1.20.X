@@ -2,20 +2,18 @@ package com.armedendmion.minetopiamod.gui.safe;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.network.safe.SAFEINVENTORYButtonMessage;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.Button;
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.gui.GuiGraphics;
-
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
-
-import com.mojang.blaze3d.systems.RenderSystem;
-import org.jetbrains.annotations.NotNull;
 
 public class SAFEINVENTORYScreen extends AbstractContainerScreen<SAFEINVENTORYMenu> {
 	private final static HashMap<String, Object> guistate = SAFEINVENTORYMenu.guistate;

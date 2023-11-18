@@ -14,7 +14,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -90,7 +89,7 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> VENDING_MACHINE_TOP = registerBlock("vending_machine_top", VendingMachineTopBlock::new);
     public static final RegistryObject<Block> FIRE_PIT = registerBlock("fire_pit", Firepit::new);
  //   public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);
-  //  public static final RegistryObject<Block> MONITOR = registerBlock("monitor", Monitor::new);
+    public static final RegistryObject<Block> MONITOR = registerBlock("monitor", Monitor::new);
  //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
  //   public static final RegistryObject<Block> ANTENNA = registerBlock("antenne", Antenne::new);
     //   public static final RegistryObject<Block> GLOBE = registerBlock("globe", Globe::new);

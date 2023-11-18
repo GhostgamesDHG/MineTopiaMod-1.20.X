@@ -5,16 +5,15 @@
 package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.gui.vendingmachine.VendingguiMenu;
 import com.armedendmion.minetopiamod.gui.safe.SAFEINVENTORYMenu;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiMenu;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiSetPasswordMenu;
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.common.extensions.IForgeMenuType;
-
+import com.armedendmion.minetopiamod.gui.vendingmachine.VendingguiMenu;
 import net.minecraft.world.inventory.MenuType;
+import net.minecraftforge.common.extensions.IForgeMenuType;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 public class ModMenu {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, MineTopiaMod.MOD_ID);

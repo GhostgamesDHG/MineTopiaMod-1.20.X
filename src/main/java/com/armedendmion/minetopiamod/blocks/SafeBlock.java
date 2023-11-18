@@ -1,10 +1,10 @@
 
 package com.armedendmion.minetopiamod.blocks;
 
+import com.armedendmion.minetopiamod.blocks.blockentity.SafeBlockEntity;
 import com.armedendmion.minetopiamod.procedures.safe.SafeBlockIsPlacedByProcedure;
 import com.armedendmion.minetopiamod.procedures.safe.SafeOnBlockRightClickedProcedure;
 import com.armedendmion.minetopiamod.procedures.safe.SafePlayerStartsToDestroyProcedure;
-import com.armedendmion.minetopiamod.blocks.blockentity.SafeBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.Containers;

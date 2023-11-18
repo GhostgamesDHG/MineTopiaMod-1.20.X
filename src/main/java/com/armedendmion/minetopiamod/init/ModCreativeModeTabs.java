@@ -224,6 +224,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAFE.get());
                         pOutput.accept(ModBlocks.VENDINGMACHINE.get());
                         pOutput.accept(ModBlocks.FIRE_PIT.get());
+                        pOutput.accept(ModBlocks.MONITOR.get());
 
                     })
                     .build());

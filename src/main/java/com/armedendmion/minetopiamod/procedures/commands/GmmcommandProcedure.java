@@ -1,8 +1,8 @@
 package com.armedendmion.minetopiamod.procedures.commands;
 
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
 
 public class GmmcommandProcedure {
 	public static void execute(Entity entity) {
