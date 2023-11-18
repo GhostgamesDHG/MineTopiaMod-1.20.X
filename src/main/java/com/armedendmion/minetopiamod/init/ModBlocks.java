@@ -88,12 +88,13 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> VENDINGMACHINE = registerBlock("vendingmachine", VendingMachine::new);
     public static final RegistryObject<Block> VENDING_MACHINE_TOP = registerBlock("vending_machine_top", VendingMachineTopBlock::new);
     public static final RegistryObject<Block> FIRE_PIT = registerBlock("fire_pit", Firepit::new);
- //   public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);
     public static final RegistryObject<Block> MONITOR = registerBlock("monitor", Monitor::new);
- //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
- //   public static final RegistryObject<Block> ANTENNA = registerBlock("antenne", Antenne::new);
-    //   public static final RegistryObject<Block> GLOBE = registerBlock("globe", Globe::new);
-    //   public static final RegistryObject<Block> DARTBORD = registerBlock("dartbord", Dartbord::new);
+    public static final RegistryObject<Block> ANTENNA = registerBlock("antenna", Antenna::new);
+    public static final RegistryObject<Block> GLOBE = registerBlock("globe", Globe::new);
+    public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);
+    public static final RegistryObject<Block> DARTBORD = registerBlock("dartbord", Dartbord::new);
+    public static final RegistryObject<Block> WALL_LIGHT = registerBlock("wall_light", WallLight::new);
+    //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
     //   public static final RegistryObject<Block> SMALL_TREE = registerBlock("small_tree", Smalltree::new);
     //   public static final RegistryObject<Block> TABLE_PLANT = registerBlock("table_plant", Tableplant::new);
     //   public static final RegistryObject<Block> BIN = registerBlock("bin", Bin::new);
@@ -103,7 +104,6 @@ public static final DeferredRegister<Block> BLOCKS =
     //   public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", Table_lamp::new);
 
     //HALLOWEEN
- //   public static final RegistryObject<Block> WALL_LIGHT = registerBlock("wall_light", wall_light::new);
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);
  //   public static final RegistryObject<Block> MONSTERBOOK = registerBlock("monsterbook", Monsterbook::new);
  //   public static final RegistryObject<Block> CLEAVER = registerBlock("cleaver", Cleaver::new);

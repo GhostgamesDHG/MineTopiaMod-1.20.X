@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/notebook" },
+    "facing=south": { "model": "gmm:block/notebook", "y":  180},
+    "facing=west": { "model": "gmm:block/notebook", "y":  270},
+    "facing=east": { "model": "gmm:block/notebook", "y":  90}
+  }
+}

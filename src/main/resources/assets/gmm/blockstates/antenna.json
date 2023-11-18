@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/antenna" },
+    "facing=south": { "model": "gmm:block/antenna", "y":  180},
+    "facing=west": { "model": "gmm:block/antenna", "y":  270},
+    "facing=east": { "model": "gmm:block/antenna", "y":  90}
+  }
+}

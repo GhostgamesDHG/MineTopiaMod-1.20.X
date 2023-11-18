@@ -225,6 +225,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.VENDINGMACHINE.get());
                         pOutput.accept(ModBlocks.FIRE_PIT.get());
                         pOutput.accept(ModBlocks.MONITOR.get());
+                        pOutput.accept(ModBlocks.ANTENNA.get());
+                        pOutput.accept(ModBlocks.GLOBE.get());
+                        pOutput.accept(ModBlocks.NOTEBOOK.get());
+                        pOutput.accept(ModBlocks.DARTBORD.get());
+                        pOutput.accept(ModBlocks.WALL_LIGHT.get());
 
                     })
                     .build());
