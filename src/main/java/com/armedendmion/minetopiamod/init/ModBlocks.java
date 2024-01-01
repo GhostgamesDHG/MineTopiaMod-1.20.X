@@ -94,14 +94,15 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> NOTEBOOK = registerBlock("notebook", Notebook::new);
     public static final RegistryObject<Block> DARTBORD = registerBlock("dartbord", Dartbord::new);
     public static final RegistryObject<Block> WALL_LIGHT = registerBlock("wall_light", WallLight::new);
-    //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
-    //   public static final RegistryObject<Block> SMALL_TREE = registerBlock("small_tree", Smalltree::new);
-    //   public static final RegistryObject<Block> TABLE_PLANT = registerBlock("table_plant", Tableplant::new);
-    //   public static final RegistryObject<Block> BIN = registerBlock("bin", Bin::new);
-    //  public static final RegistryObject<Block> COOLBOX = registerBlock("coolbox", coolbox::new);
-    //   public static final RegistryObject<Block> MODERN_PLANT = registerBlock("modern_plant", modern_plant::new);
-    //   public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = registerBlock("modern_pancake_plant", modern_pancake_plant::new);
-    //   public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", Table_lamp::new);
+    public static final RegistryObject<Block> SMALL_TREE = registerBlock("small_tree", Smalltree::new);
+    public static final RegistryObject<Block> TABLE_PLANT = registerBlock("table_plant", Tableplant::new);
+    public static final RegistryObject<Block> BIN = registerBlock("bin", Bin::new);
+    public static final RegistryObject<Block> GARBAGE_CAN = registerBlock("garbage_can", GarbageCan::new);
+    public static final RegistryObject<Block> WASTE_CONTAINER = registerBlock("waste_container", Container::new);
+    public static final RegistryObject<Block> COOLBOX = registerBlock("coolbox", coolbox::new);
+    public static final RegistryObject<Block> MODERN_PLANT = registerBlock("modern_plant", modern_plant::new);
+    public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = registerBlock("modern_pancake_plant", modern_pancake_plant::new);
+    public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", table_lamp::new);
 
     //HALLOWEEN
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);
@@ -118,6 +119,7 @@ public static final DeferredRegister<Block> BLOCKS =
     //   public static final RegistryObject<Block> TOMB = registerBlock("tomb", Tomb::new);
 
 //STILL ON THE TO-DO LIST
+    //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
 //   public static final RegistryObject<Block> OVEN = registerBlock("oven", () -> new Oven(AbstractBlock.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.5F).setLightLevel(getLightValueLit())));
     //   public static final RegistryObject<Block> FLASHLIGHT = registerBlock("flashlight", Flashlight::new);
     //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);

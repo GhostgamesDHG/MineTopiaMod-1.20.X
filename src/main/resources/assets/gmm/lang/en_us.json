@@ -179,5 +179,15 @@
   "block.gmm.antenna": "Antenna",
   "block.gmm.notebook": "Notebook",
   "block.gmm.dartbord": "Dartbord",
-  "block.gmm.wall_light": "Wall light"
+  "block.gmm.wall_light": "Wall light",
+  "block.gmm.bin": "Bin",
+  "block.gmm.garbage_can": "Garbage can",
+  "gui.gmm.containergui.button_c": "C",
+  "block.gmm.waste_container": "Waste container",
+  "block.gmm.table_plant": "Table plant",
+  "block.gmm.small_tree": "Small tree",
+  "block.gmm.coolbox": "Coolbox",
+  "block.gmm.modern_plant": "Modern plant",
+  "block.gmm.modern_pancake_plant": "Modern pancake plant",
+  "block.gmm.table_lamp": "Table lamp"
 }

@@ -5,6 +5,9 @@
 package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
+import com.armedendmion.minetopiamod.gui.bin.BinGuiMenu;
+import com.armedendmion.minetopiamod.gui.container.ContainerguiMenu;
+import com.armedendmion.minetopiamod.gui.garbagecan.GarbageGuiMenu;
 import com.armedendmion.minetopiamod.gui.safe.SAFEINVENTORYMenu;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiMenu;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiSetPasswordMenu;
@@ -22,4 +25,7 @@ public static final RegistryObject<MenuType<VendingguiMenu>> VENDINGGUI = REGIST
 	public static final RegistryObject<MenuType<SafeGuiMenu>> SAFE_GUI = REGISTRY.register("safe_gui", () -> IForgeMenuType.create(SafeGuiMenu::new));
 	public static final RegistryObject<MenuType<SafeGuiSetPasswordMenu>> SAFE_GUI_SET_PASSWORD = REGISTRY.register("safe_gui_set_password", () -> IForgeMenuType.create(SafeGuiSetPasswordMenu::new));
 	public static final RegistryObject<MenuType<SAFEINVENTORYMenu>> SAFEINVENTORY = REGISTRY.register("safeinventory", () -> IForgeMenuType.create(SAFEINVENTORYMenu::new));
+	public static final RegistryObject<MenuType<BinGuiMenu>> BIN_GUI = REGISTRY.register("bin_gui", () -> IForgeMenuType.create(BinGuiMenu::new));
+	public static final RegistryObject<MenuType<GarbageGuiMenu>> GARBAGE_GUI = REGISTRY.register("garbage_gui", () -> IForgeMenuType.create(GarbageGuiMenu::new));
+	public static final RegistryObject<MenuType<ContainerguiMenu>> CONTAINER_GUI = REGISTRY.register("container_gui", () -> IForgeMenuType.create(ContainerguiMenu::new));
 }

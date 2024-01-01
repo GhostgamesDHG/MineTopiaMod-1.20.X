@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/small_tree" },
+    "facing=south": { "model": "gmm:block/small_tree", "y":  180},
+    "facing=west": { "model": "gmm:block/small_tree", "y":  270},
+    "facing=east": { "model": "gmm:block/small_tree", "y":  90}
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/waste_container" },
+    "facing=south": { "model": "gmm:block/waste_container", "y":  180},
+    "facing=west": { "model": "gmm:block/waste_container", "y":  270},
+    "facing=east": { "model": "gmm:block/waste_container", "y":  90}
+  }
+}

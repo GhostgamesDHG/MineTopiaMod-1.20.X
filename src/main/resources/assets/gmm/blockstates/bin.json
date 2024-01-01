@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/bin" },
+    "facing=south": { "model": "gmm:block/bin", "y":  180},
+    "facing=west": { "model": "gmm:block/bin", "y":  270},
+    "facing=east": { "model": "gmm:block/bin", "y":  90}
+  }
+}

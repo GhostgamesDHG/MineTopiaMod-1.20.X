@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/table_lamp" },
+    "facing=south": { "model": "gmm:block/table_lamp", "y":  180},
+    "facing=west": { "model": "gmm:block/table_lamp", "y":  270},
+    "facing=east": { "model": "gmm:block/table_lamp", "y":  90}
+  }
+}

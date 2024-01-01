@@ -2,10 +2,8 @@ package com.armedendmion.minetopiamod.blocks;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -14,14 +12,16 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class Firepit extends Block {
 
-    public Firepit() {
-        super(Properties.copy(Blocks.IRON_BARS).noOcclusion().lightLevel(value -> 15));
+public class coolbox extends Block {
+
+    public coolbox() {
+        super(Properties.copy(Blocks.LIGHT_BLUE_CONCRETE).noOcclusion());
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+
 
     @Override
     public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
@@ -30,8 +30,10 @@ public class Firepit extends Block {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        state.getValue(FACING);
-        return box(2, 6, 2, 14, 16, 14);
+        return switch (state.getValue(FACING)) {
+            default -> box(-2, 0, 1, 18, 15, 15);
+            case EAST, WEST -> box(1, 0, -2, 15, 15, 18);
+        };
     }
 
     @Override
@@ -52,9 +54,5 @@ public class Firepit extends Block {
         return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
     }
 
-    @Override
-    public void stepOn(Level world, BlockPos pos, BlockState blockstate, Entity entity) {
-        super.stepOn(world, pos, blockstate, entity);
-        entity.setSecondsOnFire(6);
-    }
+
 }

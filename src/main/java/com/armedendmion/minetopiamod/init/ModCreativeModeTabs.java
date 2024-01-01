@@ -230,6 +230,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NOTEBOOK.get());
                         pOutput.accept(ModBlocks.DARTBORD.get());
                         pOutput.accept(ModBlocks.WALL_LIGHT.get());
+                        pOutput.accept(ModBlocks.BIN.get());
+                        pOutput.accept(ModBlocks.GARBAGE_CAN.get());
+                        pOutput.accept(ModBlocks.WASTE_CONTAINER.get());
+                        pOutput.accept(ModBlocks.SMALL_TREE.get());
+                        pOutput.accept(ModBlocks.TABLE_PLANT.get());
+                        pOutput.accept(ModBlocks.COOLBOX.get());
+                        pOutput.accept(ModBlocks.MODERN_PLANT.get());
+                        pOutput.accept(ModBlocks.MODERN_PANCAKE_PLANT.get());
+                        pOutput.accept(ModBlocks.TABLE_LAMP.get());
 
                     })
                     .build());

@@ -2,6 +2,9 @@
 
 package com.armedendmion.minetopiamod.init;
 
+import com.armedendmion.minetopiamod.gui.bin.BinGuiScreen;
+import com.armedendmion.minetopiamod.gui.container.ContainerguiScreen;
+import com.armedendmion.minetopiamod.gui.garbagecan.GarbageGuiScreen;
 import com.armedendmion.minetopiamod.gui.safe.SAFEINVENTORYScreen;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiScreen;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiSetPasswordScreen;
@@ -21,6 +24,9 @@ public class ModScreens {
 			MenuScreens.register(ModMenu.SAFE_GUI.get(), SafeGuiScreen::new);
 			MenuScreens.register(ModMenu.SAFE_GUI_SET_PASSWORD.get(), SafeGuiSetPasswordScreen::new);
 			MenuScreens.register(ModMenu.SAFEINVENTORY.get(), SAFEINVENTORYScreen::new);
+			MenuScreens.register(ModMenu.BIN_GUI.get(), BinGuiScreen::new);
+			MenuScreens.register(ModMenu.GARBAGE_GUI.get(), GarbageGuiScreen::new);
+			MenuScreens.register(ModMenu.CONTAINER_GUI.get(), ContainerguiScreen::new);
 		});
 	}
 }
