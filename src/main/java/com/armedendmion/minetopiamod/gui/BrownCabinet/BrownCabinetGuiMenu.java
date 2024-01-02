@@ -1,30 +1,29 @@
 
-package com.armedendmion.minetopiamod.gui.container;
+package com.armedendmion.minetopiamod.gui.BrownCabinet;
 
 import com.armedendmion.minetopiamod.init.ModMenu;
-import net.minecraftforge.items.SlotItemHandler;
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerLevelAccess;
+import net.minecraft.world.inventory.Slot;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.items.SlotItemHandler;
 
-import java.util.function.Supplier;
-import java.util.Map;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
 
-public class ContainerguiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class BrownCabinetGuiMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -37,11 +36,11 @@ public class ContainerguiMenu extends AbstractContainerMenu implements Supplier<
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
-	public ContainerguiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ModMenu.CONTAINER_GUI.get(), id);
+	public BrownCabinetGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(ModMenu.BROWN_CABINET_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStackHandler(21);
+		this.internal = new ItemStackHandler(27);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -76,68 +75,86 @@ public class ContainerguiMenu extends AbstractContainerMenu implements Supplier<
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 26, 22) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal,  0, 7, 10) {
 			private final int slot = 0;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal,  1, 44, 22) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 10) {
 			private final int slot = 1;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 62, 22) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 10) {
 			private final int slot = 2;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal,  3, 80, 22) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 10) {
 			private final int slot = 3;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal,  4, 98, 22)  {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal,  4, 79, 10) {
 			private final int slot = 4;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 116, 22) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 10){
 			private final int slot = 5;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 134, 22)  {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal,  6, 115, 10)  {
 			private final int slot = 6;
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 26, 40){
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 10) {
 			private final int slot = 7;
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 44, 40) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 10) {
 			private final int slot = 8;
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal,  9, 62, 40) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 28)  {
 			private final int slot = 9;
 		}));
-		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal,  10, 80, 40)  {
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 28) {
 			private final int slot = 10;
 		}));
-		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal,  11, 98, 40) {
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 43, 28)  {
 			private final int slot = 11;
 		}));
-		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal,  12, 116, 40){
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal,  12, 61, 28) {
 			private final int slot = 12;
 		}));
-		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 134, 40) {
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 79, 28) {
 			private final int slot = 13;
 		}));
-		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 26, 58) {
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal,14, 97, 28) {
 			private final int slot = 14;
 		}));
-		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 44, 58) {
+		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 115, 28) {
 			private final int slot = 15;
 		}));
-		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 62, 58) {
+		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 133, 28) {
 			private final int slot = 16;
 		}));
-		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal,  17, 80, 58) {
+		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal,  17, 151, 28) {
 			private final int slot = 17;
 		}));
-		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal,  18, 98, 58) {
+		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 7, 46) {
 			private final int slot = 18;
 		}));
-		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal,  19, 116, 58) {
+		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal,  19, 25, 46) {
 			private final int slot = 19;
 		}));
-		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 134, 58) {
+		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal,  20, 43, 46) {
 			private final int slot = 20;
+		}));
+		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 61, 46) {
+			private final int slot = 21;
+		}));
+		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 79, 46)  {
+			private final int slot = 22;
+		}));
+		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 97, 46)  {
+			private final int slot = 23;
+		}));
+		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 115, 46) {
+			private final int slot = 24;
+		}));
+		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal,  25, 133, 46) {
+			private final int slot = 25;
+		}));
+		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 151, 46) {
+			private final int slot = 26;
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
@@ -166,16 +183,16 @@ public class ContainerguiMenu extends AbstractContainerMenu implements Supplier<
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 21) {
-				if (!this.moveItemStackTo(itemstack1, 21, this.slots.size(), true))
+			if (index < 27) {
+				if (!this.moveItemStackTo(itemstack1, 27, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 21, false)) {
-				if (index < 21 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 21 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 27, false)) {
+				if (index < 27 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 27 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 21, 21 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 27, 27 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -315,6 +332,18 @@ public class ContainerguiMenu extends AbstractContainerMenu implements Supplier<
 						continue;
 					if (j == 20)
 						continue;
+					if (j == 21)
+						continue;
+					if (j == 22)
+						continue;
+					if (j == 23)
+						continue;
+					if (j == 24)
+						continue;
+					if (j == 25)
+						continue;
+					if (j == 26)
+						continue;
 					playerIn.drop(internal.extractItem(j, internal.getStackInSlot(j).getCount(), false), false);
 				}
 			} else {
@@ -360,6 +389,18 @@ public class ContainerguiMenu extends AbstractContainerMenu implements Supplier<
 					if (i == 19)
 						continue;
 					if (i == 20)
+						continue;
+					if (i == 21)
+						continue;
+					if (i == 22)
+						continue;
+					if (i == 23)
+						continue;
+					if (i == 24)
+						continue;
+					if (i == 25)
+						continue;
+					if (i == 26)
 						continue;
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}

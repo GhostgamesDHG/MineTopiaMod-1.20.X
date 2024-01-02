@@ -2,6 +2,7 @@
 
 package com.armedendmion.minetopiamod.init;
 
+import com.armedendmion.minetopiamod.gui.BrownCabinet.BrownCabinetGuiScreen;
 import com.armedendmion.minetopiamod.gui.bin.BinGuiScreen;
 import com.armedendmion.minetopiamod.gui.container.ContainerguiScreen;
 import com.armedendmion.minetopiamod.gui.garbagecan.GarbageGuiScreen;
@@ -27,6 +28,7 @@ public class ModScreens {
 			MenuScreens.register(ModMenu.BIN_GUI.get(), BinGuiScreen::new);
 			MenuScreens.register(ModMenu.GARBAGE_GUI.get(), GarbageGuiScreen::new);
 			MenuScreens.register(ModMenu.CONTAINER_GUI.get(), ContainerguiScreen::new);
+			MenuScreens.register(ModMenu.BROWN_CABINET_GUI.get(), BrownCabinetGuiScreen::new);
 		});
 	}
 }

@@ -5,6 +5,7 @@
 package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
+import com.armedendmion.minetopiamod.gui.BrownCabinet.BrownCabinetGuiMenu;
 import com.armedendmion.minetopiamod.gui.bin.BinGuiMenu;
 import com.armedendmion.minetopiamod.gui.container.ContainerguiMenu;
 import com.armedendmion.minetopiamod.gui.garbagecan.GarbageGuiMenu;
@@ -28,4 +29,5 @@ public static final RegistryObject<MenuType<VendingguiMenu>> VENDINGGUI = REGIST
 	public static final RegistryObject<MenuType<BinGuiMenu>> BIN_GUI = REGISTRY.register("bin_gui", () -> IForgeMenuType.create(BinGuiMenu::new));
 	public static final RegistryObject<MenuType<GarbageGuiMenu>> GARBAGE_GUI = REGISTRY.register("garbage_gui", () -> IForgeMenuType.create(GarbageGuiMenu::new));
 	public static final RegistryObject<MenuType<ContainerguiMenu>> CONTAINER_GUI = REGISTRY.register("container_gui", () -> IForgeMenuType.create(ContainerguiMenu::new));
+	public static final RegistryObject<MenuType<BrownCabinetGuiMenu>> BROWN_CABINET_GUI = REGISTRY.register("brown_cabinet_gui", () -> IForgeMenuType.create(BrownCabinetGuiMenu::new));
 }
