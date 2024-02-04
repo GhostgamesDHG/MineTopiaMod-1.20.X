@@ -104,6 +104,8 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = registerBlock("modern_pancake_plant", modern_pancake_plant::new);
     public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", table_lamp::new);
     public static final RegistryObject<Block> BROWN_CABINET = registerBlock("brown_cabinet", BrownCabinet::new);
+    public static final RegistryObject<Block> YELLOW_BAG = registerBlock("yellow_bag", Bag::new);
+    public static final RegistryObject<Block> GREEN_BAG = registerBlock("green_bag", Bag::new);
 
     //HALLOWEEN
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);

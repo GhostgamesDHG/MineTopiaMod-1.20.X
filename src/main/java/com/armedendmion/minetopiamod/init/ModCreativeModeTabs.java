@@ -240,6 +240,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.MODERN_PANCAKE_PLANT.get());
                         pOutput.accept(ModBlocks.TABLE_LAMP.get());
                         pOutput.accept(ModBlocks.BROWN_CABINET.get());
+                        pOutput.accept(ModBlocks.YELLOW_BAG.get());
+                        pOutput.accept(ModBlocks.GREEN_BAG.get());
 
                     })
                     .build());
