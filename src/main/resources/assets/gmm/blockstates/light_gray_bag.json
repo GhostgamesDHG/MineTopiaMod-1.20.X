@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/light_gray_bag" },
+    "facing=south": { "model": "gmm:block/light_gray_bag", "y":  180},
+    "facing=west": { "model": "gmm:block/light_gray_bag", "y":  270},
+    "facing=east": { "model": "gmm:block/light_gray_bag", "y":  90}
+  }
+}

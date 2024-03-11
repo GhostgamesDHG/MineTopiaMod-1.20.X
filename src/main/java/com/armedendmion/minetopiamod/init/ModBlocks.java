@@ -104,8 +104,24 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = registerBlock("modern_pancake_plant", modern_pancake_plant::new);
     public static final RegistryObject<Block> TABLE_LAMP = registerBlock("table_lamp", table_lamp::new);
     public static final RegistryObject<Block> BROWN_CABINET = registerBlock("brown_cabinet", BrownCabinet::new);
+
+    //BAG
     public static final RegistryObject<Block> YELLOW_BAG = registerBlock("yellow_bag", Bag::new);
     public static final RegistryObject<Block> GREEN_BAG = registerBlock("green_bag", Bag::new);
+    public static final RegistryObject<Block> WHITE_BAG = registerBlock("white_bag", Bag::new);
+    public static final RegistryObject<Block> ORANGE_BAG = registerBlock("orange_bag", Bag::new);
+    public static final RegistryObject<Block> MAGENTA_BAG = registerBlock("magenta_bag", Bag::new);
+    public static final RegistryObject<Block> LIGHT_BLUE_BAG = registerBlock("light_blue_bag", Bag::new);
+    public static final RegistryObject<Block> LIME_BAG = registerBlock("lime_bag", Bag::new);
+    public static final RegistryObject<Block> PINK_BAG = registerBlock("pink_bag", Bag::new);
+    public static final RegistryObject<Block> GRAY_BAG = registerBlock("gray_bag", Bag::new);
+    public static final RegistryObject<Block> LIGHT_GRAY_BAG = registerBlock("light_gray_bag", Bag::new);
+    public static final RegistryObject<Block> CYAN_BAG = registerBlock("cyan_bag", Bag::new);
+    public static final RegistryObject<Block> PURPLE_BAG = registerBlock("purple_bag", Bag::new);
+    public static final RegistryObject<Block> BLUE_BAG = registerBlock("blue_bag", Bag::new);
+    public static final RegistryObject<Block> BROWN_BAG = registerBlock("brown_bag", Bag::new);
+    public static final RegistryObject<Block> RED_BAG = registerBlock("red_bag", Bag::new);
+    public static final RegistryObject<Block> BLACK_BAG = registerBlock("black_bag", Bag::new);
 
     //HALLOWEEN
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);

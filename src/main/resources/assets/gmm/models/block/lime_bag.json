@@ -1,0 +1,6 @@
+{
+  "parent": "gmm:block/green_bag",
+  "textures": {
+    "particle": "minecraft:block/lime_concrete"
+  }
+}

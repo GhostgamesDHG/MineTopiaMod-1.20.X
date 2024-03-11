@@ -192,5 +192,19 @@
   "block.gmm.table_lamp": "Table lamp",
   "block.gmm.brown_cabinet": "Brown cabinet",
   "block.gmm.yellow_bag": "Yellow bag",
-  "block.gmm.green_bag": "Green bag"
+  "block.gmm.green_bag": "Green bag",
+  "block.gmm.white_bag": "White bag",
+  "block.gmm.orange_bag": "Orange bag",
+  "block.gmm.magenta_bag": "Magenta bag",
+  "block.gmm.light_blue_bag": "Light blue bag",
+  "block.gmm.lime_bag": "Lime bag",
+  "block.gmm.pink_bag": "Pink bag",
+  "block.gmm.gray_bag": "Gray bag",
+  "block.gmm.light_gray_bag": "Light gray bag",
+  "block.gmm.cyan_bag": "Cyan bag",
+  "block.gmm.purple_bag": "Purple bag",
+  "block.gmm.blue_bag": "Blue bag",
+  "block.gmm.brown_bag": "Brown bag",
+  "block.gmm.red_bag": "Red bag",
+  "block.gmm.black_bag": "Black bag"
 }

@@ -2,7 +2,7 @@
 package com.armedendmion.minetopiamod.blocks;
 
 import com.armedendmion.minetopiamod.blocks.blockentity.BrowncabinetBlockEntity;
-import com.armedendmion.minetopiamod.blocks.blockentity.GreenBagBlockEntity;
+import com.armedendmion.minetopiamod.blocks.blockentity.bag.GreenBagBlockEntity;
 import com.armedendmion.minetopiamod.gui.Bag.BagGuiMenu;
 import io.netty.buffer.Unpooled;
 import net.minecraft.core.BlockPos;
