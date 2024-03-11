@@ -92,6 +92,4 @@ public class MineTopiaMod
             workQueue.removeAll(actions);
         }
     }
-
-
 }
