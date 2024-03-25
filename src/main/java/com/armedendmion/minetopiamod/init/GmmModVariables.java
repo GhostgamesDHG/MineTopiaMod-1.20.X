@@ -88,6 +88,7 @@ public class GmmModVariables {
 		public static final String DATA_NAME = "gmm_mapvars";
 		public boolean DevMode = false;
 		public ItemStack paycheck = ItemStack.EMPTY;
+		public double ledstate = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -97,16 +98,17 @@ public class GmmModVariables {
 
 		public void read(CompoundTag nbt) {
 			DevMode = nbt.getBoolean("DevMode");
+			ledstate = nbt.getDouble("ledstate");
 			paycheck = ItemStack.of(nbt.getCompound("paycheck"));
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("DevMode", DevMode);
+			nbt.putDouble("ledstate", ledstate);
 			nbt.put("paycheck", paycheck.save(new CompoundTag()));
 			return nbt;
 		}
-
 		public void syncData(LevelAccessor world) {
 			this.setDirty();
 			if (world instanceof Level && !world.isClientSide())

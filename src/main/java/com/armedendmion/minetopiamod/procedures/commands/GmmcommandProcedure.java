@@ -18,5 +18,9 @@ public class GmmcommandProcedure {
 			_player.displayClientMessage(Component.literal("\u00A7a/heal - Heals the player"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7a/hat - Puts item in hand on your head"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7a/name - Set a custom item name"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7a/ledpanel - Control the led panels"), false);
 	}
 }

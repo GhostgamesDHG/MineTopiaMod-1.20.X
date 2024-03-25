@@ -1,0 +1,6 @@
+{
+  "parent": "gmm:block/led_panel",
+  "textures": {
+    "1": "gmm:block/double_yellow"
+  }
+}

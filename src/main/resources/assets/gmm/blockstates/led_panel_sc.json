@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/led_panel_sc" },
+    "facing=south": { "model": "gmm:block/led_panel_sc", "y":  180},
+    "facing=west": { "model": "gmm:block/led_panel_sc", "y":  270},
+    "facing=east": { "model": "gmm:block/led_panel_sc", "y":  90}
+  }
+}

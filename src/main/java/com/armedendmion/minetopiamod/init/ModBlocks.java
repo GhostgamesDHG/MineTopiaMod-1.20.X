@@ -123,6 +123,21 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> RED_BAG = registerBlock("red_bag", Bag::new);
     public static final RegistryObject<Block> BLACK_BAG = registerBlock("black_bag", Bag::new);
 
+    //LED PANELS
+    public static final RegistryObject<Block> LED_PANEL = registerBlock("led_panel", LedPanel::new);                                            //0            @
+    public static final RegistryObject<Block> LED_PANEL_RED = registerBlock("led_panel_red", LedPanel::new);                              //1            @
+    public static final RegistryObject<Block> LED_PANEL_GREEN = registerBlock("led_panel_green", LedPanel::new);                      //2            @
+    public static final RegistryObject<Block> LED_PANEL_WHITE = registerBlock("led_panel_white", LedPanel::new);                       //3            @
+    public static final RegistryObject<Block> LED_PANEL_BLUE = registerBlock("led_panel_blue", LedPanel::new);                           //4             @
+    public static final RegistryObject<Block> LED_PANEL_YELLOW = registerBlock("led_panel_yellow", LedPanel::new);                   //5            @
+    public static final RegistryObject<Block> LED_PANEL_VSC = registerBlock("led_panel_vsc", LedPanel::new);                              //6            @
+    public static final RegistryObject<Block> LED_PANEL_SC = registerBlock("led_panel_sc", LedPanel::new);                                  //7            @
+    public static final RegistryObject<Block> LED_PANEL_RAIN = registerBlock("led_panel_rain", LedPanel::new);                          //8              @
+    public static final RegistryObject<Block> LED_PANEL_CHEQUERED = registerBlock("led_panel_chequered", LedPanel::new);    //9              @
+    public static final RegistryObject<Block> LED_PANEL_DOUBLE_YELLOW = registerBlock("led_panel_double_yellow", LedPanel::new); //10       @
+    public static final RegistryObject<Block> LED_PANEL_FCY = registerBlock("led_panel_fcy", LedPanel::new);                             //11 Full course yellow
+
+    public static final RegistryObject<Block> CONTROLLER = registerBlock("controller", Pumpkin::new);
     //HALLOWEEN
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);
  //   public static final RegistryObject<Block> MONSTERBOOK = registerBlock("monsterbook", Monsterbook::new);

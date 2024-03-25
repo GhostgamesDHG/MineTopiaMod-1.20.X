@@ -241,6 +241,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.TABLE_LAMP.get());
                         pOutput.accept(ModBlocks.BROWN_CABINET.get());
                         pOutput.accept(ModBlocks.WHITE_BAG.get());
+                        pOutput.accept(ModBlocks.LED_PANEL.get());
 
                     })
                     .build());
