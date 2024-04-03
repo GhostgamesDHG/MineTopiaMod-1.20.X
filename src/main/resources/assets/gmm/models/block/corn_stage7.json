@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "gmm:block/corn_stage7"
+  },
+  "render_type": "cutout_mipped"
+}

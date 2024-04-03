@@ -2,6 +2,7 @@ package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.blocks.*;
+import com.armedendmion.minetopiamod.blocks.crops.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -138,6 +139,7 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> LED_PANEL_FCY = registerBlock("led_panel_fcy", LedPanel::new);                             //11 Full course yellow
 
     public static final RegistryObject<Block> CONTROLLER = registerBlock("controller", Pumpkin::new);
+
     //HALLOWEEN
  //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);
  //   public static final RegistryObject<Block> MONSTERBOOK = registerBlock("monsterbook", Monsterbook::new);
@@ -161,6 +163,19 @@ public static final DeferredRegister<Block> BLOCKS =
     //   public static final RegistryObject<Block> WALKIETALKIE = registerBlock("walkietalkie", walkietalkie::new);
     //   public static final RegistryObject<Block> FRYING_PAN = registerBlock("frying_pan", Frying_pan::new);
     //   public static final RegistryObject<Block> POPCORN_MACHINE = registerBlock("popcorn_machine", PopcornMachine::new);
+
+    //CROPS
+    public static final RegistryObject<Block> CORN_CROP = BLOCKS.register("corn_crop", () -> new CornBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> GRAPES_CROP = BLOCKS.register("grapes_crop", () -> new GrapesBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> WHITE_GRAPES_CROP = BLOCKS.register("white_grapes_crop", () -> new WhiteGrapesBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> RED_GRAPES_CROP = BLOCKS.register("red_grapes_crop", () -> new RedGrapesBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> HOP_CROP = BLOCKS.register("hop_crop", () -> new HopBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> LETTUCE_CROP = BLOCKS.register("lettuce_crop", () -> new LettuceBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> PAPRIKA_CROP = BLOCKS.register("paprika_crop", () -> new PaprikaBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> PEPPER_CROP = BLOCKS.register("pepper_crop", () -> new PepperBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> PINEAPPLE_CROP = BLOCKS.register("pineapple_crop", () -> new PineAppleBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop", () -> new StrawberryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

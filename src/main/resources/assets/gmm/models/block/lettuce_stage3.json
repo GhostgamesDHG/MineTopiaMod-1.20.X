@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "gmm:block/lettuce_stage3"
+  },
+  "render_type": "cutout_mipped"
+}

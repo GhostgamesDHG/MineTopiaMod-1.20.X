@@ -207,5 +207,22 @@
   "block.gmm.brown_bag": "Brown bag",
   "block.gmm.red_bag": "Red bag",
   "block.gmm.black_bag": "Black bag",
-  "block.gmm.led_panel": "Led panel"
+  "block.gmm.led_panel": "Led panel",
+  "item.gmm.corn": "Corn",
+  "item.gmm.lettuce": "Lettuce",
+  "item.gmm.paprika": "Paprika",
+  "item.gmm.pepper": "Pepper",
+  "item.gmm.tomato": "Tomato",
+  "item.gmm.white_grapes": "White grapes",
+  "item.gmm.corn_seeds": "Corn seeds",
+  "item.gmm.grapes_seeds": "Grapes seeds",
+  "item.gmm.hop_seeds": "Hop seeds",
+  "item.gmm.lettuce_seeds": "Lettuce seeds",
+  "item.gmm.paprika_seeds": "Paprika seeds",
+  "item.gmm.pepper_seeds": "Pepper seeds",
+  "item.gmm.pineapple_seeds": "Pineapple seeds",
+  "item.gmm.red_grapes_seeds": "Red grapes seeds",
+  "item.gmm.white_grapes_seeds": "white grapes seeds",
+  "item.gmm.strawberry_seeds": "Strawberry seeds",
+  "item.gmm.tomato_seeds": "Tomato seeds"
 }

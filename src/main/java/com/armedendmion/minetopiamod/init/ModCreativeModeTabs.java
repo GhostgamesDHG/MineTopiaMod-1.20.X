@@ -174,6 +174,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CHOCOLATE_BAR.get());
                         pOutput.accept(ModItems.APFELSTRUDEL.get());
                         pOutput.accept(ModItems.BITTERBALLEN.get());
+                        pOutput.accept(ModItems.CORN.get());
+                        pOutput.accept(ModItems.LETTUCE.get());
+                        pOutput.accept(ModItems.PAPRIKA.get());
+                        pOutput.accept(ModItems.PEPPER.get());
+                        pOutput.accept(ModItems.TOMATO.get());
+                        pOutput.accept(ModItems.WHITE_GRAPES.get());
 
 
                     })

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "gmm:block/hop_stage0"
+    },
+    "age=1": {
+      "model": "gmm:block/hop_stage1"
+    },
+    "age=2": {
+      "model": "gmm:block/hop_stage2"
+    },
+    "age=3": {
+      "model": "gmm:block/hop_stage3"
+    },
+    "age=4": {
+      "model": "gmm:block/hop_stage4"
+    },
+    "age=5": {
+      "model": "gmm:block/hop_stage5"
+    }
+  }
+}

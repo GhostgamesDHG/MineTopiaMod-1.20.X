@@ -45,6 +45,12 @@ public class ModFood {
     public static final FoodProperties CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
     public static final FoodProperties APFELSTRUDEL = new FoodProperties.Builder().nutrition(5).saturationMod(1.2f).build();
     public static final FoodProperties BITTERBALLEN = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
+    public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
+    public static final FoodProperties LETTUCE = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
+    public static final FoodProperties PAPRIKA = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
+    public static final FoodProperties PEPPER = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200, 2),1f).build();
+    public static final FoodProperties TOMATO = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
+    public static final FoodProperties WHITE_GRAPES = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
 
     //DRUG
     public static final FoodProperties WEED = new FoodProperties.Builder().nutrition(2)

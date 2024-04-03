@@ -3,6 +3,7 @@ package com.armedendmion.minetopiamod.init;
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.items.MoneyTooltip;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -169,9 +170,28 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> CHOCOLATE_BAR = ITEMS.register("chocolate_bar", () -> new Item(new Item.Properties().food(ModFood.CHOCOLATE_BAR)));
     public static final RegistryObject<Item> APFELSTRUDEL = ITEMS.register("apfelstrudel", () -> new Item(new Item.Properties().food(ModFood.APFELSTRUDEL)));
     public static final RegistryObject<Item> BITTERBALLEN = ITEMS.register("bitterballen", () -> new Item(new Item.Properties().food(ModFood.BITTERBALLEN)));
+    public static final RegistryObject<Item> CORN = ITEMS.register("corn", () -> new Item(new Item.Properties().food(ModFood.CORN)));
+    public static final RegistryObject<Item> LETTUCE = ITEMS.register("lettuce", () -> new Item(new Item.Properties().food(ModFood.LETTUCE)));
+    public static final RegistryObject<Item> PAPRIKA = ITEMS.register("paprika", () -> new Item(new Item.Properties().food(ModFood.PAPRIKA)));
+    public static final RegistryObject<Item> PEPPER = ITEMS.register("pepper", () -> new Item(new Item.Properties().food(ModFood.PEPPER)));
+    public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new Item(new Item.Properties().food(ModFood.TOMATO)));
+    public static final RegistryObject<Item> WHITE_GRAPES = ITEMS.register("white_grapes", () -> new Item(new Item.Properties().food(ModFood.WHITE_GRAPES)));
 
 //HATS
     public static final RegistryObject<Item> DEMON_RED_HORNS = ITEMS.register("demon_red_horns", () -> new Item(new Item.Properties()));
+
+    //SEEDS
+    public static final RegistryObject<Item> CORN_SEEDS = ITEMS.register("corn_seeds", () -> new ItemNameBlockItem(ModBlocks.CORN_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> GRAPES_SEEDS = ITEMS.register("grapes_seeds", () -> new ItemNameBlockItem(ModBlocks.GRAPES_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_GRAPES_SEEDS = ITEMS.register("white_grapes_seeds", () -> new ItemNameBlockItem(ModBlocks.WHITE_GRAPES_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> RED_GRAPES_SEEDS = ITEMS.register("red_grapes_seeds", () -> new ItemNameBlockItem(ModBlocks.RED_GRAPES_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> HOP_SEEDS = ITEMS.register("hop_seeds", () -> new ItemNameBlockItem(ModBlocks.HOP_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> LETTUCE_SEEDS = ITEMS.register("lettuce_seeds", () -> new ItemNameBlockItem(ModBlocks.LETTUCE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PAPRIKA_SEEDS = ITEMS.register("paprika_seeds", () -> new ItemNameBlockItem(ModBlocks.PAPRIKA_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PEPPER_SEEDS = ITEMS.register("pepper_seeds", () -> new ItemNameBlockItem(ModBlocks.PEPPER_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> PINEAPPLE_SEEDS = ITEMS.register("pineapple_seeds", () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds", () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds", () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
 
 
 
