@@ -19,7 +19,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.IPlantable;
 
-public class CornBlock extends CropBlock {
+public class WeedBlock extends CropBlock {
     public static final int FIRST_STAGE_MAX_AGE = 7;
     public static final int SECOND_STAGE_MAX_AGE = 1;
 
@@ -37,7 +37,7 @@ public class CornBlock extends CropBlock {
 
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 8);
 
-    public CornBlock(Properties pProperties) {
+    public WeedBlock(Properties pProperties) {
         super(pProperties);
     }
 
@@ -48,7 +48,7 @@ public class CornBlock extends CropBlock {
 
     public void randomTick(BlockState pState, ServerLevel pLevel, BlockPos pPos, RandomSource pRandom) {
     if (!pLevel.isAreaLoaded(pPos,1)) return;;
-    if (pLevel.getRawBrightness(pPos, 0) >= 12) { //is brightness 9 or above
+    if (pLevel.getRawBrightness(pPos, 0) >= 9) { //is brightness 9 or above
         int currentAge = this.getAge(pState);
 
         if (currentAge < this.getMaxAge()) {
@@ -75,6 +75,11 @@ public class CornBlock extends CropBlock {
     }
 
     @Override
+    public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient) {
+        return false;
+    }
+
+    @Override
     public boolean canSurvive(BlockState pState, LevelReader pLevel, BlockPos pPos) {
         return super.canSurvive(pState, pLevel, pPos) || (pLevel.getBlockState(pPos.below(1)).is(this) &&
                 pLevel.getBlockState(pPos.below(1)).getValue(AGE) == 7);
@@ -96,13 +101,18 @@ public class CornBlock extends CropBlock {
     }
 
     @Override
+    protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
+        return pState.is(Blocks.PODZOL);
+    }
+
+    @Override
     public int getMaxAge() {
         return FIRST_STAGE_MAX_AGE + SECOND_STAGE_MAX_AGE;
     }
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.CORN_SEEDS.get();
+        return ModItems.WEED_SEEDS.get();
     }
 
     @Override

@@ -180,6 +180,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PEPPER.get());
                         pOutput.accept(ModItems.TOMATO.get());
                         pOutput.accept(ModItems.WHITE_GRAPES.get());
+                        pOutput.accept(ModItems.WEED.get());
+                        pOutput.accept(ModItems.PURPLE_WEED.get());
+                        pOutput.accept(ModItems.UNICORNFLESH.get());
+                        pOutput.accept(ModItems.DRAGONFLESH.get());
+                        pOutput.accept(ModItems.COCAINE.get());
 
 
                     })
@@ -253,11 +258,66 @@ public class ModCreativeModeTabs {
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_TOOLS = CREATIVE_MODE_TABS.register("minetopia_tools",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(Items.AIR))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLUE_CRYSTAL_SWORD.get()))
                     .title(Component.translatable("creativetab.minetopia_tools"))
                     .displayItems((pParameters, pOutput) -> {
 
-                        pOutput.accept(Items.DIAMOND_BLOCK); //puts a diamond in the tab
+                        pOutput.accept(ModItems.BLUE_CRYSTAL_SWORD.get());
+                        pOutput.accept(ModItems.BLUE_CRYSTAL_HOE.get());
+                        pOutput.accept(ModItems.BLUE_CRYSTAL_AXE.get());
+                        pOutput.accept(ModItems.BLUE_CRYSTAL_PICKAXE.get());
+                        pOutput.accept(ModItems.BLUE_CRYSTAL_SHOVEL.get());
+                        pOutput.accept(ModItems.SWORD_BLUE.get());
+                        pOutput.accept(ModItems.SWORD_GOLD.get());
+                        pOutput.accept(ModItems.SWORD_GREEN.get());
+                        pOutput.accept(ModItems.SWORD_PINK.get());
+                        pOutput.accept(ModItems.CHRISTMAS_AXE.get());
+                        pOutput.accept(ModItems.COPPER_AXE.get());
+                        pOutput.accept(ModItems.COPPER_PICKAXE.get());
+                        pOutput.accept(ModItems.EMERALD_AXE.get());
+                        pOutput.accept(ModItems.EMERALD_PICKAXE.get());
+                        pOutput.accept(ModItems.LAPIS_AXE.get());
+                        pOutput.accept(ModItems.LAVA_PICKAXE.get());
+                        pOutput.accept(ModItems.MAGMA_AXE.get());
+                        pOutput.accept(ModItems.MAGMA_PICKAXE.get());
+                        pOutput.accept(ModItems.OBSIDIAN_AXE.get());
+                        pOutput.accept(ModItems.OBSIDIAN_PICKAXE.get());
+                        pOutput.accept(ModItems.REDSTONE_AXE.get());
+                        pOutput.accept(ModItems.CLASSIC_KNIFE.get());
+                        pOutput.accept(ModItems.WHITE_KNIFE.get());
+                        pOutput.accept(ModItems.PINK_KNIFE.get());
+                        pOutput.accept(ModItems.PURPLE_KNIFE.get());
+                        pOutput.accept(ModItems.RAINBOW_KNIFE.get());
+                        pOutput.accept(ModItems.WAPENSTOK.get());
+                        pOutput.accept(ModItems.WAPENSTOK_DIAMOND.get());
+                        pOutput.accept(ModItems.WAPENSTOK_EMERALD.get());
+                        pOutput.accept(ModItems.WAPENSTOK_GOLD.get());
+                        pOutput.accept(ModItems.WAPENSTOK_IRON.get());
+                        pOutput.accept(ModItems.WAPENSTOK_REDSTONE.get());
+                        pOutput.accept(ModItems.TASER.get());
+                        pOutput.accept(ModItems.BAT.get());
+                        pOutput.accept(ModItems.BAT_DIAMOND.get());
+                        pOutput.accept(ModItems.BAT_EMERALD.get());
+                        pOutput.accept(ModItems.BAT_GOLD.get());
+                        pOutput.accept(ModItems.BAT_GRAY.get());
+                        pOutput.accept(ModItems.BAT_REDSTONE.get());
+                        pOutput.accept(ModItems.BAT_IRON.get());
+                        pOutput.accept(ModItems.LIGHTSABER_BLUE.get());
+                        pOutput.accept(ModItems.LIGHTSABER_GREEN.get());
+                        pOutput.accept(ModItems.LIGHTSABER_PURPLE.get());
+                        pOutput.accept(ModItems.LIGHTSABER_RED.get());
+                        pOutput.accept(ModItems.LIGHTSABER_YELLOW.get());
+                        pOutput.accept(ModItems.SCYTHE.get());
+                        pOutput.accept(ModItems.CACTUS_PICKAXE.get());
+                        pOutput.accept(ModItems.RED_KNIFE.get());
+                        pOutput.accept(ModItems.DARK_PRISMARINE_PICKAXE.get());
+                        pOutput.accept(ModItems.MONDRIAAN_PICKAXE.get());
+                        pOutput.accept(ModItems.MORGANITE_PICKAXE.get());
+                        pOutput.accept(ModItems.NETHERPORTAL_PICKAXE.get());
+                        pOutput.accept(ModItems.RUBY_PICKAXE.get());
+                        pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        pOutput.accept(ModItems.WATER_PICKAXE.get());
+                        pOutput.accept(ModItems.SILVER_PICKAXE.get());
 
                     })
                     .build());

@@ -224,5 +224,16 @@
   "item.gmm.red_grapes_seeds": "Red grapes seeds",
   "item.gmm.white_grapes_seeds": "white grapes seeds",
   "item.gmm.strawberry_seeds": "Strawberry seeds",
-  "item.gmm.tomato_seeds": "Tomato seeds"
+  "item.gmm.tomato_seeds": "Tomato seeds",
+  "item.gmm.weed_seeds": "Weed seeds",
+  "item.gmm.weed": "Weed",
+  "item.gmm.purple_weed": "Purple weed",
+  "item.gmm.dragonflesh": "Dragonflesh",
+  "item.gmm.unicornflesh": "Unicornflesh",
+  "item.gmm.blue_crystal_sword": "Blue crystal sword",
+  "item.gmm.blue_crystal_axe": "Blue crystal axe",
+  "item.gmm.blue_crystal_pickaxe": "Blue crystal pickaxe",
+  "item.gmm.blue_crystal_hoe": "Blue crystal hoe",
+  "item.gmm.blue_crystal_shovel": "Blue crystal shovel",
+  "item.gmm.cocain": "Cocaine"
 }

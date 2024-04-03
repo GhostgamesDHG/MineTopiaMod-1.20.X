@@ -2,8 +2,7 @@ package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.items.MoneyTooltip;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -176,6 +175,11 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> PEPPER = ITEMS.register("pepper", () -> new Item(new Item.Properties().food(ModFood.PEPPER)));
     public static final RegistryObject<Item> TOMATO = ITEMS.register("tomato", () -> new Item(new Item.Properties().food(ModFood.TOMATO)));
     public static final RegistryObject<Item> WHITE_GRAPES = ITEMS.register("white_grapes", () -> new Item(new Item.Properties().food(ModFood.WHITE_GRAPES)));
+    public static final RegistryObject<Item> WEED = ITEMS.register("weed", () -> new Item(new Item.Properties().food(ModFood.WEED)));
+    public static final RegistryObject<Item> PURPLE_WEED = ITEMS.register("purple_weed", () -> new Item(new Item.Properties().food(ModFood.PURPLE_WEED)));
+    public static final RegistryObject<Item> DRAGONFLESH = ITEMS.register("dragonflesh", () -> new Item(new Item.Properties().food(ModFood.DRAGONFLESH)));
+    public static final RegistryObject<Item> UNICORNFLESH = ITEMS.register("unicornflesh", () -> new Item(new Item.Properties().food(ModFood.UNICORNFLESH)));
+    public static final RegistryObject<Item> COCAINE = ITEMS.register("cocaine", () -> new Item(new Item.Properties().food(ModFood.COCAINE)));
 
 //HATS
     public static final RegistryObject<Item> DEMON_RED_HORNS = ITEMS.register("demon_red_horns", () -> new Item(new Item.Properties()));
@@ -192,9 +196,65 @@ public static final DeferredRegister<Item> ITEMS =
     public static final RegistryObject<Item> PINEAPPLE_SEEDS = ITEMS.register("pineapple_seeds", () -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> TOMATO_SEEDS = ITEMS.register("tomato_seeds", () -> new ItemNameBlockItem(ModBlocks.TOMATO_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> STRAWBERRY_SEEDS = ITEMS.register("strawberry_seeds", () -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> WEED_SEEDS = ITEMS.register("weed_seeds", () -> new ItemNameBlockItem(ModBlocks.WEED_CROP.get(), new Item.Properties()));
 
-
-
+//TOOLS
+    public static final RegistryObject<Item> BLUE_CRYSTAL_SWORD = ITEMS.register("blue_crystal_sword", () -> new SwordItem(ModToolTiers.BLUE_CRYSTAL, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_CRYSTAL_AXE = ITEMS.register("blue_crystal_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_CRYSTAL_PICKAXE = ITEMS.register("blue_crystal_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 2, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_CRYSTAL_HOE = ITEMS.register("blue_crystal_hoe", () -> new HoeItem(ModToolTiers.BLUE_CRYSTAL, 0, 2, new Item.Properties()));
+    public static final RegistryObject<Item> BLUE_CRYSTAL_SHOVEL = ITEMS.register("blue_crystal_shovel", () -> new ShovelItem(ModToolTiers.BLUE_CRYSTAL, 0, 2, new Item.Properties()));
+    public static final RegistryObject<Item> SWORD_BLUE = ITEMS.register("sword_blue", () -> new SwordItem(ModToolTiers.BLUE_CRYSTAL, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> SWORD_GREEN = ITEMS.register("sword_green", () -> new SwordItem(ModToolTiers.BLUE_CRYSTAL, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> SWORD_GOLD = ITEMS.register("sword_gold", () -> new SwordItem(ModToolTiers.BLUE_CRYSTAL, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> SWORD_PINK = ITEMS.register("sword_pink", () -> new SwordItem(ModToolTiers.BLUE_CRYSTAL, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> CHRISTMAS_AXE = ITEMS.register("christmas_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_AXE = ITEMS.register("copper_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_AXE = ITEMS.register("emerald_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> LAPIS_AXE = ITEMS.register("lapis_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> MAGMA_AXE = ITEMS.register("magma_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> OBSIDIAN_AXE = ITEMS.register("obsidian_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> REDSTONE_AXE = ITEMS.register("redstone_axe", () -> new AxeItem(ModToolTiers.BLUE_CRYSTAL, 6, 2, new Item.Properties()));
+    public static final RegistryObject<Item> CLASSIC_KNIFE = ITEMS.register("classic_knife", () -> new SwordItem(ModToolTiers.MES, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> WHITE_KNIFE = ITEMS.register("white_knife", () -> new SwordItem(ModToolTiers.MES, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> RED_KNIFE = ITEMS.register("red_knife", () -> new SwordItem(ModToolTiers.MES, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> PINK_KNIFE = ITEMS.register("pink_knife", () -> new SwordItem(ModToolTiers.MES, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> PURPLE_KNIFE = ITEMS.register("purple_knife", () -> new SwordItem(ModToolTiers.MES, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> RAINBOW_KNIFE = ITEMS.register("rainbow_knife", () -> new SwordItem(ModToolTiers.MES, 4, 2, new Item.Properties()));
+    public static final RegistryObject<Item> WAPENSTOK = ITEMS.register("wapenstok", () -> new SwordItem(ModToolTiers.WAPENSTOK, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> WAPENSTOK_DIAMOND = ITEMS.register("wapenstok_diamond", () -> new SwordItem(ModToolTiers.WAPENSTOK, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> WAPENSTOK_GOLD = ITEMS.register("wapenstok_gold", () -> new SwordItem(ModToolTiers.WAPENSTOK, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> WAPENSTOK_EMERALD = ITEMS.register("wapenstok_emerald", () -> new SwordItem(ModToolTiers.WAPENSTOK, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> WAPENSTOK_IRON = ITEMS.register("wapenstok_iron", () -> new SwordItem(ModToolTiers.WAPENSTOK, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> WAPENSTOK_REDSTONE = ITEMS.register("wapenstok_redstone", () -> new SwordItem(ModToolTiers.WAPENSTOK, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> TASER = ITEMS.register("taser", () -> new SwordItem(ModToolTiers.TASER, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT = ITEMS.register("bat", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT_DIAMOND = ITEMS.register("bat_diamond", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT_GOLD = ITEMS.register("bat_gold", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT_EMERALD = ITEMS.register("bat_emerald", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT_IRON = ITEMS.register("bat_iron", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT_REDSTONE = ITEMS.register("bat_redstone", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> BAT_GRAY = ITEMS.register("bat_gray", () -> new SwordItem(ModToolTiers.BAT, 0, 10, new Item.Properties()));
+    public static final RegistryObject<Item> LIGHTSABER_BLUE = ITEMS.register("lightsaber_blue", () -> new SwordItem(ModToolTiers.LIGHTSABER, 1, 10, new Item.Properties()));
+    public static final RegistryObject<Item> LIGHTSABER_GREEN = ITEMS.register("lightsaber_green", () -> new SwordItem(ModToolTiers.LIGHTSABER, 1, 10, new Item.Properties()));
+    public static final RegistryObject<Item> LIGHTSABER_PURPLE = ITEMS.register("lightsaber_purple", () -> new SwordItem(ModToolTiers.LIGHTSABER, 1, 10, new Item.Properties()));
+    public static final RegistryObject<Item> LIGHTSABER_RED = ITEMS.register("lightsaber_red", () -> new SwordItem(ModToolTiers.LIGHTSABER, 1, 10, new Item.Properties()));
+    public static final RegistryObject<Item> LIGHTSABER_YELLOW = ITEMS.register("lightsaber_yellow", () -> new SwordItem(ModToolTiers.LIGHTSABER, 1, 10, new Item.Properties()));
+    public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", () -> new SwordItem(ModToolTiers.SCYTHE, 4, 3, new Item.Properties()));
+    public static final RegistryObject<Item> CACTUS_PICKAXE = ITEMS.register("cactus_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> DARK_PRISMARINE_PICKAXE = ITEMS.register("dark_prismarine_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> LAVA_PICKAXE = ITEMS.register("lava_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> MONDRIAAN_PICKAXE = ITEMS.register("mondriaan_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> MORGANITE_PICKAXE = ITEMS.register("morganite_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> NETHERPORTAL_PICKAXE = ITEMS.register("netherportal_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> SILVER_PICKAXE = ITEMS.register("silver_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> WATER_PICKAXE = ITEMS.register("water_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> MAGMA_PICKAXE = ITEMS.register("magma_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> OBSIDIAN_PICKAXE = ITEMS.register("obsidian_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_PICKAXE = ITEMS.register("emerald_pickaxe", () -> new PickaxeItem(ModToolTiers.BLUE_CRYSTAL, 0, 1, new Item.Properties()));
 
 
 public static void register(IEventBus eventbus) {

@@ -22,5 +22,9 @@ public class GmmcommandProcedure {
 			_player.displayClientMessage(Component.literal("\u00A7a/name - Set a custom item name"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7a/ledpanel - Control the led panels"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7a/fix - Fixes durability of item in hand"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7a/i - Shortened version of give command"), false);
 	}
 }
