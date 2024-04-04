@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/bat",
+	"textures": {
+		"texture": "minecraft:block/diamond_block",
+		"particle": "minecraft:block/diamond_block"
+	}
+}

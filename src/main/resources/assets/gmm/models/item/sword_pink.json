@@ -1,0 +1,10 @@
+{
+	"parent": "gmm:item/sword_blue",
+	"textures": {
+		"particle": "minecraft:block/pink_concrete",
+		"grijs": "minecraft:block/pink_concrete",
+		"zwart": "minecraft:block/black_concrete",
+		"groen": "minecraft:block/pink_concrete",
+		"oranje": "minecraft:block/pink_concrete"
+	}
+}

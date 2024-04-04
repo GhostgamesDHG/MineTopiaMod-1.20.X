@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/bat",
+	"textures": {
+		"texture": "minecraft:block/light_gray_concrete",
+		"particle": "minecraft:block/light_gray_concrete"
+	}
+}

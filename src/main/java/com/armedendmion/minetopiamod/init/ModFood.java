@@ -4,53 +4,32 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 public class ModFood {
-    public static final FoodProperties BANANA = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties STRAWBERRY = new FoodProperties.Builder().nutrition(3).saturationMod(1.2f).build();
-    public static final FoodProperties HAMBURGER = new FoodProperties.Builder().nutrition(10).saturationMod(1.2f).build();
-    public static final FoodProperties SANDWICH = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties PINEAPPLE = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties BACON = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties COOKED_BACON = new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).build();
-    public static final FoodProperties CHICKEN = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties COOKED_CHICKEN = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties HOTDOG = new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).build();
-    public static final FoodProperties ICE_CREAM = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties CODFISH = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties FRIES = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties PIZZA = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties CHICKEN_BUCKET = new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).build();
-    public static final FoodProperties FRUIT_SKEWER = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties SUSHI = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties SUSHI_PACKAGE = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties MUFFIN = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties VANILLA_MUFFIN = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties CHOCOLATE_MUFFIN = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties JELLYBEANS = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties CANDY_CANE = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties DOUBLE_SUSHI_PACKAGE = new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).build();
-    public static final FoodProperties CUPCAKE = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties CHEESE = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties GRAPES = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties RED_GRAPES = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties HOP = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties CHIPS_NATURAL = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties DONUT_BLUEBERRIES = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties DONUT_CHOCOLATE = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties DONUT_HALLOWEEN = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties DONUT_STRAWBERRY = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties DONUT_CHRISTMAS = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties DONUT_WHITE = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
-    public static final FoodProperties STRAWBERRY_ICECREAM = new FoodProperties.Builder().nutrition(3).saturationMod(1.2f).build();
-    public static final FoodProperties CHOCOLATE_LETTER = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties CHOCOLATE_BAR = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties APFELSTRUDEL = new FoodProperties.Builder().nutrition(5).saturationMod(1.2f).build();
-    public static final FoodProperties BITTERBALLEN = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
-    public static final FoodProperties CORN = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties LETTUCE = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties PAPRIKA = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties PEPPER = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200, 2),1f).build();
-    public static final FoodProperties TOMATO = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
-    public static final FoodProperties WHITE_GRAPES = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
+    public static final FoodProperties ONEHUNGER = new FoodProperties.Builder().nutrition(1).saturationMod(1.2f).build();
+    public static final FoodProperties TWOHUNGER = new FoodProperties.Builder().nutrition(2).saturationMod(1.2f).build();
+    public static final FoodProperties THREEHUNGER = new FoodProperties.Builder().nutrition(3).saturationMod(1.2f).build();
+    public static final FoodProperties FOURHUNGER = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f).build();
+    public static final FoodProperties FIVEHUNGER = new FoodProperties.Builder().nutrition(5).saturationMod(1.2f).build();
+    public static final FoodProperties SIXHUNGER = new FoodProperties.Builder().nutrition(6).saturationMod(1.2f).build();
+    public static final FoodProperties SEVENHUNGER = new FoodProperties.Builder().nutrition(7).saturationMod(1.2f).build();
+    public static final FoodProperties EIGHTHUNGER = new FoodProperties.Builder().nutrition(8).saturationMod(1.2f).build();
+    public static final FoodProperties NINEHUNGER = new FoodProperties.Builder().nutrition(9).saturationMod(1.2f).build();
+    public static final FoodProperties TENHUNGER = new FoodProperties.Builder().nutrition(10).saturationMod(1.2f).build();
+
+    public static final FoodProperties PEPPER = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED,200, 2),1f).build();
+
+    public static final FoodProperties BROODJE_GEZOND = new FoodProperties.Builder().nutrition(4).saturationMod(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION,5*20, 1),0.5f).build();
+
+    public static final FoodProperties GELUKSKOEKJE = new FoodProperties.Builder().nutrition(5).saturationMod(1.2f)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK,40*20, 1),1f)
+            .effect(() -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE,20*20, 1),0.05f)
+            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE,30*20, 1),0.05f)
+            .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION,30*20, 1),0.05f)
+            .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST,15*20, 1),0.05f)
+            .effect(() -> new MobEffectInstance(MobEffects.CONDUIT_POWER,10*20, 1),0.05f)
+            .effect(() -> new MobEffectInstance(MobEffects.JUMP,15*20, 1),0.05f)
+            .effect(() -> new MobEffectInstance(MobEffects.DIG_SPEED,15*20, 1),0.05f).build();
 
     //DRUG
     public static final FoodProperties WEED = new FoodProperties.Builder().nutrition(2)

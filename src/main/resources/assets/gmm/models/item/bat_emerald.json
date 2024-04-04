@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/bat",
+	"textures": {
+		"texture": "minecraft:block/emerald_block",
+		"particle": "minecraft:block/emerald_block"
+	}
+}

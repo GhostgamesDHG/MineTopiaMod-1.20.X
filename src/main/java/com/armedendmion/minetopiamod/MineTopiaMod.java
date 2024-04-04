@@ -45,7 +45,6 @@ public class MineTopiaMod
     //    ModSoundEvents.register(bus);
         ModItems.register(bus);
     //    ModArmor.ITEMS.register(bus);
-    //    ModTools.ITEMS.register(bus);
     //    ModPaintings.PAINTING_TYPES.register(bus);
         bus.addListener(this::commonSetup);
 
