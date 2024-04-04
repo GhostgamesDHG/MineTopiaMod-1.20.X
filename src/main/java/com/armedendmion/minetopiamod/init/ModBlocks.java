@@ -5,10 +5,9 @@ import com.armedendmion.minetopiamod.blocks.*;
 import com.armedendmion.minetopiamod.blocks.crops.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -141,18 +140,18 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> CONTROLLER = registerBlock("controller", Pumpkin::new);
 
     //HALLOWEEN
- //   public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", sitting_skeleton::new);
- //   public static final RegistryObject<Block> MONSTERBOOK = registerBlock("monsterbook", Monsterbook::new);
- //   public static final RegistryObject<Block> CLEAVER = registerBlock("cleaver", Cleaver::new);
- //   public static final RegistryObject<Block> RAT = registerBlock("rat", Rat::new);
- //   public static final RegistryObject<Block> ZOMBIE_ARM = registerBlock("zombie_arm", Zombie_arm::new);
- //   public static final RegistryObject<Block> MINI_SPIDER = registerBlock("mini_spider", Mini_Spider::new);
-    //  public static final RegistryObject<Block> GHOST = registerBlock("ghost", ghost::new);
-    //   public static final RegistryObject<Block> GRAVE = registerBlock("grave", Grave::new);
-    //   public static final RegistryObject<Block> PUMPKIN_CABINET = registerBlock("pumpkin_cabinet", Pumpkin_cabinet::new);
-    //   public static final RegistryObject<Block> PUMPKINS = registerBlock("pumpkins", pumpkins::new);
-    //   public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow", Scarecrow::new);
-    //   public static final RegistryObject<Block> TOMB = registerBlock("tomb", Tomb::new);
+    public static final RegistryObject<Block> SITTING_SKELETON = registerBlock("sitting_skeleton", Sitting_skeleton::new);
+    public static final RegistryObject<Block> MONSTERBOOK = registerBlock("monsterbook", Monsterbook::new);
+    public static final RegistryObject<Block> CLEAVER = registerBlock("cleaver", Cleaver::new);
+    public static final RegistryObject<Block> RAT = registerBlock("rat", Rat::new);
+    public static final RegistryObject<Block> ZOMBIE_ARM = registerBlock("zombie_arm", Zombie_arm::new);
+    public static final RegistryObject<Block> MINI_SPIDER = registerBlock("mini_spider", Mini_spider::new);
+    public static final RegistryObject<Block> GHOST = registerBlock("ghost", ghost::new);
+    public static final RegistryObject<Block> GRAVE = registerBlock("grave", Grave::new);
+    public static final RegistryObject<Block> PUMPKIN_CABINET = registerBlock("pumpkin_cabinet", Pumpkin_cabinet::new);
+    public static final RegistryObject<Block> PUMPKINS = registerBlock("pumpkins", pumpkins::new);
+    public static final RegistryObject<Block> SCARECROW = registerBlock("scarecrow", Scarecrow::new);
+    public static final RegistryObject<Block> TOMB = registerBlock("tomb", Tomb::new);
 
 //STILL ON THE TO-DO LIST
     //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
@@ -177,6 +176,19 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> STRAWBERRY_CROP = BLOCKS.register("strawberry_crop", () -> new StrawberryBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop", () -> new TomatoBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> WEED_CROP = BLOCKS.register("weed_crop", () -> new WeedBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+
+    //DOORS,STAIRS,SLABS
+    public static final RegistryObject<Block> WHITE_BRICK_STAIRS = registerBlock("white_brick_stairs", () -> new StairBlock(() -> ModBlocks.WHITE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> WHITE_BRICK_SLAB = registerBlock("white_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> BLACK_BRICK_STAIRS = registerBlock("black_brick_stairs", () -> new StairBlock(() -> ModBlocks.BLACK_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> BLACK_BRICK_SLAB = registerBlock("black_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
+    public static final RegistryObject<Block> BUNKER_DOOR = registerBlock("bunker_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), BlockSetType.IRON));
+    public static final RegistryObject<Block> WOODEN_DOOR = registerBlock("wooden_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), BlockSetType.BAMBOO));
+    public static final RegistryObject<Block> RICH_QUARTZ_DOOR = registerBlock("rich_quartz_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK), BlockSetType.STONE));
+    public static final RegistryObject<Block> STEEL_DOOR = registerBlock("steel_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), BlockSetType.IRON));
+    public static final RegistryObject<Block>  QUARTZ_DOOR = registerBlock("quartz_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK), BlockSetType.STONE));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

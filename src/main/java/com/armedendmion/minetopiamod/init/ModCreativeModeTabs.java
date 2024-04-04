@@ -253,6 +253,27 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.BROWN_CABINET.get());
                         pOutput.accept(ModBlocks.WHITE_BAG.get());
                         pOutput.accept(ModBlocks.LED_PANEL.get());
+                        pOutput.accept(ModBlocks.SITTING_SKELETON.get());
+                        pOutput.accept(ModBlocks.MONSTERBOOK.get());
+                        pOutput.accept(ModBlocks.CLEAVER.get());
+                        pOutput.accept(ModBlocks.RAT.get());
+                        pOutput.accept(ModBlocks.ZOMBIE_ARM.get());
+                        pOutput.accept(ModBlocks.MINI_SPIDER.get());
+                        pOutput.accept(ModBlocks.GHOST.get());
+                        pOutput.accept(ModBlocks.GRAVE.get());
+                        pOutput.accept(ModBlocks.PUMPKIN_CABINET.get());
+                        pOutput.accept(ModBlocks.PUMPKINS.get());
+                        pOutput.accept(ModBlocks.SCARECROW.get());
+                        pOutput.accept(ModBlocks.WHITE_BRICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.WHITE_BRICK_SLAB.get());
+                        pOutput.accept(ModBlocks.BLACK_BRICK_STAIRS.get());
+                        pOutput.accept(ModBlocks.BLACK_BRICK_SLAB.get());
+                        pOutput.accept(ModBlocks.BUNKER_DOOR.get());
+                        pOutput.accept(ModBlocks.WOODEN_DOOR.get());
+                        pOutput.accept(ModBlocks.RICH_QUARTZ_DOOR.get());
+                        pOutput.accept(ModBlocks.QUARTZ_DOOR.get());
+                        pOutput.accept(ModBlocks.STEEL_DOOR.get());
+                        pOutput.accept(ModBlocks.TOMB.get());
 
                     })
                     .build());

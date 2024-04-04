@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/cleaver" },
+    "facing=south": { "model": "gmm:block/cleaver", "y":  180},
+    "facing=west": { "model": "gmm:block/cleaver", "y":  270},
+    "facing=east": { "model": "gmm:block/cleaver", "y":  90}
+  }
+}

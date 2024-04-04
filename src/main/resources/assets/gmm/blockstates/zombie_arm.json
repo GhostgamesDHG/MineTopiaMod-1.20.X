@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/zombie_arm" },
+    "facing=south": { "model": "gmm:block/zombie_arm", "y":  180},
+    "facing=west": { "model": "gmm:block/zombie_arm", "y":  270},
+    "facing=east": { "model": "gmm:block/zombie_arm", "y":  90}
+  }
+}

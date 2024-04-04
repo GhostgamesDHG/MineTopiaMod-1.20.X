@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/mini_spider" },
+    "facing=south": { "model": "gmm:block/mini_spider", "y":  180},
+    "facing=west": { "model": "gmm:block/mini_spider", "y":  270},
+    "facing=east": { "model": "gmm:block/mini_spider", "y":  90}
+  }
+}
