@@ -16,7 +16,7 @@ If you want to play the new version you need to download the source code and bui
 * Add all the Dolls back
 * ~~Add functionallity~~
 * Add all the recipes PARTLY ACTIVE
-* Add all the loot tables
+* ~~Add all the loot tables~~
 * ~~Add commands~~
 * ~~Add all the textures~~
 * ~~Add all the commands~~
