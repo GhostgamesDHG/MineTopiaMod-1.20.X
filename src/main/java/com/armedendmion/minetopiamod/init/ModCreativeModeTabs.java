@@ -258,7 +258,7 @@ public class ModCreativeModeTabs {
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_TOOLS = CREATIVE_MODE_TABS.register("minetopia_tools",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BLUE_CRYSTAL_SWORD.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE_PICKAXE.get()))
                     .title(Component.translatable("creativetab.minetopia_tools"))
                     .displayItems((pParameters, pOutput) -> {
 
