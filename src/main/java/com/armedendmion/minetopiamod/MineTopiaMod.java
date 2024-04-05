@@ -38,7 +38,7 @@ public class MineTopiaMod
     public MineTopiaMod()
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModCreativeModeTabs.register(bus);
+        ModTabs.register(bus);
         ModBlocks.register(bus);
         ModMenu.REGISTRY.register(bus);
         BlockEntities.REGISTRY.register(bus);
