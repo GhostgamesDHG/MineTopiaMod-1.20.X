@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/duikbril_normaal",
+	"textures": {
+		"0": "gmm:item/duikbril_gold",
+		"particle": "gmm:item/duikbril_gold"
+	}
+}

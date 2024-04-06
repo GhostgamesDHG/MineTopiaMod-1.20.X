@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/headbag",
+	"textures": {
+		"0": "gmm:item/bizak_hoed_blij",
+		"particle": "gmm:item/bizak_hoed_blij"
+	}
+}

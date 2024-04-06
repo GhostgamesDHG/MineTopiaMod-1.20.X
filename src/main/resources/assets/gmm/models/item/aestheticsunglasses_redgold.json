@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/aestheticsunglasses_orangewhite",
+	"textures": {
+		"0": "gmm:item/aestheticsunglasses_redgold",
+		"particle": "gmm:item/aestheticsunglasses_redgold"
+	}
+}

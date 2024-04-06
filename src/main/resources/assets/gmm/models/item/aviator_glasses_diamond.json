@@ -1,0 +1,7 @@
+{
+    "parent": "gmm:item/aviator_glasses_gold",
+  	"textures": {
+  		"0": "gmm:item/aviator_bril4",
+  		"particle": "gmm:item/aviator_bril4"
+    }
+}

@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/umbrellahat_yellow",
+	"textures": {
+		"7": "minecraft:block/pink_concrete",
+		"particle": "minecraft:block/pink_concrete"
+	}
+}
