@@ -44,7 +44,7 @@ public class ModTabs {
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_DOLLS = MODE_TABS.register("minetopia_dolls",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HOTDOG.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.PAPEGAAIPOPPETJE.get()))
                     .title(Component.translatable("creativetab.minetopia_dolls"))
                     .displayItems((displayParameters, output) ->
                             MINETOPIA_DOLLS_TAB.forEach(itemLike -> output.accept(itemLike.get()))
@@ -52,7 +52,7 @@ public class ModTabs {
                     .build());
 
     public static final RegistryObject<CreativeModeTab> MINETOPIA_HATS = MODE_TABS.register("minetopia_hats",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.HOTDOG.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.BEERHEAD.get()))
                     .title(Component.translatable("creativetab.minetopia_hats"))
                     .displayItems((displayParameters, output) ->
                             MINETOPIA_HATS_TAB.forEach(itemLike -> output.accept(itemLike.get()))
@@ -100,7 +100,7 @@ public class ModTabs {
         return itemLike;
     }
 
-    public static <T extends Item> RegistryObject<T> AddToDollsTab(RegistryObject<T> itemLike) {
+    public static <T extends Item> RegistryObject<T> addToDollsTab(RegistryObject<T> itemLike) {
         MINETOPIA_DOLLS_TAB.add(itemLike);
         return itemLike;
     }

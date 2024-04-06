@@ -12,8 +12,8 @@ If you want to play the new version you need to download the source code and bui
 * ~~Add all the Items back~~
 * ~~Add all the food back~~
 * ~~Add all the tools back~~
-* Add all the hats back
-* Add all the Dolls back
+* Add all the hats back ONLY MODELS FILES NEEDS TO BE DONE
+* Add all the Dolls back ONLY MODELS FILES NEEDS TO BE DONE
 * ~~Add functionallity~~
 * Add all the recipes PARTLY ACTIVE
 * ~~Add all the loot tables~~
