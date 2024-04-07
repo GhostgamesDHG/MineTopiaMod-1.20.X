@@ -1,0 +1,7 @@
+{
+	"parent": "gmm:item/rozepet",
+	"textures": {
+		"texture": "minecraft:block/cauldron_inner",
+		"cap": "gmm:block/anvil_base"
+	}
+}

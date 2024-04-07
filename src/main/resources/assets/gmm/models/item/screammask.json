@@ -1,0 +1,6 @@
+{
+	"parent": "gmm:item/clownmask",
+	"textures": {
+		"1": "gmm:item/screammask"
+	}
+}
