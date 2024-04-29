@@ -9,10 +9,9 @@ The releases are on Modrinth and Curseforge.
 **Some ideas that I will work on**
 <!-- TOC -->
 * Fitness
-* Loan
-* ATM
+* Loan 90% DONE
+* ATM  80% DONE
 * Computer
-* Scoreboard (Can be toggled on and off)
 * More furniture
 * More clothes/armor than the previous version (Will be in a GUI I think)
 * And more.....
