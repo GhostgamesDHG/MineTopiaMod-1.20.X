@@ -91,6 +91,7 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> VENDINGMACHINE = ModTabs.addToBlocksTab(registerBlock("vendingmachine", VendingMachine::new));
     public static final RegistryObject<Block> VENDING_MACHINE_TOP = registerBlock("vending_machine_top", VendingMachineTopBlock::new);
     public static final RegistryObject<Block> FIRE_PIT = ModTabs.addToBlocksTab(registerBlock("fire_pit", Firepit::new));
+    public static final RegistryObject<Block> FIRE_PIT_LIT = registerBlock("fire_pit_lit", FirepitLit::new);
     public static final RegistryObject<Block> MONITOR = ModTabs.addToBlocksTab(registerBlock("monitor", Monitor::new));
     public static final RegistryObject<Block> ANTENNA = ModTabs.addToBlocksTab(registerBlock("antenna", Antenna::new));
     public static final RegistryObject<Block> GLOBE = ModTabs.addToBlocksTab(registerBlock("globe", Globe::new));
