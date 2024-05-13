@@ -17,6 +17,7 @@ import com.armedendmion.minetopiamod.gui.safe.SAFEINVENTORYMenu;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiMenu;
 import com.armedendmion.minetopiamod.gui.safe.SafeGuiSetPasswordMenu;
 import com.armedendmion.minetopiamod.gui.vendingmachine.VendingguiMenu;
+import com.armedendmion.minetopiamod.network.OilCanGUIMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.registries.DeferredRegister;
@@ -38,4 +39,5 @@ public static final RegistryObject<MenuType<VendingguiMenu>> VENDINGGUI = REGIST
 	public static final RegistryObject<MenuType<AtmguiMenu>> ATMGUI = REGISTRY.register("atmgui", () -> IForgeMenuType.create(AtmguiMenu::new));
 	public static final RegistryObject<MenuType<AtmdepositMenu>> ATMDEPOSIT = REGISTRY.register("atmdeposit", () -> IForgeMenuType.create(AtmdepositMenu::new));
 	public static final RegistryObject<MenuType<AtmwithdrawMenu>> ATMWITHDRAW = REGISTRY.register("atmwithdraw", () -> IForgeMenuType.create(AtmwithdrawMenu::new));
+	public static final RegistryObject<MenuType<OilCanGUIMenu>> OILCAN = REGISTRY.register("oilcan", () -> IForgeMenuType.create(OilCanGUIMenu::new));
 }

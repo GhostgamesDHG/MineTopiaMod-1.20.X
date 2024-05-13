@@ -8,7 +8,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 
-public class Antenna extends OilCan {
+public class Antenna extends DogCot {
 
     public Antenna() {
     }

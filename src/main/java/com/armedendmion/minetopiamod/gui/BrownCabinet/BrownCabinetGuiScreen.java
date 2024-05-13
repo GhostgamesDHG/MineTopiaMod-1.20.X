@@ -25,7 +25,7 @@ public class BrownCabinetGuiScreen extends AbstractContainerScreen<BrownCabinetG
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageHeight = 151;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("gmm:textures/screens/browncabinetgui.png");
@@ -42,7 +42,7 @@ public class BrownCabinetGuiScreen extends AbstractContainerScreen<BrownCabinetG
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 1, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 		RenderSystem.disableBlend();
 	}
 

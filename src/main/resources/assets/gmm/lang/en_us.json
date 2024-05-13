@@ -775,5 +775,6 @@
   "gui.gmm.atmwithdraw.button_100": "100",
   "gui.gmm.atmdeposit.button_1000": "1000",
   "gui.gmm.atmwithdraw.button_1000": "1000",
-  "gui.gmm.bag": "Bag"
+  "gui.gmm.bag": "Bag",
+  "gui.gmm.fluid_gui.label_tanks": "Oil Can"
 }

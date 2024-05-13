@@ -2,7 +2,7 @@ package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.blocks.blockentity.BrowncabinetBlockEntity;
-import com.armedendmion.minetopiamod.blocks.blockentity.OvenBlockEntity;
+import com.armedendmion.minetopiamod.blocks.blockentity.OilCanBlockEntity;
 import com.armedendmion.minetopiamod.blocks.blockentity.SafeBlockEntity;
 import com.armedendmion.minetopiamod.blocks.blockentity.bag.*;
 import net.minecraft.world.level.block.Block;
@@ -32,7 +32,7 @@ public class BlockEntities {
     public static final RegistryObject<BlockEntityType<?>> BROWN_BAG = register("brown_bag", ModBlocks.BROWN_BAG, BrownBagBlockEntity::new);
     public static final RegistryObject<BlockEntityType<?>> RED_BAG = register("red_bag", ModBlocks.RED_BAG, RedBagBlockEntity::new);
     public static final RegistryObject<BlockEntityType<?>> BLACK_BAG = register("black_bag", ModBlocks.BLACK_BAG, BlackBagBlockEntity::new);
-    public static final RegistryObject<BlockEntityType<?>> OVEN = register("oven", ModBlocks.OVEN, OvenBlockEntity::new);
+    public static final RegistryObject<BlockEntityType<?>> OILCAN = register("oilcan", ModBlocks.OIL_CAN, OilCanBlockEntity::new);
 
     private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
         return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
