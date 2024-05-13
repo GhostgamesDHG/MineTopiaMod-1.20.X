@@ -2,24 +2,28 @@
 These are the files of the new MineTopia Mod :)
 If there is an issue report it to the issue page.
 
-The Mod is currently in a very early stage. You can play this mod already in an older minecraft version. 
+This is still a work in progress, but we are getting there slowly
 
-If you want to play the new version you need to download the source code and build the jar yourself. There will also be jar files here, but they are not updated very often.
+The releases are on Modrinth and Curseforge.
+
+**Some ideas that I will work on**
+<!-- TOC -->
+* Fitness
+* Loan 90% DONE
+* ATM  80% DONE
+* Computer
+* More furniture
+* More clothes/armor than the previous version (Will be in a GUI I think)
+* And more.....
+<!-- TOC -->
+
+
 
 **These thing need to be done**
 <!-- TOC -->
-* ~~Add all the blocks back~~
-* ~~Add all the Items back~~
-* ~~Add all the food back~~
-* ~~Add all the tools back~~
-* Add all the hats back ONLY MODELS FILES NEEDS TO BE DONE
-* Add all the Dolls back ONLY MODELS FILES NEEDS TO BE DONE
-* ~~Add functionallity~~
 * Add all the recipes PARTLY ACTIVE
-* ~~Add all the loot tables~~
-* ~~Add commands~~
-* ~~Add all the textures~~
-* ~~Add all the commands~~
+* Add 3 blocks back from the previous version.
+* Add the clothes back
 * _The safe block needs a rewrite. You cannot set a password if you are playing on a server_
 <!-- TOC -->
 Some Items have been removed because they are useless.
