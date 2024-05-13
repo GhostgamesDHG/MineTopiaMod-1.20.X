@@ -25,7 +25,7 @@ public class BagGuiScreen extends AbstractContainerScreen<BagGuiMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageHeight = 155;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("gmm:textures/screens/suitcase_gui.png");
@@ -62,6 +62,7 @@ public class BagGuiScreen extends AbstractContainerScreen<BagGuiMenu> {
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font, Component.translatable("gui.gmm.bag"), 6, 1, -1, false);
 	}
 
 	@Override

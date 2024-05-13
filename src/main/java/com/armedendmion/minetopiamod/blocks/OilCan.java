@@ -33,8 +33,7 @@ public class OilCan extends Block {
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-        state.getValue(FACING);
+    public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {state.getValue(FACING);
         return Shapes.or(
                 box(0, 1, 0, 16, 18, 16));
 

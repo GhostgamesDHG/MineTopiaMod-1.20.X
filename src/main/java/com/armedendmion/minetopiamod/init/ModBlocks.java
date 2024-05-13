@@ -7,7 +7,9 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -15,6 +17,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 public static final DeferredRegister<Block> BLOCKS =
@@ -155,7 +158,7 @@ public static final DeferredRegister<Block> BLOCKS =
 
 //STILL ON THE TO-DO LIST
     //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
-//   public static final RegistryObject<Block> OVEN = registerBlock("oven", () -> new Oven(AbstractBlock.Properties.create(Material.ROCK).setRequiresTool().hardnessAndResistance(3.5F).setLightLevel(getLightValueLit())));
+    public static final RegistryObject<Block> OVEN = ModTabs.addToBlocksTab(registerBlock("oven", () -> new Oven(BlockBehaviour.Properties.copy(Blocks.FURNACE).noOcclusion().noCollission().lightLevel(value -> 15))));
     //   public static final RegistryObject<Block> FLASHLIGHT = registerBlock("flashlight", Flashlight::new);
     //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);
     //   public static final RegistryObject<Block> GOPRO = registerBlock("gopro", gopro::new);
@@ -198,6 +201,12 @@ public static final DeferredRegister<Block> BLOCKS =
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static ToIntFunction<BlockState> litBlockEmission(int pLightValue) {
+        return (p_50763_) -> {
+            return p_50763_.getValue(BlockStateProperties.LIT) ? pLightValue : 0;
+        };
     }
 
 public static void register(IEventBus eventBus) {

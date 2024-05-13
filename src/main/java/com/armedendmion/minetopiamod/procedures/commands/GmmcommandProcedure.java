@@ -11,8 +11,6 @@ public class GmmcommandProcedure {
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A72\u00A7l====Info===="), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal("\u00A7aCurrent version: 2.2"), false);
-		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7aCurrent commands:"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7a/heal - Heals the player"), false);
@@ -26,5 +24,9 @@ public class GmmcommandProcedure {
 			_player.displayClientMessage(Component.literal("\u00A7a/fix - Fixes durability of item in hand"), false);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
 			_player.displayClientMessage(Component.literal("\u00A7a/i - Shortened version of give command"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7a/balance - See how much money you have"), false);
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal("\u00A7a/loan - Set loan amount and timer"), false);
 	}
 }

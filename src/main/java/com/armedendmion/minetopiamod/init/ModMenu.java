@@ -7,6 +7,9 @@ package com.armedendmion.minetopiamod.init;
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.gui.Bag.BagGuiMenu;
 import com.armedendmion.minetopiamod.gui.BrownCabinet.BrownCabinetGuiMenu;
+import com.armedendmion.minetopiamod.gui.atm.AtmdepositMenu;
+import com.armedendmion.minetopiamod.gui.atm.AtmguiMenu;
+import com.armedendmion.minetopiamod.gui.atm.AtmwithdrawMenu;
 import com.armedendmion.minetopiamod.gui.bin.BinGuiMenu;
 import com.armedendmion.minetopiamod.gui.container.ContainerguiMenu;
 import com.armedendmion.minetopiamod.gui.garbagecan.GarbageGuiMenu;
@@ -32,4 +35,7 @@ public static final RegistryObject<MenuType<VendingguiMenu>> VENDINGGUI = REGIST
 	public static final RegistryObject<MenuType<ContainerguiMenu>> CONTAINER_GUI = REGISTRY.register("container_gui", () -> IForgeMenuType.create(ContainerguiMenu::new));
 	public static final RegistryObject<MenuType<BrownCabinetGuiMenu>> BROWN_CABINET_GUI = REGISTRY.register("brown_cabinet_gui", () -> IForgeMenuType.create(BrownCabinetGuiMenu::new));
 	public static final RegistryObject<MenuType<BagGuiMenu>> BAG_GUI = REGISTRY.register("bag_gui", () -> IForgeMenuType.create(BagGuiMenu::new));
+	public static final RegistryObject<MenuType<AtmguiMenu>> ATMGUI = REGISTRY.register("atmgui", () -> IForgeMenuType.create(AtmguiMenu::new));
+	public static final RegistryObject<MenuType<AtmdepositMenu>> ATMDEPOSIT = REGISTRY.register("atmdeposit", () -> IForgeMenuType.create(AtmdepositMenu::new));
+	public static final RegistryObject<MenuType<AtmwithdrawMenu>> ATMWITHDRAW = REGISTRY.register("atmwithdraw", () -> IForgeMenuType.create(AtmwithdrawMenu::new));
 }

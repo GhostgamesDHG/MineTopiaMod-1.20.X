@@ -4,6 +4,9 @@ package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.gui.Bag.BagGuiScreen;
 import com.armedendmion.minetopiamod.gui.BrownCabinet.BrownCabinetGuiScreen;
+import com.armedendmion.minetopiamod.gui.atm.AtmdepositScreen;
+import com.armedendmion.minetopiamod.gui.atm.AtmguiScreen;
+import com.armedendmion.minetopiamod.gui.atm.AtmwithdrawScreen;
 import com.armedendmion.minetopiamod.gui.bin.BinGuiScreen;
 import com.armedendmion.minetopiamod.gui.container.ContainerguiScreen;
 import com.armedendmion.minetopiamod.gui.garbagecan.GarbageGuiScreen;
@@ -31,6 +34,9 @@ public class ModScreens {
 			MenuScreens.register(ModMenu.CONTAINER_GUI.get(), ContainerguiScreen::new);
 			MenuScreens.register(ModMenu.BROWN_CABINET_GUI.get(), BrownCabinetGuiScreen::new);
 			MenuScreens.register(ModMenu.BAG_GUI.get(), BagGuiScreen::new);
+			MenuScreens.register(ModMenu.ATMGUI.get(), AtmguiScreen::new);
+			MenuScreens.register(ModMenu.ATMDEPOSIT.get(), AtmdepositScreen::new);
+			MenuScreens.register(ModMenu.ATMWITHDRAW.get(), AtmwithdrawScreen::new);
 		});
 	}
 }
