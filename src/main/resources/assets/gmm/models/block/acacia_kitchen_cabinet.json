@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecraft:block/dark_oak_planks",
-		"1": "minecraft:block/quartz_block_bottom",
-		"2": "minecraft:block/anvil_base",
-		"particle": "minecraft:block/dark_oak_planks"
+		"0": "minecraft:block/acacia_log",
+		"1": "minecraft:block/stripped_acacia_log",
+		"2": "minecraft:block/anvil",
+		"particle": "minecraft:block/acacia_log"
 	},
 	"elements": [
 		{

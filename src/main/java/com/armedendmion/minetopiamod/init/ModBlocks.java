@@ -106,7 +106,15 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> MODERN_PLANT = ModTabs.addToBlocksTab(registerBlock("modern_plant", modern_plant::new));
     public static final RegistryObject<Block> MODERN_PANCAKE_PLANT = ModTabs.addToBlocksTab(registerBlock("modern_pancake_plant", modern_pancake_plant::new));
     public static final RegistryObject<Block> TABLE_LAMP = ModTabs.addToBlocksTab(registerBlock("table_lamp", table_lamp::new));
-    public static final RegistryObject<Block> BROWN_CABINET = ModTabs.addToBlocksTab(registerBlock("brown_cabinet", BrownCabinet::new));
+        public static final RegistryObject<Block> DARK_OAK_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("dark_oak_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> OAK_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("oak_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> BIRCH_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("birch_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> SPRUCE_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("spruce_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> ACACIA_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("acacia_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> JUNGLE_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("jungle_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> MANGROVE_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("mangrove_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> BAMBOO_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("bamboo_kitchen_cabinet", KitchenCabinet::new));
+        public static final RegistryObject<Block> CHERRY_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("cherry_kitchen_cabinet", KitchenCabinet::new));
 
     //BAG
     public static final RegistryObject<Block> YELLOW_BAG = registerBlock("yellow_bag", Bag::new);

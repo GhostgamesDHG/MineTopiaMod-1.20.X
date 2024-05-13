@@ -1,0 +1,9 @@
+{
+	"parent": "gmm:block/acacia_kitchen_cabinet",
+	"textures": {
+		"0": "minecraft:block/mangrove_log",
+		"1": "minecraft:block/stripped_mangrove_log",
+		"2": "minecraft:block/anvil",
+		"particle": "minecraft:block/mangrove_log"
+	}
+}

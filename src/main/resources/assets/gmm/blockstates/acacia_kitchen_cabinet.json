@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/acacia_kitchen_cabinet" },
+    "facing=south": { "model": "gmm:block/acacia_kitchen_cabinet", "y":  180},
+    "facing=west": { "model": "gmm:block/acacia_kitchen_cabinet", "y":  270},
+    "facing=east": { "model": "gmm:block/acacia_kitchen_cabinet", "y":  90}
+  }
+}

@@ -1,0 +1,9 @@
+{
+	"parent": "gmm:block/acacia_kitchen_cabinet",
+	"textures": {
+		"0": "minecraft:block/cherry_log",
+		"1": "minecraft:block/stripped_cherry_log",
+		"2": "minecraft:block/anvil",
+		"particle": "minecraft:block/cherry_log"
+	}
+}

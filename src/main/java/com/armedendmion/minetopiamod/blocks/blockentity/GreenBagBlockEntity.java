@@ -1,4 +1,4 @@
-package com.armedendmion.minetopiamod.blocks.blockentity.bag;
+package com.armedendmion.minetopiamod.blocks.blockentity;
 
 import com.armedendmion.minetopiamod.gui.BrownCabinet.BrownCabinetGuiMenu;
 import com.armedendmion.minetopiamod.init.BlockEntities;
@@ -26,12 +26,12 @@ import net.minecraftforge.items.wrapper.SidedInvWrapper;
 import javax.annotation.Nullable;
 import java.util.stream.IntStream;
 
-public class YellowBagBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
+public class GreenBagBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
 	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(27, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
-	public YellowBagBlockEntity(BlockPos position, BlockState state) {
-		super(BlockEntities.YELLOW_BAG.get(), position, state);
+	public GreenBagBlockEntity(BlockPos position, BlockState state) {
+		super(BlockEntities.GREEN_BAG.get(), position, state);
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class YellowBagBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("yellowbag");
+		return Component.literal("greenbag");
 	}
 
 	@Override
@@ -90,7 +90,7 @@ public class YellowBagBlockEntity extends RandomizableContainerBlockEntity imple
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("yellowbag");
+		return Component.literal("greenbag");
 	}
 
 	@Override

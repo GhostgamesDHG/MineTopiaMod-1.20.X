@@ -34,9 +34,9 @@ import net.minecraftforge.network.NetworkHooks;
 import java.util.Collections;
 import java.util.List;
 
-public class BrownCabinet extends Block implements EntityBlock {
+public class KitchenCabinet extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
-	public BrownCabinet() {
+	public KitchenCabinet() {
 		super(Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
