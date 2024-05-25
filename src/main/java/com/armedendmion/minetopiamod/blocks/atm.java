@@ -23,7 +23,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class atm extends Block {
 
     public atm() {
-        super(Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion());
+        super(Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

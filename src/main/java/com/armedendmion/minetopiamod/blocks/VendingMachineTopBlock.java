@@ -40,7 +40,7 @@ public class VendingMachineTopBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public VendingMachineTopBlock() {
-		super(Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).strength(3.5f).requiresCorrectToolForDrops().pushReaction(PushReaction.BLOCK)
+		super(Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).requiresCorrectToolForDrops().strength(1.5F, 6.0F).pushReaction(PushReaction.BLOCK)
 				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}

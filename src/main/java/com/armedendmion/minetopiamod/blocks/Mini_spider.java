@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Mini_spider extends Block {
 
     public Mini_spider() {
-        super(Properties.copy(Blocks.BONE_BLOCK).noOcclusion());
+        super(Properties.copy(Blocks.BONE_BLOCK).noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

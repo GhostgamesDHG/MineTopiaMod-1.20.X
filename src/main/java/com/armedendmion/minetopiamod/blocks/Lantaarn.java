@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Lantaarn extends Block {
 
     public Lantaarn() {
-        super(Properties.copy(Blocks.SEA_LANTERN).noOcclusion().lightLevel(value -> 15).noOcclusion());
+        super(Properties.copy(Blocks.SEA_LANTERN).noOcclusion().lightLevel(value -> 15).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

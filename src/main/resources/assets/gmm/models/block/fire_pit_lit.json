@@ -1,12 +1,12 @@
 {
 	"credit": "Made with Blockbench",
+	"render_type": "cutout_mipped",
 	"texture_size": [64, 64],
 	"textures": {
 		"1": "minecraft:block/fire_0",
 		"2": "gmm:block/fire_pot",
 		"particle": "gmm:block/fire_pot"
 	},
-	"render_type": "cutout_mipped",
 	"elements": [
 		{
 			"from": [7, 0.10895, 1.42493],
@@ -194,6 +194,32 @@
 				"west": {"uv": [0, 0, 0, 4], "texture": "#missing"},
 				"up": {"uv": [4, 0, 0, 0], "texture": "#missing"},
 				"down": {"uv": [4, 0, 0, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [8, 7, 2],
+			"to": [8, 23, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 20.5, 10]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"west": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"up": {"uv": [4, 0, 0, 0], "rotation": 90, "texture": "#missing"},
+				"down": {"uv": [4, 0, 0, 0], "rotation": 270, "texture": "#missing"}
+			}
+		},
+		{
+			"from": [2, 7, 8],
+			"to": [14, 23, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10, 20.5, 8]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 4], "texture": "#missing"},
+				"up": {"uv": [4, 0, 0, 0], "rotation": 180, "texture": "#missing"},
+				"down": {"uv": [4, 0, 0, 0], "rotation": 180, "texture": "#missing"}
 			}
 		},
 		{

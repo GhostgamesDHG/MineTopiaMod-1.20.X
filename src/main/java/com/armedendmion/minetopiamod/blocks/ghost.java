@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class ghost extends Block {
 
     public ghost() {
-        super(Properties.copy(Blocks.OAK_PLANKS).noOcclusion());
+        super(Properties.copy(Blocks.OAK_PLANKS).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

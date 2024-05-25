@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Camera extends Block {
 
     public Camera() {
-        super(Properties.copy(Blocks.BROWN_CONCRETE));
+        super(Properties.copy(Blocks.BROWN_CONCRETE).requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

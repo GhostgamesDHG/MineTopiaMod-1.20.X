@@ -31,7 +31,7 @@ import net.minecraftforge.network.NetworkHooks;
 public class Container extends Block {
 
     public Container() {
-        super(Properties.copy(Blocks.BLACK_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion());
+        super(Properties.copy(Blocks.BLACK_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

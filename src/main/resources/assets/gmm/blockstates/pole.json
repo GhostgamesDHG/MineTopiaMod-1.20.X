@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "gmm:block/pole",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "gmm:block/pole",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "gmm:block/pole",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "gmm:block/pole",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "gmm:block/pole"
+    },
+    "facing=west": {
+      "model": "gmm:block/pole",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

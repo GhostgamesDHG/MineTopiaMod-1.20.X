@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_rh",
-  "textures": {
-    "top": "gmm:block/rich_quartz_door_top",
-    "bottom": "gmm:block/rich_quartz_door_bottom"
-  }
-}

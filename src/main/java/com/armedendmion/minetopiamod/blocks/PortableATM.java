@@ -23,7 +23,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class PortableATM extends Block {
 
     public PortableATM() {
-        super(Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().lightLevel(value -> 10));
+        super(Properties.copy(Blocks.BEACON).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().lightLevel(value -> 10).requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

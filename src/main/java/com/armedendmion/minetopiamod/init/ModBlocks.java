@@ -65,6 +65,7 @@ public static final DeferredRegister<Block> BLOCKS =
 
     //ALL THE OTHER BLOCKS
     public static final RegistryObject<Block> ATM = ModTabs.addToBlocksTab(registerBlock("atm", atm::new));
+    public static final RegistryObject<Block> WASHING_MACHINE = ModTabs.addToBlocksTab(registerBlock("washing_machine", Washingmachine::new));
     public static final RegistryObject<Block> PORTABLE_ATM = ModTabs.addToBlocksTab(registerBlock("portable_atm", PortableATM::new));
     public static final RegistryObject<Block> LAMP = ModTabs.addToBlocksTab(registerBlock("lamp", Lamp::new));
     public static final RegistryObject<Block> COMPUTER = ModTabs.addToBlocksTab(registerBlock("computer", Computer::new));
@@ -137,6 +138,7 @@ public static final DeferredRegister<Block> BLOCKS =
 
     //LED PANELS
     public static final RegistryObject<Block> LED_PANEL = ModTabs.addToBlocksTab(registerBlock("led_panel", LedPanel::new));                                            //0            @
+    public static final RegistryObject<Block> POLE = ModTabs.addToBlocksTab(registerBlock("pole", LedpanelPole::new));
     public static final RegistryObject<Block> LED_PANEL_RED = registerBlock("led_panel_red", LedPanel::new);                              //1            @
     public static final RegistryObject<Block> LED_PANEL_GREEN = registerBlock("led_panel_green", LedPanel::new);                      //2            @
     public static final RegistryObject<Block> LED_PANEL_WHITE = registerBlock("led_panel_white", LedPanel::new);                       //3            @
@@ -167,7 +169,7 @@ public static final DeferredRegister<Block> BLOCKS =
 
 //STILL ON THE TO-DO LIST
     //   public static final RegistryObject<Block> CADEAU = registerBlock("cadeau", Cadeau::new);
-    public static final RegistryObject<Block> OVEN = ModTabs.addToBlocksTab(registerBlock("oven", () -> new Oven(BlockBehaviour.Properties.copy(Blocks.FURNACE).noOcclusion().noCollission().lightLevel(value -> 15))));
+    //public static final RegistryObject<Block> OVEN = ModTabs.addToBlocksTab(registerBlock("oven", () -> new Oven(BlockBehaviour.Properties.copy(Blocks.FURNACE).noOcclusion().noCollission().lightLevel(value -> 15))));
     //   public static final RegistryObject<Block> FLASHLIGHT = registerBlock("flashlight", Flashlight::new);
     //   public static final RegistryObject<Block> MICROFOON = registerBlock("microfoon", microfoon::new);
     //   public static final RegistryObject<Block> GOPRO = registerBlock("gopro", gopro::new);

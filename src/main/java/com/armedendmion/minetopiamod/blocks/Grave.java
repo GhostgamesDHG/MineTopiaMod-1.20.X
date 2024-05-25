@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Grave extends Block {
 
     public Grave() {
-        super(Properties.copy(Blocks.STONE).noOcclusion());
+        super(Properties.copy(Blocks.STONE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

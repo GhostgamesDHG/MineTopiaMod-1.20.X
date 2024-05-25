@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class coolbox extends Block {
 
     public coolbox() {
-        super(Properties.copy(Blocks.LIGHT_BLUE_CONCRETE).noOcclusion());
+        super(Properties.copy(Blocks.LIGHT_BLUE_CONCRETE).noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

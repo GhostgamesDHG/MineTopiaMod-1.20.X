@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Smalltree extends Block {
 
     public Smalltree() {
-        super(Properties.copy(Blocks.OAK_LEAVES).noOcclusion());
+        super(Properties.copy(Blocks.OAK_LEAVES).noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

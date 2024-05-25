@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class table_lamp extends Block {
 
     public table_lamp() {
-        super(Properties.copy(Blocks.SEA_LANTERN).noOcclusion().lightLevel(value -> 15));
+        super(Properties.copy(Blocks.SEA_LANTERN).noOcclusion().lightLevel(value -> 15).strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

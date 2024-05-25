@@ -23,7 +23,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class GarbageCan extends Block {
 
     public GarbageCan() {
-        super(Properties.copy(Blocks.BLACK_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion());
+        super(Properties.copy(Blocks.BLACK_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class RoadBlock extends Block {
 
     public RoadBlock() {
-        super(Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.RED).noOcclusion());
+        super(Properties.copy(Blocks.IRON_BLOCK).mapColor(DyeColor.RED).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

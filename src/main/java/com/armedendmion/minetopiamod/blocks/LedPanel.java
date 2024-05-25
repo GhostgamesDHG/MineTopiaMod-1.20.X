@@ -2,7 +2,6 @@ package com.armedendmion.minetopiamod.blocks;
 
 import com.armedendmion.minetopiamod.init.ModBlocks;
 import com.armedendmion.minetopiamod.procedures.LedpanelP;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -21,14 +20,12 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 
 public class LedPanel extends Block {
 
     public LedPanel() {
-        super(Properties.copy(Blocks.GRAY_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).lightLevel(value -> 15).noOcclusion());
+        super(Properties.copy(Blocks.GRAY_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).lightLevel(value -> 15).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
@@ -74,6 +71,13 @@ public class LedPanel extends Block {
         return new ItemStack(ModBlocks.LED_PANEL.get());
     }
 
+
+    @Override
+    public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+        super.onPlace(blockstate, world, pos, oldState, moving);
+        world.scheduleTick(pos, this, 1);
+    }
+
     @Override
     public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
         super.tick(blockstate, world, pos, random);
@@ -81,17 +85,8 @@ public class LedPanel extends Block {
         int y = pos.getY();
         int z = pos.getZ();
         LedpanelP.execute(world, x, y, z);
+        world.scheduleTick(pos, this, 1);
     }
 
-    @OnlyIn(Dist.CLIENT)
-    @Override
-    public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
-        super.animateTick(blockstate, world, pos, random);
-        Player entity = Minecraft.getInstance().player;
-        int x = pos.getX();
-        int y = pos.getY();
-        int z = pos.getZ();
-        LedpanelP.execute(world, x, y, z);
-    }
 
 }

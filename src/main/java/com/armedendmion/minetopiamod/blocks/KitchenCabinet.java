@@ -37,7 +37,7 @@ import java.util.List;
 public class KitchenCabinet extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public KitchenCabinet() {
-		super(Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(1f, 10f));		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		super(Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).requiresCorrectToolForDrops().strength(1.5F, 6.0F));		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
 	@Override
