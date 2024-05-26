@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gmm:portable_atm",
+    "gmm:vendingmachine",
+    "gmm:vending_machine_top"
+  ]
+}

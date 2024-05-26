@@ -25,43 +25,43 @@ public static final DeferredRegister<Block> BLOCKS =
 
     //ORES
     public static final RegistryObject<Block> BLUE_CRYSTAL_BLOCK = ModTabs.addToBlocksTab(registerBlock("blue_crystal_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> BLUE_CRYSTAL_ORE = ModTabs.addToBlocksTab(registerBlock("blue_crystal_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> PCB_ORE = ModTabs.addToBlocksTab(registerBlock("pcb_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
 
     //KEUKENTEGELS
     public static final RegistryObject<Block> BLUE_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("blue_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_LIGHT_BLUE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_LIGHT_BLUE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> BLACK_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("black_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> DARK_BLUE_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("dark_blue_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLUE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLUE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> BROWN_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("brown_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BROWN))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BROWN).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> CYAN_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("cyan_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_CYAN))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_CYAN).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> GREEN_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("green_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_GREEN))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_GREEN).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> GRAY_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("gray_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_GRAY))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_GRAY).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> LIGHT_GRAY_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("light_gray_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_LIGHT_GRAY))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_LIGHT_GRAY).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> LIGHT_GREEN_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("light_green_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_LIGHT_GREEN))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_LIGHT_GREEN).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> MAGENTA_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("magenta_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_MAGENTA))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_MAGENTA).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> ORANGE_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("orange_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_ORANGE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_ORANGE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> PINK_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("pink_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_PINK))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_PINK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> PURPLE_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("purple_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_PURPLE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_PURPLE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> RED_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("red_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_RED))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_RED).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> YELLOW_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("yellow_kitchen_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_YELLOW))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_YELLOW).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
 
     //ALL THE OTHER BLOCKS
     public static final RegistryObject<Block> ATM = ModTabs.addToBlocksTab(registerBlock("atm", atm::new));
@@ -83,11 +83,11 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> WREATH = ModTabs.addToBlocksTab(registerBlock("wreath", Wreath::new));
     public static final RegistryObject<Block> CHRISTMAS_GARLANDS = ModTabs.addToBlocksTab(registerBlock("christmas_garlands", ChristmasGarlands::new));
     public static final RegistryObject<Block> WHITE_BRICKS = ModTabs.addToBlocksTab(registerBlock("white_bricks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.TERRACOTTA_WHITE))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.TERRACOTTA_WHITE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> BLACK_BRICKS = ModTabs.addToBlocksTab(registerBlock("black_bricks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> MYSTERIOUS_BLOCK = ModTabs.addToBlocksTab(registerBlock("mysterious_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK).lightLevel(value -> 15))));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_BLACK).lightLevel(value -> 15).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
     public static final RegistryObject<Block> SAFE = ModTabs.addToBlocksTab(registerBlock("safe", SafeBlock::new));
     public static final RegistryObject<Block> VENDINGMACHINE = ModTabs.addToBlocksTab(registerBlock("vendingmachine", VendingMachine::new));
     public static final RegistryObject<Block> VENDING_MACHINE_TOP = registerBlock("vending_machine_top", VendingMachineTopBlock::new);
@@ -192,16 +192,16 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> WEED_CROP = BLOCKS.register("weed_crop", () -> new WeedBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     //DOORS,STAIRS,SLABS
-    public static final RegistryObject<Block> WHITE_BRICK_STAIRS = ModTabs.addToBlocksTab(registerBlock("white_brick_stairs", () -> new StairBlock(() -> ModBlocks.WHITE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE))));
-    public static final RegistryObject<Block> WHITE_BRICK_SLAB = ModTabs.addToBlocksTab(registerBlock("white_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE))));
-    public static final RegistryObject<Block> BLACK_BRICK_STAIRS = ModTabs.addToBlocksTab(registerBlock("black_brick_stairs", () -> new StairBlock(() -> ModBlocks.BLACK_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE))));
-    public static final RegistryObject<Block> BLACK_BRICK_SLAB = ModTabs.addToBlocksTab(registerBlock("black_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE))));
+    public static final RegistryObject<Block> WHITE_BRICK_STAIRS = ModTabs.addToBlocksTab(registerBlock("white_brick_stairs", () -> new StairBlock(() -> ModBlocks.WHITE_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
+    public static final RegistryObject<Block> WHITE_BRICK_SLAB = ModTabs.addToBlocksTab(registerBlock("white_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
+    public static final RegistryObject<Block> BLACK_BRICK_STAIRS = ModTabs.addToBlocksTab(registerBlock("black_brick_stairs", () -> new StairBlock(() -> ModBlocks.BLACK_BRICKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
+    public static final RegistryObject<Block> BLACK_BRICK_SLAB = ModTabs.addToBlocksTab(registerBlock("black_brick_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
 
-    public static final RegistryObject<Block> BUNKER_DOOR = ModTabs.addToBlocksTab(registerBlock("bunker_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), BlockSetType.IRON)));
-    public static final RegistryObject<Block> WOODEN_DOOR = ModTabs.addToBlocksTab(registerBlock("wooden_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS), BlockSetType.BAMBOO)));
-    public static final RegistryObject<Block> RICH_QUARTZ_DOOR = ModTabs.addToBlocksTab(registerBlock("rich_quartz_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK), BlockSetType.STONE)));
-    public static final RegistryObject<Block> STEEL_DOOR = ModTabs.addToBlocksTab(registerBlock("steel_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), BlockSetType.IRON)));
-    public static final RegistryObject<Block>  QUARTZ_DOOR = ModTabs.addToBlocksTab(registerBlock("quartz_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK), BlockSetType.STONE)));
+    public static final RegistryObject<Block> BUNKER_DOOR = ModTabs.addToBlocksTab(registerBlock("bunker_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), BlockSetType.IRON)));
+    public static final RegistryObject<Block> WOODEN_DOOR = ModTabs.addToBlocksTab(registerBlock("wooden_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), BlockSetType.BAMBOO)));
+    public static final RegistryObject<Block> RICH_QUARTZ_DOOR = ModTabs.addToBlocksTab(registerBlock("rich_quartz_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), BlockSetType.STONE)));
+    public static final RegistryObject<Block> STEEL_DOOR = ModTabs.addToBlocksTab(registerBlock("steel_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), BlockSetType.IRON)));
+    public static final RegistryObject<Block>  QUARTZ_DOOR = ModTabs.addToBlocksTab(registerBlock("quartz_door", () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.QUARTZ_BLOCK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), BlockSetType.STONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

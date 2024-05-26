@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Owl extends Block {
 
     public Owl() {
-        super(Properties.copy(Blocks.BONE_BLOCK).mapColor(DyeColor.BROWN).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.BONE_BLOCK).mapColor(DyeColor.BROWN).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

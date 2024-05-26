@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "gmm:wooden_door",
+    "gmm:controller",
+    "gmm:dartbord",
+    "gmm:owl",
+    "gmm:pumpkin",
+    "gmm:dog_cot",
+    "gmm:dark_oak_kitchen_cabinet",
+    "gmm:oak_kitchen_cabinet",
+    "gmm:birch_kitchen_cabinet",
+    "gmm:spruce_kitchen_cabinet",
+    "gmm:acacia_kitchen_cabinet",
+    "gmm:jungle_kitchen_cabinet",
+    "gmm:mangrove_kitchen_cabinet",
+    "gmm:bamboo_kitchen_cabinet",
+    "gmm:cherry_kitchen_cabinet",
+    "gmm:globe"
+  ]
+}

@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class pumpkins extends Block {
 
     public pumpkins() {
-        super(Properties.copy(Blocks.BONE_BLOCK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.OAK_PLANKS).noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

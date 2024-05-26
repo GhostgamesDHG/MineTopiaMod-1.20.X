@@ -9,6 +9,7 @@ plugins {
 version = mod_version
 group = mod_group_id
 
+
 base {
     archivesName = mod_id
 }
@@ -56,19 +57,27 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven {
-        name = "Jared's maven"
-        url = "https://maven.blamejared.com/"
+        url "https://www.cursemaven.com"
     }
     maven {
+        // location of the maven that hosts JEI files
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
 }
+
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-common-api:15.3.0.4"))
-    compileOnly(fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.3.0.4"))
-    runtimeOnly(fg.deobf("mezz.jei:jei-1.20.1-forge:15.3.0.4"))
+    runtimeOnly(fg.deobf('curse.maven:mousetweaks-60089:4581240'))
+
+  //  compileOnly fg.deobf("mezz.jei:jei_${mc_version}-forge-${jei_version}:api")
+
+    //runtimeOnly fg.deobf("mezz.jei:jei_${mc_version}-forge-${jei_version}")
 }
 
 tasks.named('processResources', ProcessResources).configure {

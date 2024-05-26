@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Rat extends Block {
 
     public Rat() {
-        super(Properties.copy(Blocks.BONE_BLOCK).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.BONE_BLOCK).noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
