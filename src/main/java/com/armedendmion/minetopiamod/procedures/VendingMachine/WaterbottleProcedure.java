@@ -20,7 +20,7 @@ public class WaterbottleProcedure {
 		double count = 0;
 		ItemStack output = ItemStack.EMPTY;
 		count = 8;
-		output = new ItemStack(Blocks.BARRIER);
+		output = new ItemStack(ModItems.WATER_BOTTLE.get());
 		if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			ItemStack _setstack = new ItemStack(ModItems.MONEY2.get());
 			_setstack.setCount((int) count);

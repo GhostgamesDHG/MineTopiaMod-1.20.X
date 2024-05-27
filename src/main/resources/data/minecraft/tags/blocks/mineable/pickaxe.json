@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "gmm:atm",
+    "gmm:frying_pan",
     "gmm:vendingmachine",
     "gmm:blue_kitchen_tiles",
     "gmm:black_kitchen_tiles",

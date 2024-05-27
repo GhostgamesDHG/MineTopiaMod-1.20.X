@@ -4,7 +4,7 @@ license="${mod_license}"
 issueTrackerURL="https://discord.gg/TPjjuHFfZV"
 [[mods]]
 modId="gmm"
-version="2.2"
+version="2.3"
 displayName="MineTopia Mod"
 updateJSONURL="https://raw.githubusercontent.com/GhostgamesDHG/update.json/main/update.json"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/minetopia-extra-mod"

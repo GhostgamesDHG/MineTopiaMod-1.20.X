@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/frying_pan" },
+    "facing=south": { "model": "gmm:block/frying_pan", "y":  180},
+    "facing=west": { "model": "gmm:block/frying_pan", "y":  270},
+    "facing=east": { "model": "gmm:block/frying_pan", "y":  90}
+  }
+}

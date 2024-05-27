@@ -3,6 +3,7 @@ package com.armedendmion.minetopiamod.init;
 import com.armedendmion.minetopiamod.MineTopiaMod;
 import com.armedendmion.minetopiamod.blocks.*;
 import com.armedendmion.minetopiamod.blocks.crops.*;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
@@ -26,10 +27,12 @@ public static final DeferredRegister<Block> BLOCKS =
     //ORES
     public static final RegistryObject<Block> BLUE_CRYSTAL_BLOCK = ModTabs.addToBlocksTab(registerBlock("blue_crystal_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
-    public static final RegistryObject<Block> BLUE_CRYSTAL_ORE = ModTabs.addToBlocksTab(registerBlock("blue_crystal_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
-    public static final RegistryObject<Block> PCB_ORE = ModTabs.addToBlocksTab(registerBlock("pcb_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F))));
+
+    public static final RegistryObject<DropExperienceBlock> BLUE_CRYSTAL_ORE = ModTabs.addToBlocksTab(registerBlock("blue_crystal_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), UniformInt.of(4,7))));
+
+    public static final RegistryObject<DropExperienceBlock> PCB_ORE = ModTabs.addToBlocksTab(registerBlock("pcb_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F), UniformInt.of(4,7))));
 
     //KEUKENTEGELS
     public static final RegistryObject<Block> BLUE_KITCHEN_TILES = ModTabs.addToBlocksTab(registerBlock("blue_kitchen_tiles",
@@ -117,6 +120,7 @@ public static final DeferredRegister<Block> BLOCKS =
         public static final RegistryObject<Block> MANGROVE_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("mangrove_kitchen_cabinet", KitchenCabinet::new));
         public static final RegistryObject<Block> BAMBOO_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("bamboo_kitchen_cabinet", KitchenCabinet::new));
         public static final RegistryObject<Block> CHERRY_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("cherry_kitchen_cabinet", KitchenCabinet::new));
+    public static final RegistryObject<Block> FRYING_PAN = ModTabs.addToBlocksTab(registerBlock("frying_pan", FryingPan::new));
 
     //BAG
     public static final RegistryObject<Block> YELLOW_BAG = registerBlock("yellow_bag", Bag::new);
@@ -138,6 +142,7 @@ public static final DeferredRegister<Block> BLOCKS =
 
     //LED PANELS
     public static final RegistryObject<Block> LED_PANEL = ModTabs.addToBlocksTab(registerBlock("led_panel", LedPanel::new));                                            //0            @
+                                    //0            @
     public static final RegistryObject<Block> POLE = ModTabs.addToBlocksTab(registerBlock("pole", LedpanelPole::new));
     public static final RegistryObject<Block> LED_PANEL_RED = registerBlock("led_panel_red", LedPanel::new);                              //1            @
     public static final RegistryObject<Block> LED_PANEL_GREEN = registerBlock("led_panel_green", LedPanel::new);                      //2            @
