@@ -45,7 +45,7 @@ import java.util.List;
 public class OilCan extends Block implements EntityBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public OilCan() {
-        super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.STONE).sound(SoundType.METAL).requiresCorrectToolForDrops().strength(1.5F, 6.0F).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.BLOCK)
+        super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).forceSolidOff().mapColor(MapColor.STONE).sound(SoundType.METAL).requiresCorrectToolForDrops().strength(1.5F, 6.0F).requiresCorrectToolForDrops().noOcclusion().pushReaction(PushReaction.BLOCK)
                 .isRedstoneConductor((bs, br, bp) -> false));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }

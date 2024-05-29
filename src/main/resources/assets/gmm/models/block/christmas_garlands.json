@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "gmm:block/kerstkrans_leaves",
-		"particle": "gmm:block/kerstkrans_leaves"
+		"0": "minecraft:block/azalea_leaves",
+		"particle": "minecraft:block/azalea_leaves"
 	},
 	"render_type": "cutout_mipped",
 	"elements": [

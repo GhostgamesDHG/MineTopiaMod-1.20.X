@@ -8,15 +8,16 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 
-public class pumpkins extends Block {
+public class IceCreamStand extends Block {
 
-    public pumpkins() {
-        super(Properties.copy(Blocks.OAK_PLANKS).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
+    public IceCreamStand() {
+        super(Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.WOOD).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
@@ -30,7 +31,7 @@ public class pumpkins extends Block {
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         state.getValue(FACING);
-        return box(0, 0, 0, 16, 8, 16);
+        return box(0, 0, 0, 16, 18, 16);
     }
 
     @Override
@@ -50,5 +51,4 @@ public class pumpkins extends Block {
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
         return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
     }
-
 }

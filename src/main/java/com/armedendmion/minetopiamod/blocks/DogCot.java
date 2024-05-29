@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class DogCot extends Block {
 
     public DogCot() {
-        super(Properties.copy(Blocks.OAK_PLANKS).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.OAK_PLANKS).forceSolidOff().noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

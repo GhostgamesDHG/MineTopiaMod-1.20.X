@@ -26,7 +26,7 @@ import java.util.List;
 public class FirepitLit extends Block {
 
     public FirepitLit() {
-        super(Properties.copy(Blocks.IRON_BARS).noOcclusion().lightLevel(value -> 15).requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.IRON_BARS).forceSolidOff().noOcclusion().lightLevel(value -> 15).requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

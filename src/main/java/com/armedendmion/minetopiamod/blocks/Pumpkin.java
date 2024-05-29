@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Pumpkin extends Block {
 
     public Pumpkin() {
-        super(Properties.copy(Blocks.PUMPKIN).lightLevel(value -> 10).strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.PUMPKIN).forceSolidOff().lightLevel(value -> 10).strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

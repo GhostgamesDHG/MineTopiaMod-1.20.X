@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Scarecrow extends Block {
 
     public Scarecrow() {
-        super(Properties.copy(Blocks.OAK_PLANKS).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.OAK_PLANKS).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

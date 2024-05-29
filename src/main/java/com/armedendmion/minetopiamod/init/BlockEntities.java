@@ -1,8 +1,8 @@
 package com.armedendmion.minetopiamod.init;
 
 import com.armedendmion.minetopiamod.MineTopiaMod;
-import com.armedendmion.minetopiamod.blocks.blockentity.GreenBagBlockEntity;
 import com.armedendmion.minetopiamod.blocks.blockentity.BrowncabinetBlockEntity;
+import com.armedendmion.minetopiamod.blocks.blockentity.GreenBagBlockEntity;
 import com.armedendmion.minetopiamod.blocks.blockentity.OilCanBlockEntity;
 import com.armedendmion.minetopiamod.blocks.blockentity.SafeBlockEntity;
 import net.minecraft.world.level.block.Block;

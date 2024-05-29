@@ -1,13 +1,13 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "gmm:block/kerstkrans_leaves",
+		"0": "minecraft:block/azalea_leaves",
 		"1": "minecraft:block/red_concrete_powder",
 		"2": "minecraft:block/yellow_glazed_terracotta",
 		"3": "minecraft:block/red_glazed_terracotta",
 		"4": "minecraft:block/lime_glazed_terracotta",
 		"5": "minecraft:block/purple_glazed_terracotta",
-		"particle": "gmm:block/kerstkrans_leaves"
+		"particle": "minecraft:block/azalea_leaves"
 	},
 	"render_type": "cutout_mipped",
 	"elements": [

@@ -121,6 +121,8 @@ public static final DeferredRegister<Block> BLOCKS =
         public static final RegistryObject<Block> BAMBOO_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("bamboo_kitchen_cabinet", KitchenCabinet::new));
         public static final RegistryObject<Block> CHERRY_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("cherry_kitchen_cabinet", KitchenCabinet::new));
     public static final RegistryObject<Block> FRYING_PAN = ModTabs.addToBlocksTab(registerBlock("frying_pan", FryingPan::new));
+    public static final RegistryObject<Block> CHRISTMAS_TREE = ModTabs.addToBlocksTab(registerBlock("christmas_tree", ChristmasTree::new));
+    public static final RegistryObject<Block> CHRISTMAS_TREE_TOP = registerBlock("christmas_tree_top", ChristmasTreeTopBlock::new);
 
     //BAG
     public static final RegistryObject<Block> YELLOW_BAG = registerBlock("yellow_bag", Bag::new);
@@ -157,6 +159,7 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> LED_PANEL_FCY = registerBlock("led_panel_fcy", LedPanel::new);                             //11 Full course yellow
 
     public static final RegistryObject<Block> CONTROLLER = registerBlock("controller", Pumpkin::new);
+    public static final RegistryObject<Block> ICE_CREAM_STAND = ModTabs.addToBlocksTab(registerBlock("ice_cream_stand", IceCreamStand::new));
 
     //HALLOWEEN
     public static final RegistryObject<Block> SITTING_SKELETON = ModTabs.addToBlocksTab(registerBlock("sitting_skeleton", Sitting_skeleton::new));

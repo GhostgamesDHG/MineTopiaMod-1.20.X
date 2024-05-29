@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Boombox extends Block {
 
     public Boombox() {
-        super(Properties.copy(Blocks.WHITE_CONCRETE).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.WHITE_CONCRETE).forceSolidOff().noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

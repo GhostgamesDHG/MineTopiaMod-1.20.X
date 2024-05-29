@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Sitting_skeleton extends Block {
 
     public Sitting_skeleton() {
-        super(Properties.of().sound(SoundType.BONE_BLOCK).requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.BONE_BLOCK).forceSolidOff().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

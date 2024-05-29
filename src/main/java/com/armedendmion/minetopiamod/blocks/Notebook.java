@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Notebook extends Block {
 
     public Notebook() {
-        super(Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.STONE).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.of().mapColor(MapColor.COLOR_GRAY).forceSolidOff().sound(SoundType.STONE).noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

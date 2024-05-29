@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class TrafficCone extends Block {
 
     public TrafficCone() {
-        super(Properties.of().sound(SoundType.STONE).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.STONE).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

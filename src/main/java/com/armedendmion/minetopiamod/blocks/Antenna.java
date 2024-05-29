@@ -17,7 +17,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Antenna extends Block {
 
     public Antenna() {
-        super(BlockBehaviour.Properties.of().sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(BlockBehaviour.Properties.of().forceSolidOff().sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;

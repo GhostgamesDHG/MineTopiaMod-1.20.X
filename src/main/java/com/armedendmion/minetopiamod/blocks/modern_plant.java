@@ -30,7 +30,7 @@ import net.minecraftforge.network.NetworkHooks;
 public class modern_plant extends Block {
 
     public modern_plant() {
-        super(Properties.copy(Blocks.OAK_LEAVES).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.OAK_LEAVES).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

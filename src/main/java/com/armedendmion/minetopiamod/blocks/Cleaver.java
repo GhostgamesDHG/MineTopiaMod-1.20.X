@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Cleaver extends Block {
 
     public Cleaver() {
-        super(Properties.of().sound(SoundType.METAL).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.METAL).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

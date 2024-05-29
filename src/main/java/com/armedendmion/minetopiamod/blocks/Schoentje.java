@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Schoentje extends Block {
 
     public Schoentje() {
-        super(Properties.copy(Blocks.DARK_OAK_PLANKS).strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.DARK_OAK_PLANKS).forceSolidOff().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

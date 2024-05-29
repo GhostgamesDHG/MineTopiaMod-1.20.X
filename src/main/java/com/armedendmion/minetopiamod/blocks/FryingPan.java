@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class FryingPan extends Block {
 
     public FryingPan() {
-        super(Properties.of().sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.METAL).forceSolidOff().noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;

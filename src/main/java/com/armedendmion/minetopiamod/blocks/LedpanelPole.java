@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 public class LedpanelPole extends RodBlock {
 
     public LedpanelPole() {
-        super(Properties.copy(Blocks.IRON_BARS).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.IRON_BARS).noOcclusion().requiresCorrectToolForDrops().forceSolidOff().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.UP));
     }
 

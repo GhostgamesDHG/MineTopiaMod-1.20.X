@@ -15,7 +15,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Zombie_arm extends Block {
 
     public Zombie_arm() {
-        super(Properties.of().sound(SoundType.BONE_BLOCK).strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.BONE_BLOCK).forceSolidOff().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

@@ -39,7 +39,7 @@ public class Bag extends Block implements EntityBlock {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
     public Bag() {
-        super(Properties.copy(Blocks.BLACK_WOOL).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.BLACK_WOOL).noOcclusion().forceSolidOff().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 

@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Monsterbook extends Block {
 
     public Monsterbook() {
-        super(Properties.copy(Blocks.OAK_PLANKS).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.OAK_PLANKS).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

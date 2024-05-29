@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Computer extends Block {
 
     public Computer() {
-        super(Properties.copy(Blocks.GRAY_CONCRETE).mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
+        super(Properties.copy(Blocks.GRAY_CONCRETE).forceSolidOff().mapColor(MapColor.COLOR_GRAY).sound(SoundType.METAL).noOcclusion().requiresCorrectToolForDrops().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }

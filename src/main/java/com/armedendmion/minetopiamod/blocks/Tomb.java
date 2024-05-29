@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class Tomb extends Block {
 
     public Tomb() {
-        super(Properties.of().sound(SoundType.STONE).noOcclusion().strength(1.5F, 6.0F));
+        super(Properties.of().sound(SoundType.STONE).forceSolidOff().noOcclusion().strength(1.5F, 6.0F));
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 
     }
