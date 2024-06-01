@@ -1,0 +1,17 @@
+{
+	"parent": "gmm:block/christmas_tree",
+	"render_type": "cutout_mipped",
+	"textures": {
+		"0": "minecraft:block/pink_glazed_terracotta",
+		"1": "minecraft:block/pink_glazed_terracotta",
+		"2": "minecraft:block/pink_glazed_terracotta",
+		"3": "minecraft:block/pink_glazed_terracotta",
+		"4": "minecraft:block/pink_glazed_terracotta",
+		"5": "minecraft:block/pink_glazed_terracotta",
+		"6": "minecraft:block/pink_glazed_terracotta",
+		"7": "minecraft:block/pink_glazed_terracotta",
+		"8": "gmm:block/white_leaves",
+		"11": "minecraft:block/pink_concrete",
+		"particle": "minecraft:block/spruce_log"
+	}
+}

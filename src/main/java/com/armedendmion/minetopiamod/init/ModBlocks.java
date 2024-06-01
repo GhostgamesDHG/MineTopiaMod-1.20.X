@@ -122,6 +122,8 @@ public static final DeferredRegister<Block> BLOCKS =
         public static final RegistryObject<Block> CHERRY_KITCHEN_CABINET = ModTabs.addToBlocksTab(registerBlock("cherry_kitchen_cabinet", KitchenCabinet::new));
     public static final RegistryObject<Block> FRYING_PAN = ModTabs.addToBlocksTab(registerBlock("frying_pan", FryingPan::new));
     public static final RegistryObject<Block> CHRISTMAS_TREE = ModTabs.addToBlocksTab(registerBlock("christmas_tree", ChristmasTree::new));
+    public static final RegistryObject<Block> WHITE_CHRISTMAS_TREE = ModTabs.addToBlocksTab(registerBlock("white_christmas_tree", WhiteChristmasTree::new));
+    public static final RegistryObject<Block> WHITE_CHRISTMAS_TREE_TOP = registerBlock("white_christmas_tree_top", WhiteChristmasTreeTop::new);
     public static final RegistryObject<Block> CHRISTMAS_TREE_TOP = registerBlock("christmas_tree_top", ChristmasTreeTopBlock::new);
 
     //BAG
@@ -144,7 +146,6 @@ public static final DeferredRegister<Block> BLOCKS =
 
     //LED PANELS
     public static final RegistryObject<Block> LED_PANEL = ModTabs.addToBlocksTab(registerBlock("led_panel", LedPanel::new));                                            //0            @
-                                    //0            @
     public static final RegistryObject<Block> POLE = ModTabs.addToBlocksTab(registerBlock("pole", LedpanelPole::new));
     public static final RegistryObject<Block> LED_PANEL_RED = registerBlock("led_panel_red", LedPanel::new);                              //1            @
     public static final RegistryObject<Block> LED_PANEL_GREEN = registerBlock("led_panel_green", LedPanel::new);                      //2            @

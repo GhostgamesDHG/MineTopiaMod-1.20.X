@@ -767,6 +767,7 @@
     "block.gmm.frying_pan": "Frying pan",
     "block.gmm.ice_cream_stand": "Ice cream stand",
     "block.gmm.christmas_tree": "Christmas tree",
+    "block.gmm.white_christmas_tree": "White christmas tree",
   "gui.gmm.atmwithdraw.button_20": "20",
   "gui.gmm.atmdeposit.button_20": "20",
   "gui.gmm.atmdeposit.label_deposit": "§6Deposit",
