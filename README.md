@@ -17,8 +17,6 @@ The releases are on Modrinth and Curseforge.
 * And more.....
 <!-- TOC -->
 
-
-
 **These thing need to be done**
 <!-- TOC -->
 * Add all the recipes PARTLY ACTIVE
