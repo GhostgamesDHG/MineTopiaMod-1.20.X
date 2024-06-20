@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "gmm:block/krappaal" },
+    "facing=south": { "model": "gmm:block/krappaal", "y":  180},
+    "facing=west": { "model": "gmm:block/krappaal", "y":  270},
+    "facing=east": { "model": "gmm:block/krappaal", "y":  90}
+  }
+}

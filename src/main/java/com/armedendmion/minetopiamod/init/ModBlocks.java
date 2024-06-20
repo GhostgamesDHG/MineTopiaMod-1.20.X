@@ -74,6 +74,7 @@ public static final DeferredRegister<Block> BLOCKS =
     public static final RegistryObject<Block> COMPUTER = ModTabs.addToBlocksTab(registerBlock("computer", Computer::new));
     public static final RegistryObject<Block> DOG_COT = ModTabs.addToBlocksTab(registerBlock("dog_cot", DogCot::new));
     public static final RegistryObject<Block> OIL_CAN = ModTabs.addToBlocksTab(registerBlock("oil_can", OilCan::new));
+   // public static final RegistryObject<Block> KRAPPAAL = ModTabs.addToBlocksTab(registerBlock("krappaal", Lamp::new));
     public static final RegistryObject<Block> PARKING_SIGN = ModTabs.addToBlocksTab(registerBlock("parking_sign", ParkingSign::new));
     public static final RegistryObject<Block> PUMPKIN = ModTabs.addToBlocksTab(registerBlock("pumpkin", Pumpkin::new));
     public static final RegistryObject<Block> ROADBLOCK = ModTabs.addToBlocksTab(registerBlock("roadblock", RoadBlock::new));

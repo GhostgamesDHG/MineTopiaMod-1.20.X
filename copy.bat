@@ -1,2 +1,2 @@
 @echo off
-move "C:\MinecraftModding\MinetopiaModFolder\MinetopiaMod\build\libs\MineTopiaMod-2.0.jar" "C:\Users\DGcoo\Desktop"
+move "C:\MinecraftModding\MineTopiaMod 1.20\build\libs\gmm-2.0.jar" "C:\Users\DGcoo\Desktop"
