@@ -9,8 +9,7 @@ The releases are on Modrinth and Curseforge.
 **Some ideas that I will work on**
 <!-- TOC -->
 * Fitness
-* Loan 90% DONE
-* ATM  80% DONE
+* More advanced command/functions
 * Computer
 * More furniture
 * More clothes/armor than the previous version (Will be in a GUI I think)
@@ -22,7 +21,6 @@ The releases are on Modrinth and Curseforge.
 **These thing need to be done**
 <!-- TOC -->
 * Add all the recipes PARTLY ACTIVE
-* Add 3 blocks back from the previous version.
 * Add the clothes back
 * _The safe block needs a rewrite. You cannot set a password if you are playing on a server_
 <!-- TOC -->
